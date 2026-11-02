@@ -7,8 +7,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
-    "preview": "vite preview",
+    "build": "tsc --noEmit && node scripts/bersih.mjs && vite build",
+    "preview": "vite preview --outDir ..",
     "sahkan": "tsx scripts/sahkan.ts",
     "simulasi": "tsx scripts/simulasi.ts"
   },

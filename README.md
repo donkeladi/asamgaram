@@ -56,7 +56,7 @@ Pelan sendiri menyatakan bahawa fakta undang-undang perlu disemak oleh pakar. Da
 ```bash
 npm install
 npm run dev        # pelayan pembangunan
-npm run build      # bina ke dist/
+npm run build      # bina ke akar repo (untuk GitHub Pages)
 npm run preview    # uji binaan
 npm run sahkan     # sahkan semua kandungan JSON (id, rujukan, token, ungkapan, bilangan pilihan)
 npm run simulasi -- 500   # main 500 permainan rawak tanpa kepala: cari jalan buntu dan ralat
@@ -64,7 +64,12 @@ npm run simulasi -- 500   # main 500 permainan rawak tanpa kepala: cari jalan bu
 
 ## Hos di GitHub Pages
 
-`.github/workflows/deploy.yml` mengesahkan kandungan, menjalankan simulasi, membina dan menerbitkan setiap kali `main` dikemas kini. Di Settings → Pages, pilih **Source: GitHub Actions**. Laluan asas ialah relatif (`./`), jadi ia berfungsi di `username.github.io/nama-repo/`.
+Hasil bina (`index.html`, `assets/`, `sw.js`, `manifest.webmanifest`, ikon) **disimpan dalam akar repo**, jadi GitHub Pages terus menghidangkannya tanpa langkah bina di server.
+
+1. Settings → Pages → **Source: Deploy from a branch**, pilih branch utama dan folder **/ (root)**.
+2. Selepas mengubah kod atau kandungan: `npm run build`, kemudian commit hasilnya (`index.html`, `assets/`, `sw.js`…).
+
+Laluan asas ialah relatif (`./`), jadi ia berfungsi di `username.github.io/nama-repo/`. Kod sumber ada dalam `src/` (`npm run dev` untuk pembangunan).
 
 ## Struktur
 
@@ -76,6 +81,7 @@ content/
   harga.json          harga, gaji, hantaran & kenduri mengikut negeri
   nama.json, sifat.json
 src/
+  index.html, main.ts
   engine.ts           enjin teras (tanpa DOM): meter, belanjaan, syarat, pemilihan peristiwa, penilaian
   pergaduhan.ts       sistem pergaduhan
   minigames.ts        10 mini-game

@@ -1,22 +1,13 @@
-name: Bina dan hos di GitHub Pages
+name: Semakan (kandungan, simulasi, bina)
 
+# Hasil bina disimpan dalam repo (akar) dan dihidangkan oleh GitHub Pages
+# mod "Deploy from a branch" / root. Workflow ini hanya menyemak PR dan push.
 on:
   push:
-    branches: [main]
   pull_request:
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
-  bina:
+  semak:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,20 +22,5 @@ jobs:
         run: npm run simulasi -- 150
       - name: Bina
         run: npm run build
-      - uses: actions/configure-pages@v5
-        if: github.ref == 'refs/heads/main'
-      - uses: actions/upload-pages-artifact@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          path: dist
-
-  terbit:
-    if: github.ref == 'refs/heads/main'
-    needs: bina
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Pastikan hasil bina yang di-commit terkini
+        run: git diff --exit-code -- index.html || (echo "Jalankan npm run build dan commit hasilnya" && exit 1)

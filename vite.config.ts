@@ -1,7 +1,10 @@
 import { defineConfig } from 'vite';
 
-// base './' supaya boleh dihoskan di sub-laluan GitHub Pages (username.github.io/repo/)
+// Kod sumber di src/. Hasil bina ditulis ke akar repo supaya GitHub Pages
+// (mod "Deploy from a branch", folder "/ (root)") terus menyajikan game siap-bina.
 export default defineConfig({
+  root: 'src',
+  publicDir: '../public',
   base: './',
-  build: { target: 'es2020', chunkSizeWarningLimit: 900 },
+  build: { outDir: '..', emptyOutDir: false, target: 'es2020', chunkSizeWarningLimit: 900 },
 });
