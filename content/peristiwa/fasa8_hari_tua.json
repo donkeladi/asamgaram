@@ -1,0 +1,57 @@
+[
+ {"id":"p8_pencen","tajuk":"Pencen dan KWSP","fasa":[8],"wajib":true,"urut":1,"bulan":2,"latar":"pejabat","tag":["serius"],"syarat":{"tiada":["p8Pencen"]},
+  "teks":["Hari terakhir bekerja. Rakan sekerja menyanyi lagu perpisahan. Pada umur 55, awak boleh keluarkan sebahagian simpanan KWSP. Jumlah yang awak simpan selama ini muncul di skrin: {tunai} tunai, KWSP yang bernilai lebih besar."],
+  "pilihan":[
+   {"t":"Keluarkan secara bulanan, hidup sederhana","h":"Pencen kecil tetapi stabil.","k":{"flag":{"p8Pencen":true,"pencen":true},"stres":-3,"kwsp":-5000,"tunai":5000}},
+   {"t":"Keluarkan sekaligus, bayar hutang, ubah suai rumah","h":"Hutang habis. Awak tidur lena buat pertama kali.","k":{"flag":{"p8Pencen":true,"pencen":true},"hutang":"-$hutang","kwsp":-20000,"stres":-6}},
+   {"t":"Biar KWSP kekal berkembang, kerja separuh masa","h":"Tabungan lebih besar. Badan agak letih.","k":{"flag":{"p8Pencen":true},"stres":2,"gaji":-300}},
+   {"t":"Belanja untuk impian dan percutian","h":"Hidup sekali. Awak merasa muda semula.","k":{"flag":{"p8Pencen":true,"pencen":true},"tunai":"-$cuti","kwsp":-8000,"stres":-8,"catat":"Menyambut persaraan dengan percutian impian.","emoji":"✈️"}}]},
+ {"id":"p8_anak_kahwin","tajuk":"Anak berkahwin","fasa":[8],"bulan":[12,18],"latar":"kenduri","tag":["tenang"],"syarat":{"anakMin":1},"berat":12,"ulang":false,
+  "teks":["{anak} berpakaian pengantin. Awak ingat bayi itu, malam tak tidur, lampin dan yuran sekolah. Sekarang awak berdiri di pelamin sebagai ibu/ayah pengantin."],
+  "pilihan":[
+   {"t":"Berikan restu dan doa sepenuh hati","h":"Air mata mengalir. {anak} peluk awak erat.","k":{"anak":8,"kasih":3,"stres":-3,"catat":"{anak} berkahwin. Hati penuh doa.","emoji":"💒","tunai":-3000}},
+   {"t":"Bantu kos kenduri dengan simpanan awak","h":"Awak tak berkira. Kenduri berlangsung meriah.","k":{"anak":6,"tunai":-6000,"stat":{"kenduri":6000}}},
+   {"t":"Beri nasihat panjang sebelum majlis","h":"{anak} mendengar dengan sabar. Dua jam.","k":{"anak":3,"stres":-1},"lucu":true},
+   {"t":"Biarkan mereka urus sendiri, awak hanya hadir","h":"Mereka matang. Awak bangga.","k":{"anak":4,"stres":-2}}]},
+ {"id":"p8_cucu","tajuk":"Cucu pertama","fasa":[8],"bulan":[12,18],"latar":"rumah","tag":["tenang"],"syarat":{"anakMin":1,"flag":{"cucuLahir":false}},"berat":14,"ulang":false,
+  "teks":["Telefon berbunyi pagi tadi: “Abah/Mak, {anak} bersalin! Cucu lelaki/perempuan!” Awak berdiri di dapur memegang senduk, tak tahu nak ketawa atau menangis."],
+  "pilihan":[
+   {"t":"Terus ke hospital dengan bunga","h":"Tangan kecil itu menggenggam jari awak. Dunia berhenti seketika.","k":{"stat":{"cucu":1},"anak":6,"stres":-6,"flag":{"cucuLahir":true},"catat":"Cucu pertama. Hidup datang bulat.","emoji":"👶"}},
+   {"t":"Jaga cucu setiap hujung minggu","h":"Penat, tetapi sangat dihargai.","k":{"stat":{"cucu":1},"anak":8,"kesihatan":-1,"stres":-3,"flag":{"cucuLahir":true,"dekatAnak":true}}},
+   {"t":"Beri nasihat tentang cara jaga bayi (sekali lagi)","h":"{anak} berpura-pura mendengar dan tersenyum sabar.","k":{"stat":{"cucu":1},"anak":-1,"flag":{"cucuLahir":true}},"lucu":true}]},
+ {"id":"p8_sakit","tajuk":"Sakit yang lebih serius","fasa":[8],"bulan":[6,12],"latar":"hospital","tag":["berat"],"syarat":{"max":{"kesihatan":55}},"berat":10,"ulang":true,"cd":12,
+  "teks":["Doktor menyusun fail dan membuka mulut perlahan: awak perlukan prosedur. Anak-anak datang berhimpun di wad. Suasana sunyi tetapi penuh kasih."],
+  "pilihan":[
+   {"t":"Jalani rawatan penuh dengan sokongan keluarga","h":"Berminggu-minggu sukar. Akhirnya pulih perlahan-lahan.","k":{"kesihatan":6,"tunai":"-$hospital","anak":6,"stres":4,"flag":{"dekatAnak":true}}},
+   {"t":"Minta pendapat kedua dan buat keputusan sendiri","h":"Keputusan sukar yang awak buat dengan sedar.","k":{"kesihatan":3,"tunai":-1500,"stres":3}},
+   {"t":"Tolak rawatan agresif, fokus kualiti hidup","h":"Anak-anak tak mudah menerima, tetapi menghormati.","k":{"kesihatan":-3,"stres":-4,"anak":2,"stat":{"sesal":0}}}]},
+ {"id":"p8_kehilangan","tajuk":"Kehilangan pasangan","fasa":[8],"bulan":[6,12],"latar":"rumah","tag":["berat","kematian"],"amaran":"Babak ini membincangkan kematian pasangan di hari tua.","syarat":{"rel":["berkahwin"],"umurMin":65},"berat":5,"ulang":false,
+  "teks":["{nama} pergi dengan tenang pada waktu subuh. Awak duduk di tepi katil pegang tangan yang tak lagi hangat. Rumah sunyi macam tak pernah sunyi begini."],
+  "pilihan":[
+   {"t":"Berdoa, uruskan jenazah, ucap selamat tinggal","h":"Ramai datang. Cerita tentang {nama} berkumandang sepanjang hari.","k":{"rel":"kehilangan","stres":8,"anak":4,"kawan":4,"catat":"Kehilangan {nama}. Doa dan kenangan.","emoji":"🤍"}},
+   {"t":"Berkumpul dengan anak-anak, berkongsi kenangan","h":"Dalam kesedihan, ada kehangatan.","k":{"rel":"kehilangan","stres":6,"anak":8,"catat":"Berkumpul dengan keluarga selepas kehilangan {nama}.","emoji":"🤍"}},
+   {"t":"Mengurung diri beberapa minggu","h":"Dunia bergerak, awak tidak. Perlahan-lahan awak keluar.","k":{"rel":"kehilangan","stres":10,"anak":-2,"kesihatan":-4}}]},
+ {"id":"p8_reunion","tajuk":"Reunion kawan lama","fasa":[8],"bulan":[12,18],"latar":"kafe","tag":["lucu"],"berat":8,"ulang":false,
+  "teks":["Reunion sekolah. Rambut beruban, perut membuncit, ada yang sudah jadi datuk. Seorang kawan lama bertanya, “Awak masih ingat siapa yang dulu berlari keliling padang kerana kalah pertaruhan?”"],
+  "pilihan":[
+   {"t":"Ketawa sehingga menangis, berkongsi cerita lama","h":"Dua jam yang terasa dua minit.","k":{"kawan":8,"stres":-6,"kesihatan":1}},
+   {"t":"Bertemu dan bertukar nombor, janji berjumpa lagi","h":"Janji yang awak tepati kali ini.","k":{"kawan":6,"stres":-3}},
+   {"t":"Tak hadir, malas, tak apa","h":"Awak tak menyesal. Hampir.","k":{"kawan":-3,"stres":-1,"stat":{"sesal":1}}}]},
+ {"id":"p8_surat","tajuk":"Surat untuk diri muda","fasa":[8],"bulan":2,"latar":"rumah","tag":["tenang"],"berat":6,"ulang":false,
+  "teks":["Di sebuah petang yang lengang, awak menulis surat untuk diri sendiri yang berumur 22. Apa yang awak nak beritahu?"],
+  "pilihan":[
+   {"t":"“Jangan terburu-buru. Banyak yang akan jadi.”","h":"Awak senyum. Surat itu disimpan di laci.","k":{"stres":-4}},
+   {"t":"“Simpan duit awal, jaga badan.”","h":"Nasihat paling praktikal. Terlambat tapi tetap berguna.","k":{"stres":-2}},
+   {"t":"“Cakap ‘sayang’ lebih kerap kepada orang yang awak sayang.”","h":"Awak menangis sedikit. Kemudian telefon seseorang.","k":{"kasih":4,"anak":3,"kawan":3,"stres":-3}},
+   {"t":"“Jangan takut dengan makcik kenduri.”","h":"Awak ketawa kuat sendirian. Sedikit gila, sangat gembira.","k":{"stres":-5},"lucu":true}]},
+ {"id":"p8_besar","tajuk":"Tinggal di mana, dengan siapa?","fasa":[8],"besar":true,"syarat":{"fasaMin":5},"bulan":[12,24],"latar":"rumah","tag":["serius"],"seterusnya":"p8_penilaian",
+  "teks":["Di hari tua, soalan lama muncul semula: tinggal bersama anak, atau di rumah sendiri? Awak sudah cukup tua untuk tahu apa yang awak mahu, dan cukup bijak untuk bertanya apa yang orang lain perlukan."],
+  "pilihan":[
+   {"t":"Tinggal dengan anak dan cucu","h":"Rumah bising, hati hangat. Kadang-kadang awak mahu sunyi sejam.","syarat":{"anakMin":1},"k":{"flag":{"p8Besar":true,"dekatAnak":true},"anak":8,"stres":-2,"kesihatan":2}},
+   {"t":"Kekal di rumah sendiri, anak melawat","h":"Bebas dan bermaruah. Sunyi sedikit, tetapi damai.","k":{"flag":{"p8Besar":true},"stres":-4,"anak":2}},
+   {"t":"Berpindah ke komuniti persaraan kecil","h":"Kawan baharu, kopi pagi dan permainan dam haji.","k":{"flag":{"p8Besar":true},"kawan":8,"stres":-5,"tunai":-2000}},
+   {"t":"Pulang ke kampung halaman","h":"Tanah lama, udara lama, wajah lama. Hati pulang.","k":{"flag":{"p8Besar":true},"stres":-6,"kesihatan":3,"ibubapa":4}}]},
+ {"id":"p8_penilaian","tajuk":"Kad Penilaian Kebahagiaan","fasa":[8],"besar":true,"jenis":"penilaian","syarat":{"flag":{"p8Besar":true}},"bulan":0,"latar":"rumah","tag":["tenang"],
+  "teks":["Hidup sudah dilalui. Apa yang tinggal ialah kenangan, orang yang awak sayang, dan satu soalan: adakah ia berbaloi?"],
+  "pilihan":[]}
+]

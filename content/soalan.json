@@ -1,0 +1,112 @@
+[
+ {"id":"gemuk","untuk":"semua","soalan":"\"Saya nampak gemuk tak?\"","maksud":"Perlukan keyakinan","tag":["lucu"],"pilihan":[
+  {"t":"\"Jujur, sikit.\"","h":"Senyap. Sangat senyap.","gaya":"jujur","k":{"percaya":3,"kasih":-3,"stres":2}},
+  {"t":"\"Awak cantik/kacak macam biasa. Saya suka awak macam ni.\"","h":"Dia senyum malu dan peluk awak.","gaya":"lembut","k":{"kasih":4}},
+  {"t":"\"Gemuk pun saya tetap sayang. Banyak sikit untuk dipeluk.\"","h":"Dia gelak, lepas tu cubit lengan awak.","gaya":"humor","k":{"kasih":3,"stres":-2}},
+  {"t":"\"Tanya doktor lah.\"","h":"Salah timing. Muka dia berubah.","gaya":"diam","k":{"kasih":-4,"stres":3}}]},
+ {"id":"mati","untuk":"semua","soalan":"\"Kalau saya mati, awak kahwin lain tak?\"","maksud":"Mengukur kesetiaan","tag":["lucu","sensitif"],"pilihan":[
+  {"t":"\"Janganlah cakap macam tu.\"","h":"Dia tenang sedikit, tapi mata berkaca.","gaya":"lembut","k":{"kasih":3}},
+  {"t":"\"Tengok dulu siapa yang ada masa tu.\"","h":"Dia hentak bantal ke muka awak.","gaya":"humor","k":{"kasih":-2,"stres":3}},
+  {"t":"\"Tak. Saya takkan cari orang lain.\"","h":"Dia senyum tapi macam tak percaya penuh.","gaya":"tegas","k":{"kasih":2,"percaya":1}},
+  {"t":"\"Mungkin, kalau awak benarkan.\"","h":"Dia diam dua hari.","gaya":"jujur","k":{"kasih":-5,"luka":4}}]},
+ {"id":"okay","untuk":"semua","soalan":"\"Tak apa, saya okay.\"","maksud":"Belum okay","tag":["serius"],"pilihan":[
+  {"t":"\"Okay.\" (terima bulat-bulat)","h":"Dia senyum nipis. Itu bukan senyum okay.","gaya":"diam","k":{"luka":6,"kasih":-3},"ingat":"Dulu waktu saya cakap okay, awak percaya je."},
+  {"t":"Tanya semula dengan lembut","h":"Dia hela nafas. \"Sebenarnya...\" dan dia cerita semuanya.","gaya":"lembut","k":{"kasih":5,"luka":-3,"stres":-3}},
+  {"t":"\"Awak tak okay. Cakap je.\"","h":"Dia menangis sikit, lepas tu lega.","gaya":"jujur","k":{"kasih":3,"percaya":2,"stres":-2}},
+  {"t":"Bagi ruang, tunggu dia datang","h":"Dia datang sendiri sejam kemudian dengan teh dua cawan.","gaya":"tegas","k":{"kasih":2},"ikut":{"p:pendiam":{"kasih":3},"p:suka bercakap":{"kasih":-3}}}]},
+ {"id":"makan","untuk":"semua","soalan":"\"Nak makan apa?\" ... lalu tolak semua cadangan","maksud":"Penat membuat keputusan","tag":["lucu"],"pilihan":[
+  {"t":"Pilih sendiri dengan yakin: \"Kita makan {makanan}.\"","h":"Dia terus bersetuju. Rupanya itu yang dia nak dari tadi.","gaya":"tegas","k":{"stres":-3,"kasih":2}},
+  {"t":"Cadang lima tempat lagi","h":"Dia tolak semua. Dalam kereta, sejam berlalu.","gaya":"jujur","k":{"stres":4,"kasih":-2}},
+  {"t":"\"Terserah awak.\"","h":"Dia: \"Terserah tu apa maksudnya?\"","gaya":"diam","k":{"stres":3,"kasih":-1}},
+  {"t":"Hantar dia ke restoran yang awak tahu dia suka","h":"Dia terkejut awak ingat. Mata bercahaya.","gaya":"lembut","bk":"khidmat","k":{"kasih":3,"percaya":1}}]},
+ {"id":"like","untuk":"semua","soalan":"\"Siapa tu yang like gambar awak?\"","maksud":"Cemburu atau tidak selamat","tag":["serius"],"pilihan":[
+  {"t":"Tunjuk telefon dengan relaks","h":"Dia tengok sekejap, lega.","gaya":"jujur","k":{"percaya":4,"kasih":1}},
+  {"t":"\"Awak ni kenapa? Tak percaya saya?\"","h":"Dia diam, mata merah.","gaya":"tegas","k":{"percaya":-4,"kasih":-3,"luka":4}},
+  {"t":"\"Kawan lama. Mari saya kenalkan.\"","h":"Dia lega dan sedikit malu sebab curiga.","gaya":"lembut","k":{"percaya":3,"kasih":2}},
+  {"t":"Gelak dan tukar topik","h":"Dia tak ketawa.","gaya":"humor","k":{"percaya":-2},"ikut":{"p:cemburu":{"percaya":-3,"kasih":-2}}}]},
+ {"id":"mak","untuk":"semua","soalan":"\"Awak sayang mak awak lebih ke saya?\"","maksud":"Rasa tidak dipertahankan depan mertua","tag":["serius"],"pilihan":[
+  {"t":"\"Dua-dua. Tapi awak teman hidup saya.\"","h":"Dia senyum, rasa dihargai.","gaya":"lembut","k":{"kasih":4,"mertua":-1}},
+  {"t":"\"Mak, tak boleh banding.\"","h":"Dia diam. Dia dengar apa yang tak diucapkan.","gaya":"jujur","k":{"kasih":-4,"luka":4,"mertua":2}},
+  {"t":"\"Awak pilih mana dulu?\"","h":"Dia tolak kerusi dan keluar bilik.","gaya":"humor","k":{"kasih":-5,"stres":4}},
+  {"t":"Peluk dan tak jawab","h":"Dia peluk balik, seolah tak perlu jawapan.","gaya":"diam","k":{"kasih":2}}]},
+ {"id":"gaji","untuk":"perempuan","soalan":"\"Gaji awak berapa sebenarnya?\"","maksud":"Menilai keselamatan kewangan","tag":["serius"],"pilihan":[
+  {"t":"Jawab jujur dan tepat","h":"Dia mengangguk. \"Terima kasih jujur.\"","gaya":"jujur","k":{"percaya":4}},
+  {"t":"\"Cukup untuk kita.\"","h":"Dia tak puas hati tapi tak kejar.","gaya":"lembut","k":{"percaya":-1}},
+  {"t":"Besarkan sikit supaya nampak hebat","h":"Dia gembira. Tak lama.","gaya":"humor","k":{"percaya":-4,"stres":3,"flag":{"berbohongGaji":true}},"ingat":"Awak pernah tipu gaji awak kat saya."},
+  {"t":"\"Soalan tu tak sopan.\"","h":"Dia terdiam, kemudian sedar dia memang tak tahu langsung.","gaya":"tegas","k":{"kasih":-2,"percaya":-2}}]},
+ {"id":"online","untuk":"perempuan","soalan":"\"Kenapa tak balas mesej, tapi online?\"","maksud":"Rasa diabaikan","tag":["lucu"],"pilihan":[
+  {"t":"\"Maaf, saya sibuk. Janji balas lebih cepat.\"","h":"Dia lembut semula.","gaya":"lembut","k":{"kasih":3}},
+  {"t":"\"Tak sempat, saya tengah buat kerja.\"","h":"Dia faham, tapi nada suaranya perlahan.","gaya":"jujur","k":{"percaya":2,"kasih":-1}},
+  {"t":"Hantar stiker kucing comel","h":"Dia gelak dan tak jadi marah.","gaya":"humor","k":{"kasih":2,"stres":-2}},
+  {"t":"\"Saya tak wajib balas dalam 5 minit.\"","h":"Dia diam. Typing... typing... deleted.","gaya":"tegas","k":{"kasih":-4,"luka":3}}]},
+ {"id":"meminang","untuk":"perempuan","soalan":"\"Bila nak masuk meminang?\"","maksud":"Mahu kepastian","tag":["serius"],"syarat":{"rel":["bercinta"]},"pilihan":[
+  {"t":"\"Tahun ni, saya dah mula simpan.\"","h":"Dia tak berkata apa, tapi genggam tangan awak erat.","gaya":"jujur","k":{"kasih":4,"percaya":3,"stres":3}},
+  {"t":"\"Bila kita dah sedia.\"","h":"Dia angguk perlahan, belum puas hati.","gaya":"lembut","k":{"kasih":-1,"stres":2}},
+  {"t":"\"Sabar-sabar la dulu.\"","h":"Dia mula bertanya adakah dia penting.","gaya":"humor","k":{"kasih":-4,"percaya":-2}},
+  {"t":"Tukar topik","h":"Dia diam sepanjang jalan balik.","gaya":"diam","k":{"percaya":-4,"luka":4}}]},
+ {"id":"mahal","untuk":"lelaki","soalan":"\"Awak tak rasa beg ni cantik? Dalam sale tau.\"","maksud":"Uji: boleh bayar atau tidak?","tag":["lucu"],"pilihan":[
+  {"t":"Beli juga, tanda sayang","h":"Dia gembira. Dompet awak menangis.","gaya":"lembut","bk":"hadiah","k":{"kasih":4,"tunai":-250,"percaya":-1}},
+  {"t":"\"Cantik, tapi bulan ni ketat. Bulan depan boleh?\"","h":"Dia faham dan kagum awak jujur.","gaya":"jujur","k":{"percaya":3,"kasih":1}},
+  {"t":"\"Awak dah ada sepuluh beg.\"","h":"Dia tarik muka masam.","gaya":"tegas","k":{"kasih":-3}},
+  {"t":"Alih perhatian ke tempat makan","h":"Berjaya. Buat masa ni.","gaya":"humor","k":{"stres":-1}}]},
+ {"id":"kawan","untuk":"lelaki","soalan":"\"Lepak dengan kawan lagi? Dah seminggu tak dating.\"","maksud":"Merasa tidak diutamakan","tag":["serius"],"pilihan":[
+  {"t":"Batalkan lepak, keluar dengan dia","h":"Dia gembira. Kawan-kawan awak mengomel.","gaya":"lembut","bk":"masa","k":{"kasih":5,"kawan":-3}},
+  {"t":"\"Sekali sekala je, jangan risau.\"","h":"Dia senyum yang tak sampai ke mata.","gaya":"tegas","k":{"kasih":-2,"kawan":2}},
+  {"t":"Bawa dia lepak sekali","h":"Dia rasa janggal, tapi kagum awak mahu ajak.","gaya":"humor","k":{"kasih":2,"kawan":2}},
+  {"t":"\"Awak ni mengongkong.\"","h":"Salah. Sangat salah.","gaya":"jujur","k":{"kasih":-6,"luka":5}}]},
+ {"id":"kahwin_lain","untuk":"perempuan","soalan":"\"Kalau saya tak boleh ada anak, awak masih sayang saya?\"","maksud":"Takut tidak diterima","tag":["serius","sensitif"],"syarat":{"rel":["bertunang","berkahwin"]},"pilihan":[
+  {"t":"\"Awak bukan sekadar rahim.\"","h":"Dia peluk awak lama.","gaya":"lembut","k":{"kasih":6,"percaya":3}},
+  {"t":"\"Kita hadapi sama-sama.\"","h":"Dia menangis diam-diam.","gaya":"tegas","k":{"kasih":4,"percaya":2}},
+  {"t":"\"Tak tahu lagi.\"","h":"Dia senyap. Kata-kata awak tak boleh ditarik balik.","gaya":"jujur","k":{"kasih":-8,"luka":8}},
+  {"t":"Tukar topik cepat-cepat","h":"Dia faham itu sebagai jawapan.","gaya":"diam","k":{"kasih":-3,"percaya":-2}}]},
+ {"id":"mertua_banding","untuk":"semua","soalan":"\"Mak saya kata masakan awak kurang masin.\"","maksud":"Mencari sokongan","tag":["lucu"],"syarat":{"rel":["berkahwin"]},"pilihan":[
+  {"t":"\"Masakan awak sedap. Mak tu lidah dia lain.\"","h":"Dia lega dengan sokongan awak.","gaya":"lembut","k":{"kasih":3,"mertua":-1}},
+  {"t":"\"Betul juga sikit.\"","h":"Dia letak senduk dan keluar dapur.","gaya":"jujur","k":{"kasih":-4,"mertua":2,"luka":3}},
+  {"t":"\"Esok saya masak. Mak tu pasti suka.\"","h":"Dia gelak. Esoknya... dapur awak hampir terbakar.","gaya":"humor","k":{"kasih":2,"stres":2}},
+  {"t":"Diam dan makan","h":"Dia perhatikan tiap suapan awak.","gaya":"diam","k":{"stres":2}}]},
+ {"id":"gambar","untuk":"semua","soalan":"\"Boleh tak awak tak post gambar kita? Saya tak selesa.\"","maksud":"Hormati privasi","tag":["serius"],"pilihan":[
+  {"t":"\"Baik, saya delete. Maaf tak tanya dulu.\"","h":"Dia lega. \"Terima kasih faham.\"","gaya":"lembut","k":{"percaya":4,"kasih":2}},
+  {"t":"\"Cuma gambar je.\"","h":"Dia tak berkata apa tapi senyum hilang.","gaya":"tegas","k":{"percaya":-3}},
+  {"t":"Tanya sebabnya","h":"Dia cerita. Pertama kali dia buka hati begitu.","gaya":"jujur","k":{"kasih":3,"percaya":3}},
+  {"t":"Post tapi tutup muka dia","h":"Kompromi pelik. Dia gelak.","gaya":"humor","k":{"kasih":1}}]},
+ {"id":"duit_pinjam","untuk":"semua","soalan":"\"Saya nak pinjam sikit duit untuk adik saya. Boleh tak?\"","maksud":"Menguji kepercayaan kewangan","tag":["serius"],"pilihan":[
+  {"t":"Bagi tanpa banyak tanya","h":"Dia lega dan terharu.","gaya":"lembut","k":{"tunai":-500,"kasih":4,"percaya":2}},
+  {"t":"Tanya untuk apa dan bila bayar","h":"Dia sedikit tersinggung, tapi jawab jujur.","gaya":"jujur","k":{"tunai":-300,"percaya":2,"kasih":-1}},
+  {"t":"\"Duit kita pun ketat.\"","h":"Dia faham... mungkin.","gaya":"tegas","k":{"kasih":-2,"percaya":1}},
+  {"t":"\"Boleh, tapi kita catat dulu.\"","h":"Dia setuju. Kerja jadi lebih jelas.","gaya":"jujur","k":{"tunai":-400,"percaya":3}}]},
+ {"id":"cuti","untuk":"semua","soalan":"\"Bila last kita bercuti berdua?\"","maksud":"Rindukan masa bersama","tag":["serius"],"pilihan":[
+  {"t":"Tempah hotel bajet hujung bulan ni","h":"Dia terkejut, kemudian gembira.","gaya":"lembut","bk":"masa","k":{"kasih":5,"tunai":-400,"stres":-3}},
+  {"t":"\"Bila-bila bila ada duit lebih.\"","h":"Dia senyum, tapi diam.","gaya":"jujur","k":{"kasih":-2}},
+  {"t":"\"Hujung minggu ni kita piknik di taman je.\"","h":"Murah, tapi manis. Dia suka.","gaya":"humor","k":{"kasih":3,"stres":-2}},
+  {"t":"\"Cuti? Tak ada masa lah.\"","h":"Dia teringat awak kata benda sama tahun lepas.","gaya":"tegas","k":{"kasih":-4,"luka":3}}]},
+ {"id":"curiga_kerja","untuk":"semua","soalan":"\"Siapa kawan sekerja yang awak sebut tadi tu?\"","maksud":"Cemburu atau tidak selamat","tag":["lucu"],"pilihan":[
+  {"t":"Terangkan siapa dia dengan senang hati","h":"Dia relaks. Rupanya takut-takut je.","gaya":"jujur","k":{"percaya":3}},
+  {"t":"\"Kenapa? Awak nak tahu sangat?\"","h":"Dia tak tanya lagi. Itu bukan bagus.","gaya":"tegas","k":{"percaya":-3,"kasih":-2}},
+  {"t":"Ajak dia datang event syarikat bulan depan","h":"Dia terharu awak sanggup ajak.","gaya":"lembut","k":{"percaya":4,"kasih":2}},
+  {"t":"Usik: \"Cemburu ke? Comel.\"","h":"Berjaya hanya kalau dia pendiam jenis humor.","gaya":"humor","k":{"kasih":1},"ikut":{"p:cemburu":{"percaya":-3,"kasih":-2}}}]},
+ {"id":"anak_bila","untuk":"semua","soalan":"\"Bila kita nak ada anak, sebenarnya?\"","maksud":"Selidik rancangan masa depan","tag":["serius"],"syarat":{"rel":["bertunang","berkahwin"],"anakMax":0},"pilihan":[
+  {"t":"\"Selepas kita stabil sikit. Dalam setahun dua.\"","h":"Dia angguk. Jelas, walaupun belum pasti.","gaya":"jujur","k":{"percaya":2}},
+  {"t":"\"Bila Tuhan beri rezeki.\"","h":"Dia senyum. Jawapan selamat.","gaya":"lembut","k":{"kasih":1}},
+  {"t":"\"Awak je yang nak anak ke?\"","h":"Hati dia terguris.","gaya":"humor","k":{"kasih":-4,"luka":4}},
+  {"t":"Peluk, bagi tahu awak pun tak sabar","h":"Dia tersipu.","gaya":"lembut","k":{"kasih":4,"keintiman":3}}]},
+ {"id":"mimpi","untuk":"semua","soalan":"\"Awak ada impian yang awak belum cerita dekat saya?\"","maksud":"Ingin mengenali jiwa awak","tag":["serius"],"pilihan":[
+  {"t":"Cerita impian sebenar awak","h":"Dia dengar tanpa menyampuk. Mata berkaca.","gaya":"jujur","k":{"kasih":5,"percaya":3,"stres":-3}},
+  {"t":"\"Tak ada. Hidup macam ni dah cukup.\"","h":"Jawapan selamat. Dia tak percaya sepenuhnya.","gaya":"diam","k":{"kasih":-1}},
+  {"t":"Buat lawak pasal pencen awal","h":"Dia ketawa, tapi nak tahu lebih lagi lain kali.","gaya":"humor","k":{"kasih":1}},
+  {"t":"Tanya balik impian dia","h":"Dia cerita panjang. Awak jadi pendengar yang baik.","gaya":"lembut","k":{"kasih":4}}]},
+ {"id":"jadual_balik","untuk":"semua","soalan":"\"Kita raya rumah siapa dulu tahun ni?\"","maksud":"Pertembungan adat dua keluarga","tag":["serius"],"syarat":{"rel":["bertunang","berkahwin"]},"pilihan":[
+  {"t":"\"Rumah awak dulu, tahun depan rumah saya.\"","h":"Dia sangat menghargai, dan keluarga dia gembira.","gaya":"lembut","k":{"kasih":4,"mertua":3,"ibubapa":-2}},
+  {"t":"\"Rumah mak saya, dia dah tua.\"","h":"Dia faham... mungkin. Tapi ada senyap dalam kereta.","gaya":"tegas","k":{"ibubapa":3,"kasih":-3,"mertua":-3}},
+  {"t":"Bahagi dua hari: pagi sini, petang sana","h":"Penat tapi adil.","gaya":"jujur","k":{"stres":4,"kasih":2,"mertua":1,"ibubapa":1}},
+  {"t":"Undi dengan suit kertas gunting batu","h":"Dia gelak. Awak kalah. Raya rumah dia.","gaya":"humor","k":{"kasih":2,"mertua":2}}]},
+ {"id":"tengok_telefon","untuk":"semua","soalan":"\"Boleh saya tengok telefon awak sekejap?\"","maksud":"Mahu telus, atau mengawal","tag":["serius"],"pilihan":[
+  {"t":"Hulur sambil senyum","h":"Dia tengok sikit je, lepas tu pulangkan. \"Terima kasih percaya.\"","gaya":"jujur","k":{"percaya":3}},
+  {"t":"\"Kenapa? Awak tak percaya saya?\"","h":"Dia diam. Tapi telefon dia pula awak sorok minggu depan.","gaya":"tegas","k":{"percaya":-3,"kasih":-1}},
+  {"t":"\"Boleh, tapi saya nak tengok awak punya juga.\"","h":"Seri. Dua-dua rasa janggal.","gaya":"humor","k":{"percaya":1}},
+  {"t":"Tolak dengan baik, jelaskan sempadan","h":"Dia terima. Mungkin.","gaya":"lembut","k":{"percaya":1,"kasih":1},"ikut":{"p:mengawal":{"luka":6,"kasih":-2,"flag":{"tandaAmaran":"+1"}}}}]},
+ {"id":"kejutan","untuk":"semua","soalan":"\"Awak ingat hari ni hari apa?\"","maksud":"Awak lupa?","tag":["lucu"],"pilihan":[
+  {"t":"Keluarkan hadiah yang awak sorok","h":"Dia tak percaya awak ingat. Mata bersinar.","gaya":"lembut","bk":"hadiah","k":{"kasih":5,"tunai":-100}},
+  {"t":"\"Err... Selasa?\"","h":"Ouch.","gaya":"humor","k":{"kasih":-4,"luka":3},"ingat":"Awak lupa hari penting kita."},
+  {"t":"Tipu ingat, lepas tu cari kad cepat-cepat","h":"Dia nampak. Dia senyum dan marah serentak.","gaya":"jujur","k":{"kasih":-1,"percaya":-1}},
+  {"t":"\"Ya, ingat! Jom makan.\"","h":"Selamat. Tapi dia tahu awak lupa.","gaya":"diam","k":{"percaya":-1}}]}
+]

@@ -1,0 +1,1479 @@
+[
+ {
+  "id": "ujian_soalan",
+  "tajuk": "Soalan ujian",
+  "fasa": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "jenis": "ujian",
+  "ulang": true,
+  "cd": 0,
+  "berat": 5,
+  "bulan": 1,
+  "latar": "chat",
+  "tag": [
+   "tenang"
+  ],
+  "teks": [
+   "{nama} memandang awak dengan senyuman yang mencurigakan."
+  ],
+  "pilihan": []
+ },
+ {
+  "id": "pergaduhan_auto",
+  "tajuk": "Pergaduhan",
+  "fasa": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "jenis": "pergaduhan",
+  "ulang": true,
+  "cd": 0,
+  "berat": 3,
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "berat"
+  ],
+  "teks": [
+   "Suasana tegang."
+  ],
+  "pilihan": []
+ },
+ {
+  "id": "bajet_hujung_bulan",
+  "tajuk": "Bajet hujung bulan",
+  "fasa": [
+   1,
+   5,
+   6,
+   7,
+   8
+  ],
+  "jenis": "mini",
+  "mini": "bajet_bulan",
+  "ulang": true,
+  "cd": 10,
+  "berat": 4,
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "max": {
+    "tunai": 1800
+   }
+  },
+  "teks": [
+   "Hari ke-22 dan akaun tinggal sedikit. Gaji masuk lagi lapan hari. Bil, PTPTN, sewa, makan. Awak buka app bank dan tarik nafas dalam-dalam."
+  ],
+  "miniHasil": {
+   "tinggi": {
+    "t": "",
+    "h": "Semua komitmen berjaya dibayar tepat. Sedikit lebihan malah masuk simpanan.",
+    "k": {}
+   },
+   "sederhana": {
+    "t": "",
+    "h": "Hampir selamat. Satu dua bil dibayar lewat, awak dapat selamat sampai gaji.",
+    "k": {}
+   },
+   "rendah": {
+    "t": "",
+    "h": "Ada komitmen yang tertinggal. Awak terpaksa meminjam sedikit untuk makan hujung minggu.",
+    "k": {}
+   }
+  }
+ },
+ {
+  "id": "kejutan_telefon",
+  "tajuk": "Telefon jatuh",
+  "fasa": [
+   1,
+   5,
+   6,
+   7
+  ],
+  "ulang": true,
+  "cd": 20,
+  "berat": 4,
+  "bulan": 1,
+  "latar": "jalan",
+  "tag": [
+   "lucu"
+  ],
+  "teks": [
+   "Telefon awak terlepas dari poket dan mendarat tepat di atas simen. Skrin berbunyi retak macam kaca di jambangan kenduri. Awak tak berani lihat."
+  ],
+  "pilihan": [
+   {
+    "t": "Tukar skrin sahaja (RM300)",
+    "h": "Kembali baik, tapi tidak lagi sama.",
+    "k": {
+     "tunai": -300,
+     "stres": 2
+    }
+   },
+   {
+    "t": "Beli telefon baharu, bayar ansuran",
+    "h": "Moden. Dan berhutang.",
+    "k": {
+     "hutang": 2000,
+     "stres": -1
+    }
+   },
+   {
+    "t": "Guna telefon retak sehingga tak boleh lagi",
+    "h": "Jari awak sering berdarah halus. Tapi awak jimat.",
+    "k": {
+     "stres": 2,
+     "simpanan": 300
+    },
+    "lucu": true
+   }
+  ]
+ },
+ {
+  "id": "kawan_pinjam",
+  "tajuk": "Kawan pinjam duit, tak bayar",
+  "fasa": [
+   1,
+   5,
+   6,
+   7
+  ],
+  "ulang": true,
+  "cd": 24,
+  "berat": 4,
+  "bulan": 1,
+  "latar": "kafe",
+  "tag": [
+   "serius"
+  ],
+  "teks": [
+   "Kawan baik pinjam RM1,000 tiga bulan lepas. Kini dia menyepi, tapi baru posting gambar bercuti. Awak melihat, dan mengira."
+  ],
+  "pilihan": [
+   {
+    "t": "Tanya dengan sopan, minta dibayar",
+    "h": "Dia terkejut, kemudian bayar separuh. Hubungan agak renggang.",
+    "k": {
+     "tunai": 500,
+     "kawan": -3,
+     "stres": 1
+    }
+   },
+   {
+    "t": "Biarkan, anggap sedekah",
+    "h": "Awak melepaskan. Tapi tak mudah.",
+    "k": {
+     "stres": 2,
+     "kawan": -1,
+     "stat": {
+      "sesal": 0
+     }
+    }
+   },
+   {
+    "t": "Posting sindiran di media sosial",
+    "h": "Semua tahu. Awak terasa puas, kemudian malu.",
+    "k": {
+     "kawan": -6,
+     "reputasi": -3,
+     "stres": 1
+    },
+    "lucu": true
+   },
+   {
+    "t": "Bincang bersemuka dan atur pelan bayar",
+    "h": "Dewasa dan berkesan.",
+    "k": {
+     "tunai": 300,
+     "kawan": 2,
+     "stres": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "viral",
+  "tajuk": "Viral di media sosial",
+  "fasa": [
+   1,
+   5,
+   6,
+   7
+  ],
+  "ulang": true,
+  "cd": 50,
+  "berat": 0.6,
+  "bulan": 1,
+  "latar": "chat",
+  "tag": [
+   "lucu"
+  ],
+  "teks": [
+   "Klip pendek tentang rumah tangga awak (yang awak tak sedar dirakam) meletup di TikTok. 2.3 juta tontonan. Komen: ‘Relate sangat.’ Makcik-makcik meratah komen."
+  ],
+  "pilihan": [
+   {
+    "t": "Layan komen, bikin lagi kandungan",
+    "h": "Pengikut naik, masa privasi turun.",
+    "k": {
+     "tunai": 600,
+     "stres": 4,
+     "reputasi": 3,
+     "kasih": -1
+    }
+   },
+   {
+    "t": "Padam klip sebelum jadi lebih besar",
+    "h": "Aman kembali. Awak rasa sedikit rugi.",
+    "k": {
+     "stres": -2
+    }
+   },
+   {
+    "t": "Cakap dengan {nama}, buat keputusan bersama",
+    "h": "Bersama, kalian putuskan batasnya.",
+    "k": {
+     "kasih": 3,
+     "percaya": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "raya",
+  "tajuk": "Hari Raya",
+  "fasa": [
+   5,
+   6,
+   7,
+   8
+  ],
+  "ulang": true,
+  "cd": 10,
+  "berat": 5,
+  "bulan": 2,
+  "latar": "kenduri",
+  "tag": [
+   "lucu"
+  ],
+  "teks": [
+   "Hari Raya tiba. Duit raya, kuih, baju baharu, jalan sesak. Giliran siapa tahun ni? Soalan klasik: “Raya rumah siapa dulu?”"
+  ],
+  "pilihan": [
+   {
+    "t": "Belanja kuih dan duit raya secukupnya ({raya})",
+    "h": "Semua suka. Dompet sedikit lega selepas raya kedua.",
+    "k": {
+     "tunai": "-$raya",
+     "ibubapa": 4,
+     "reputasi": 3,
+     "mertua": 2
+    }
+   },
+   {
+    "t": "Hadkan: hanya yang dekat dan tulus",
+    "h": "Sempit tapi masuk akal.",
+    "k": {
+     "tunai": -300,
+     "stres": -2,
+     "reputasi": -1
+    }
+   },
+   {
+    "t": "Raya di rumah awak tahun ni",
+    "h": "Rumah penuh. Dapur penuh. Hati penuh.",
+    "k": {
+     "tunai": -500,
+     "ibubapa": 5,
+     "mertua": -1,
+     "stres": 5
+    }
+   },
+   {
+    "t": "Raya di kampung mertua, balik rumah petang",
+    "h": "Penat memandu, tapi adil.",
+    "k": {
+     "mertua": 5,
+     "stres": 3,
+     "tunai": -200
+    }
+   }
+  ]
+ },
+ {
+  "id": "mertua_uzur",
+  "tajuk": "Mak mertua uzur",
+  "fasa": [
+   6,
+   7
+  ],
+  "ulang": false,
+  "berat": 9,
+  "bulan": 4,
+  "latar": "hospital",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "mertua": [
+    "uzur",
+    "penyayang",
+    "pilih kasih",
+    "suka campur"
+   ]
+  },
+  "teks": [
+   "{nama} menerima panggilan: Mak {mertuaNama} tak sihat. Kali ini lebih serius. {nama} diam, kemudian memandang awak dengan mata yang meminta sesuatu tanpa kata."
+  ],
+  "pilihan": [
+   {
+    "t": "Bawa Mak tinggal dengan kita",
+    "h": "Perubahan besar, hati {nama} lega.",
+    "k": {
+     "mertua": 10,
+     "kasih": 6,
+     "stres": 6,
+     "tunai": -400
+    }
+   },
+   {
+    "t": "Bergilir dengan adik-beradik {nama}",
+    "h": "Adil, penat, dan berat.",
+    "k": {
+     "mertua": 5,
+     "stres": 3,
+     "tunai": -200
+    }
+   },
+   {
+    "t": "Upah penjaga, kos kami tanggung",
+    "h": "Mak selesa. Dompet kurang.",
+    "k": {
+     "mertua": 4,
+     "tunai": -1200,
+     "stres": 1
+    }
+   },
+   {
+    "t": "Cakap tak mampu. {nama} patut urus sendiri",
+    "h": "Kata-kata yang tak boleh ditarik semula.",
+    "k": {
+     "mertua": -10,
+     "kasih": -8,
+     "luka": 8,
+     "stres": 4
+    }
+   }
+  ]
+ },
+ {
+  "id": "curang_terbongkar",
+  "tajuk": "Rahsia yang terbongkar",
+  "fasa": [
+   5,
+   6,
+   7
+  ],
+  "ulang": false,
+  "berat": 10,
+  "bulan": 3,
+  "latar": "chat",
+  "tag": [
+   "berat",
+   "sensitif"
+  ],
+  "amaran": "Babak ini membincangkan kecurangan dalam perkahwinan.",
+  "utas": "pasangan",
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "sifatP": [
+    "curang"
+   ],
+   "fasaMin": 5
+  },
+  "teks": [
+   "Telefon {nama} terbuka di atas meja. Satu notifikasi. Bukan mesej sekali, tapi banyak mesej, dan ayat-ayat yang awak tak patut baca."
+  ],
+  "chat": [
+   {
+    "d": "pasangan",
+    "t": "Dia tak tahu apa-apa. Jangan risau."
+   },
+   {
+    "d": "kawan",
+    "t": "Jumpa tempat biasa?"
+   }
+  ],
+  "pilihan": [
+   {
+    "t": "Berhadapan secara tenang dan jujur",
+    "h": "{nama} mengaku. Kebisuan yang menyakitkan.",
+    "k": {
+     "percaya": -20,
+     "luka": 18,
+     "kasih": -10,
+     "stres": 10,
+     "ingat": "Awak pernah curang."
+    }
+   },
+   {
+    "t": "Beritahu orang tengah (ustaz, keluarga, kaunselor)",
+    "h": "Mereka dengar, mencadangkan jalan. Tak mudah.",
+    "k": {
+     "flag": {
+      "orangTengah": true
+     },
+     "stres": 6,
+     "luka": 10,
+     "percaya": -12
+    }
+   },
+   {
+    "t": "Berpura-pura tak tahu, simpan dahulu",
+    "h": "Awak menyimpan sesuatu yang makin berat.",
+    "k": {
+     "stres": 10,
+     "percaya": -8,
+     "luka": 12,
+     "flag": {
+      "curangDiketahui": true
+     }
+    }
+   },
+   {
+    "t": "Terus mohon cerai",
+    "h": "Tegas dan menyakitkan.",
+    "k": {
+     "luka": 12,
+     "stres": 6,
+     "flag": {
+      "ceraiMula": true
+     }
+    },
+    "seterusnya": null
+   }
+  ]
+ },
+ {
+  "id": "kv3_telefon",
+  "tajuk": "Telefon diperiksa",
+  "fasa": [
+   5,
+   6,
+   7
+  ],
+  "ulang": false,
+  "berat": 10,
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "sensitif",
+   "keganasan"
+  ],
+  "amaran": "Babak ini memaparkan tanda-tanda hubungan yang mengawal.",
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "sifatP": [
+    "mengawal"
+   ],
+   "flag": {
+    "kawal2": true,
+    "kawal3": false
+   }
+  },
+  "teks": [
+   "{nama} mula memeriksa telefon awak setiap malam. Mesej, panggilan, galeri. “Kalau awak tak ada apa-apa nak sorok, tak apa kan?” Rakan sekerja awak dah mula jarang awak hubungi. Awak sendiri tak tahu bila itu berlaku."
+  ],
+  "pilihan": [
+   {
+    "t": "Menyerah supaya aman",
+    "h": "Awak makin kecil. Dia makin selesa.",
+    "k": {
+     "stres": 8,
+     "percaya": -4,
+     "kawan": -6,
+     "flag": {
+      "kawal3": true,
+      "tandaAmaran": "+1"
+     }
+    }
+   },
+   {
+    "t": "Bincang dengan kaunselor atau orang yang awak percaya",
+    "h": "Mereka tak menyalahkan awak. Itu pertama kali dalam sekian lama.",
+    "k": {
+     "stres": -2,
+     "flag": {
+      "kawal3": true,
+      "tandaAmaran": "+1",
+      "kaunseling": true
+     },
+     "tunai": -150
+    }
+   },
+   {
+    "t": "Hubungi Talian Kasih 15999",
+    "h": "Mereka mendengar tanpa menghakimi, dan menerangkan pilihan yang ada untuk awak.",
+    "k": {
+     "stres": -3,
+     "flag": {
+      "kawal3": true,
+      "tandaAmaran": "+1",
+      "bantuanDicari": true
+     }
+    }
+   },
+   {
+    "t": "Cuba pujuk {nama} supaya berubah",
+    "h": "Dia berjanji. Seminggu kemudian, semuanya sama.",
+    "k": {
+     "stres": 5,
+     "flag": {
+      "kawal3": true,
+      "tandaAmaran": "+1"
+     }
+    }
+   }
+  ],
+  "bantuan": true
+ },
+ {
+  "id": "kv4_keluarga",
+  "tajuk": "Dilarang jumpa keluarga",
+  "fasa": [
+   5,
+   6,
+   7
+  ],
+  "ulang": false,
+  "berat": 10,
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "sensitif",
+   "keganasan"
+  ],
+  "amaran": "Babak ini memaparkan pengasingan dan penghinaan dalam hubungan.",
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "sifatP": [
+    "mengawal"
+   ],
+   "flag": {
+    "kawal3": true,
+    "kawal4": false
+   }
+  },
+  "teks": [
+   "“Keluarga awak tak suka saya. Awak patut pilih: mereka atau saya.” {nama} berkata tenang di depan jiran, dan lebih dingin di dalam rumah. Di depan tetamu, dia menghina awak dengan senyuman: “Dia ni memang macam tu.”"
+  ],
+  "pilihan": [
+   {
+    "t": "Telefon mak/ayah diam-diam dan beritahu",
+    "h": "Suara mak bergetar: “Balik sini, nak.” Awak belum tahu nak balik atau tidak.",
+    "k": {
+     "stres": -2,
+     "ibubapa": 6,
+     "flag": {
+      "kawal4": true,
+      "tandaAmaran": "+1"
+     }
+    }
+   },
+   {
+    "t": "Cari bantuan: Talian Kasih 15999, dan simpan nombor di tempat selamat",
+    "h": "Awak mula mencatat tarikh dan kejadian. Pelan keselamatan sedikit demi sedikit terbentuk.",
+    "k": {
+     "stres": 2,
+     "flag": {
+      "kawal4": true,
+      "tandaAmaran": "+1",
+      "bantuanDicari": true
+     }
+    }
+   },
+   {
+    "t": "Tidak mahu menambah masalah, diam dahulu",
+    "h": "Tembok semakin tinggi.",
+    "k": {
+     "stres": 8,
+     "kesihatan": -4,
+     "flag": {
+      "kawal4": true,
+      "tandaAmaran": "+1"
+     }
+    }
+   }
+  ],
+  "bantuan": true
+ },
+ {
+  "id": "kv5_ugutan",
+  "tajuk": "Garis yang dilintasi",
+  "fasa": [
+   5,
+   6,
+   7
+  ],
+  "ulang": 3,
+  "berat": 14,
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "sensitif",
+   "keganasan"
+  ],
+  "amaran": "Babak ini menyentuh ugutan dan keganasan rumah tangga. Tiada adegan fizikal dipaparkan.",
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "sifatP": [
+    "mengawal"
+   ],
+   "flag": {
+    "kawal4": true,
+    "kawal5": false
+   }
+  },
+  "teks": [
+   "Malam itu {nama} menjerit. Sesuatu pecah. Layar gelap. Esoknya, awak berdiri di depan cermin dengan lengan baju panjang walaupun cuaca panas. Tiada siapa perlu tahu apa yang berlaku. Tetapi awak tahu."
+  ],
+  "pilihan": [
+   {
+    "t": "Hubungi Talian Kasih 15999 dan lapor polis",
+    "h": "Awak telefon. Suara di hujung talian menerangkan perintah perlindungan dan rumah perlindungan. Awak tak keseorangan.",
+    "k": {
+     "stres": 4,
+     "flag": {
+      "kawal5": true,
+      "bantuanDicari": true,
+      "laporPolis": true
+     }
+    }
+   },
+   {
+    "t": "Pergi ke rumah keluarga/kawan yang selamat malam ini",
+    "h": "Pintu dibuka tanpa soalan. Awak menangis lama.",
+    "k": {
+     "stres": -2,
+     "flag": {
+      "kawal5": true,
+      "bantuanDicari": true
+     },
+     "ibubapa": 4
+    }
+   },
+   {
+    "t": "Cuba bertahan dan percaya dia akan berubah",
+    "h": "Sebahagian dari awak ingin percaya. Sebahagian lain tahu.",
+    "k": {
+     "stres": 10,
+     "kesihatan": -6,
+     "flag": {
+      "kawal5": null
+     },
+     "percaya": -8
+    }
+   }
+  ],
+  "seterusnya": "kv_perlindungan",
+  "bantuan": true,
+  "cd": 5
+ },
+ {
+  "id": "kv_perlindungan",
+  "tajuk": "Jalan keluar",
+  "fasa": [
+   5,
+   6,
+   7
+  ],
+  "ulang": false,
+  "bulan": 4,
+  "latar": "mahkamah",
+  "tag": [
+   "sensitif",
+   "keganasan"
+  ],
+  "amaran": "Babak ini menggambarkan proses mendapatkan perlindungan.",
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "bantuanDicari": true
+   }
+  },
+  "teks": [
+   "Dengan bantuan pegawai kebajikan, awak mohon perintah perlindungan dan tinggal di rumah perlindungan sementara. Proses panjang, tetapi awak tak keseorangan. Proses cerai dan hak jagaan akan menyusul. Awak boleh memulakan semula, selangkah demi selangkah."
+  ],
+  "pilihan": [
+   {
+    "t": "Teruskan proses cerai dan hak jagaan",
+    "h": "Mahkamah mendengar. Perlahan-lahan, hidup yang selamat dibina semula.",
+    "k": {
+     "rel": "bercerai",
+     "stres": -6,
+     "luka": -20,
+     "kesihatan": 3,
+     "tunai": -1500,
+     "flag": {
+      "kaunseling": true
+     },
+     "catat": "Meninggalkan hubungan yang membahayakan. Memulakan hidup baharu dengan selamat.",
+     "emoji": "🕊️"
+    }
+   },
+   {
+    "t": "Dapatkan kaunseling dan sokongan dahulu",
+    "h": "Awak mula memahami apa yang berlaku bukan salah awak.",
+    "k": {
+     "stres": -5,
+     "flag": {
+      "kaunseling": true
+     },
+     "tunai": -300,
+     "kesihatan": 4
+    }
+   }
+  ],
+  "bantuan": true
+ },
+ {
+  "id": "kawalan_hilang",
+  "tajuk": "Kawalan diri hilang",
+  "fasa": [
+   5,
+   6,
+   7
+  ],
+  "ulang": false,
+  "berat": 12,
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "berat",
+   "keganasan"
+  ],
+  "amaran": "Babak ini memaparkan watak anda hilang kawalan emosi dan kesannya. Tiada adegan fizikal dipaparkan.",
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "min": {
+    "stres": 80,
+    "luka": 45
+   }
+  },
+  "teks": [
+   "Hari yang buruk. Kerja, hutang, mertua, anak menangis. Pergaduhan kecil hari itu memuncak dan awak, buat pertama kali, melakukan sesuatu yang awak tak boleh tarik balik. Layar gelap. Awak duduk di tangga luar, tangan menggigil. {nama} tidak bercakap dengan awak."
+  ],
+  "pilihan": [
+   {
+    "t": "Mengaku salah, mohon rawatan dan kaunseling",
+    "h": "Satu langkah yang paling sukar. Awak mula belajar mengawal apa yang awak tak pernah faham.",
+    "k": {
+     "flag": {
+      "kaunseling": true,
+      "terapi": true
+     },
+     "stres": -6,
+     "tunai": -800,
+     "percaya": -8,
+     "luka": 10,
+     "kasih": -6,
+     "catat": "Mengaku kesilapan dan mula mendapat rawatan.",
+     "emoji": "🧠"
+    }
+   },
+   {
+    "t": "Memohon maaf, tetapi tidak mencari bantuan",
+    "h": "{nama} diam. Tiga bulan kemudian ia berulang dalam bentuk lain.",
+    "k": {
+     "percaya": -14,
+     "kasih": -12,
+     "luka": 18,
+     "stres": 6,
+     "stat": {
+      "sesal": 3
+     }
+    }
+   },
+   {
+    "t": "Menafikan dan menyalahkan keadaan",
+    "h": "{nama} berkemas. Laporan dibuat. Rumah tangga runtuh.",
+    "k": {
+     "rel": "bercerai",
+     "percaya": -20,
+     "luka": 25,
+     "stres": 12,
+     "stat": {
+      "sesal": 4
+     },
+     "catat": "Kehilangan kawalan diri meruntuhkan rumah tangga.",
+     "emoji": "💔"
+    }
+   }
+  ],
+  "bantuan": true
+ },
+ {
+  "id": "poligami_godaan",
+  "tajuk": "Satu soalan yang berat",
+  "fasa": [
+   6,
+   7
+  ],
+  "ulang": false,
+  "berat": 3,
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "amaran": "Babak ini membincangkan poligami mengikut undang-undang keluarga Islam.",
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "jantina": "lelaki",
+   "min": {
+    "simpanan": 15000
+   }
+  },
+  "teks": [
+   "Seorang rakan menyatakan sesuatu yang tak awak sangka: peluang berkahwin lagi. Dalam undang-undang, poligami hanya dibenarkan dengan kebenaran mahkamah syariah, dan syaratnya berat: kemampuan kewangan, keadilan, isteri pertama dipanggil untuk didengar. Awak tak yakin sama ada ini patut dibincangkan langsung."
+  ],
+  "pilihan": [
+   {
+    "t": "Teruskan, mohon di mahkamah syariah",
+    "h": "Proses bermula. Dokumen, bukti pendapatan, dan temu duga.",
+    "k": {
+     "flag": {
+      "poligamiMohon": true
+     },
+     "stres": 6,
+     "tunai": -1000
+    },
+    "seterusnya": null
+   },
+   {
+    "t": "Bincang dengan {nama} dahulu secara jujur",
+    "h": "{nama} diam lama. Jawapannya mengejutkan awak.",
+    "k": {
+     "kasih": -6,
+     "luka": 8,
+     "percaya": 2,
+     "stres": 5
+    }
+   },
+   {
+    "t": "Lupakan sahaja, ini bukan untuk awak",
+    "h": "Awak bersyukur dengan apa yang ada.",
+    "k": {
+     "kasih": 3,
+     "percaya": 3,
+     "stres": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "poligami_mahkamah",
+  "tajuk": "Mahkamah syariah",
+  "fasa": [
+   6,
+   7
+  ],
+  "ulang": false,
+  "berat": 40,
+  "bulan": 4,
+  "latar": "mahkamah",
+  "tag": [
+   "berat"
+  ],
+  "amaran": "Babak ini membincangkan poligami mengikut undang-undang keluarga Islam.",
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "jantina": "lelaki",
+   "flag": {
+    "poligamiMohon": true,
+    "poligami": false
+   }
+  },
+  "teks": [
+   "Hakim mendengar permohonan awak. Isteri pertama dipanggil. {nama} duduk tegak, tak memandang awak. Soalan: adakah awak mampu menyara dua rumah? Adil dalam masa, nafkah, dan layanan?"
+  ],
+  "pilihan": [
+   {
+    "t": "Tunjuk bukti pendapatan dan kemampuan sebenar",
+    "h": "Hakim menyemak. Keputusan tak pasti.",
+    "rawak": {
+     "p": "=40+$simpanan/1000",
+     "ya": {
+      "flag": {
+       "poligami": true
+      },
+      "stres": 8,
+      "kasih": -8,
+      "luka": 14,
+      "tunai": -1500,
+      "h": "Permohonan diluluskan dengan syarat. {nama} dengar dengan wajah kaku. Dua rumah, dua tanggungjawab, satu hati yang perlu adil."
+     },
+     "tidak": {
+      "flag": {
+       "poligamiMohon": null
+      },
+      "stres": 6,
+      "kasih": -6,
+      "luka": 10,
+      "h": "Permohonan ditolak: kemampuan dan keadilan tidak dapat dipastikan. {nama} diam. Hubungan terjejas."
+     }
+    },
+    "k": {}
+   },
+   {
+    "t": "Tarik balik permohonan, lihat wajah {nama}",
+    "h": "Awak berhenti sebelum terlambat.",
+    "k": {
+     "flag": {
+      "poligamiMohon": null
+     },
+     "kasih": 4,
+     "percaya": 4,
+     "stres": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "poligami_suami",
+  "tajuk": "Suami mahu berpoligami",
+  "fasa": [
+   6,
+   7
+  ],
+  "ulang": false,
+  "berat": 6,
+  "bulan": 3,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "amaran": "Babak ini membincangkan poligami dari sudut isteri.",
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "jantina": "perempuan",
+   "sifatP": [
+    "mahuPoligami"
+   ],
+   "fasaMin": 4
+  },
+  "teks": [
+   "{nama} duduk di hadapan awak dengan wajah serius. “Saya nak berterus-terang. Saya nak berkahwin lagi, dengan kebenaran mahkamah.” Awak rasa dunia bergegar. Dalam undang-undang, isteri pertama dipanggil untuk didengar, dan keadilan dinilai."
+  ],
+  "pilihan": [
+   {
+    "t": "Berunding: letakkan syarat dan hak awak dengan jelas",
+    "h": "Awak menetapkan syarat yang jelas: nafkah, masa, tempat tinggal.",
+    "k": {
+     "kasih": -6,
+     "percaya": -4,
+     "stres": 8,
+     "flag": {
+      "poligami": true,
+      "poligamiMahkamah": true
+     },
+     "tunai": -800
+    }
+   },
+   {
+    "t": "Membantah di mahkamah",
+    "h": "Hakim mendengar. Keputusan mungkin tak seperti yang awak mahu, atau mungkin ya.",
+    "rawak": {
+     "p": 50,
+     "ya": {
+      "flag": {
+       "poligamiBatal": true
+      },
+      "stres": 6,
+      "kasih": -3,
+      "luka": 8,
+      "h": "Permohonan {nama} ditolak. Hubungan retak, tapi bertahan."
+     },
+     "tidak": {
+      "flag": {
+       "poligami": true
+      },
+      "stres": 10,
+      "kasih": -8,
+      "luka": 14,
+      "h": "Permohonan diluluskan. Hati awak hancur."
+     }
+    }
+   },
+   {
+    "t": "Menuntut cerai (fasakh) kerana tak sanggup",
+    "h": "Awak membuat keputusan paling sukar, dengan kepala tegak.",
+    "k": {
+     "rel": "bercerai",
+     "stres": 6,
+     "luka": -5,
+     "kasih": -10,
+     "tunai": -1500,
+     "catat": "Memilih berpisah dengan maruah apabila suami mahu berpoligami.",
+     "emoji": "🕊️"
+    }
+   },
+   {
+    "t": "Menerima, demi anak-anak",
+    "h": "Awak terima dengan hati yang berat. Banyak benda tak diucapkan.",
+    "k": {
+     "flag": {
+      "poligami": true
+     },
+     "stres": 8,
+     "kasih": -6,
+     "luka": 12
+    }
+   }
+  ]
+ },
+ {
+  "id": "poligami_adil",
+  "tajuk": "Menilai keadilan",
+  "fasa": [
+   7,
+   8
+  ],
+  "ulang": false,
+  "berat": 30,
+  "bulan": 12,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "flag": {
+    "poligami": true,
+    "adilNilai": false
+   }
+  },
+  "teks": [
+   "Bertahun selepas itu, keadilan dinilai bukan di mahkamah, tapi di rumah-rumah: masa, nafkah, perhatian, hati. Dua rumah, dua keluarga, dan jarak antara apa yang dijanjikan dengan apa yang berlaku."
+  ],
+  "pilihan": [
+   {
+    "t": "Cuba adil: bahagi masa dan nafkah sama rata, dengan jujur",
+    "h": "Penat dan mahal, tapi dihormati.",
+    "rawak": {
+     "p": 55,
+     "ya": {
+      "flag": {
+       "adilNilai": true
+      },
+      "kasih": 4,
+      "anak": 4,
+      "stres": 6,
+      "h": "Awak berjaya menjaga keadilan dengan susah payah."
+     },
+     "tidak": {
+      "flag": {
+       "adilNilai": true,
+       "adilGagal": true
+      },
+      "kasih": -12,
+      "anak": -8,
+      "reputasi": -6,
+      "stres": 12,
+      "h": "Walaupun berusaha, keadilan terjejas: salah satu pihak sentiasa terasa kurang. Hati semua pihak terluka."
+     }
+    }
+   },
+   {
+    "t": "Lebihkan keluarga baharu",
+    "h": "Keluarga pertama terabai. Kemarahan senyap menimbun.",
+    "k": {
+     "flag": {
+      "adilNilai": true,
+      "adilGagal": true
+     },
+     "kasih": -14,
+     "anak": -10,
+     "reputasi": -8,
+     "stres": 10
+    }
+   },
+   {
+    "t": "Tamatkan salah satu perkahwinan dengan baik",
+    "h": "Satu keputusan berat, demi keadilan.",
+    "k": {
+     "flag": {
+      "adilNilai": true
+     },
+     "rel": "bercerai",
+     "kasih": -8,
+     "stres": 8,
+     "tunai": -2000
+    }
+   }
+  ]
+ },
+ {
+  "id": "ujian_cerai",
+  "tajuk": "Di persimpangan",
+  "fasa": [
+   0
+  ],
+  "ulang": true,
+  "cd": 14,
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "berat"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "min": {
+    "luka": 45
+   },
+   "max": {
+    "percaya": 50
+   }
+  },
+  "teks": [
+   "Satu malam, selepas pertengkaran yang sama berulang untuk kali ke-ratus, {nama} berkata perlahan: “Saya tak pasti kita masih boleh teruskan.” Tiada jeritan. Hanya keletihan yang dalam."
+  ],
+  "pilihan": [
+   {
+    "t": "Bincang dengan hati terbuka, dari awal",
+    "h": "Perbualan paling panjang dalam beberapa tahun.",
+    "rawak": {
+     "p": 45,
+     "ya": {
+      "luka": -20,
+      "kasih": 6,
+      "percaya": 6,
+      "stres": -3,
+      "h": "Kalian bercakap sehingga subuh. Sesuatu mula pulih."
+     },
+     "tidak": {
+      "stres": 5,
+      "luka": 2,
+      "h": "Kalian bercakap, tetapi tiada yang berubah. Kata-kata tak mampu mengubah apa yang tak diubah."
+     }
+    }
+   },
+   {
+    "t": "Minta orang tengah: ibu bapa, ustaz atau kaunselor",
+    "h": "Kali ini ada pihak ketiga yang adil.",
+    "k": {
+     "tunai": -400,
+     "flag": {
+      "orangTengah": true
+     }
+    },
+    "rawak": {
+     "p": 55,
+     "ya": {
+      "luka": -25,
+      "kasih": 8,
+      "percaya": 8,
+      "stres": -4,
+      "h": "Orang tengah membantu kalian melihat dari sisi masing-masing. Luka lama mula mengecil."
+     },
+     "tidak": {
+      "stres": 6,
+      "h": "Orang tengah cuba sedaya upaya. Tapi hati yang sudah penat tak mudah dipujuk.",
+      "luka": 4,
+      "flag": {
+       "ceraiMula": true
+      }
+     }
+    }
+   },
+   {
+    "t": "Teruskan proses perceraian",
+    "h": "Kata-kata yang tak boleh ditarik balik. Proses bermula.",
+    "k": {
+     "stres": 6,
+     "flag": {
+      "ceraiMula": true
+     }
+    },
+    "syarat": {
+     "min": {
+      "luka": 45
+     }
+    }
+   },
+   {
+    "t": "Diam, teruskan seperti biasa",
+    "h": "Ia tak hilang. Ia hanya menunggu.",
+    "k": {
+     "luka": 4,
+     "kasih": -3
+    }
+   }
+  ]
+ },
+ {
+  "id": "cerai_proses",
+  "tajuk": "Proses perceraian",
+  "fasa": [
+   0
+  ],
+  "ulang": false,
+  "bulan": 3,
+  "latar": "mahkamah",
+  "tag": [
+   "berat"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "ceraiMula": true
+   }
+  },
+  "teks": [
+   "Perceraian orang Islam diuruskan di mahkamah syariah: kaunseling wajib atau sesi sulh, kemudian lafaz talak, fasakh, khuluk (tebus talak) atau taklik, bergantung keadaan. Prosesnya tak cepat, dan tak mudah."
+  ],
+  "pilihan": [
+   {
+    "t": "Lafaz talak di mahkamah",
+    "h": "Selepas sesi sulh yang tak berhasil, mahkamah mengesahkan.",
+    "syarat": {
+     "jantina": "lelaki"
+    },
+    "k": {
+     "rel": "bercerai",
+     "stres": 6,
+     "luka": -10,
+     "tunai": -1500,
+     "catat": "Bercerai dengan {nama} di mahkamah syariah.",
+     "emoji": "💔"
+    }
+   },
+   {
+    "t": "Mohon khuluk atau fasakh",
+    "h": "Dengan alasan yang kukuh, mahkamah meluluskan.",
+    "syarat": {
+     "jantina": "perempuan"
+    },
+    "k": {
+     "rel": "bercerai",
+     "stres": 6,
+     "luka": -10,
+     "tunai": -1200,
+     "catat": "Bercerai dengan {nama} di mahkamah syariah.",
+     "emoji": "💔"
+    }
+   },
+   {
+    "t": "Tarik balik, cuba sekali lagi dengan kaunselor",
+    "h": "Satu peluang terakhir.",
+    "k": {
+     "flag": {
+      "ceraiMula": null,
+      "orangTengah": true
+     },
+     "luka": -10,
+     "kasih": 3,
+     "tunai": -300
+    }
+   }
+  ],
+  "seterusnya": "cerai_selepas"
+ },
+ {
+  "id": "cerai_selepas",
+  "tajuk": "Selepas cerai",
+  "fasa": [
+   0
+  ],
+  "ulang": false,
+  "bulan": 4,
+  "latar": "rumah",
+  "tag": [
+   "berat"
+  ],
+  "syarat": {
+   "rel": [
+    "bercerai"
+   ],
+   "tiada": [
+    "ceraiSelesai"
+   ]
+  },
+  "teks": [
+   "Edah, nafkah edah, mut’ah, harta sepencarian, dan hak jagaan anak. Semua perlu diselesaikan satu-satu. {anak} atau tidak, hidup baharu bermula di sini."
+  ],
+  "pilihan": [
+   {
+    "t": "Selesaikan secara baik, jaga hubungan sebagai ibu bapa bersama",
+    "h": "Bukan mudah, tetapi anak menang.",
+    "syarat": {
+     "anakMin": 1
+    },
+    "k": {
+     "flag": {
+      "ceraiSelesai": true
+     },
+     "anak": 6,
+     "stres": -2,
+     "tunai": -1000,
+     "luka": -8
+    }
+   },
+   {
+    "t": "Berebut hak jagaan, cabar di mahkamah",
+    "h": "Proses panjang dan melukakan semua pihak.",
+    "syarat": {
+     "anakMin": 1
+    },
+    "k": {
+     "flag": {
+      "ceraiSelesai": true
+     },
+     "anak": -4,
+     "stres": 8,
+     "tunai": -3000,
+     "luka": 6
+    }
+   },
+   {
+    "t": "Mulakan hidup baharu, fokus pada diri",
+    "h": "Jarak, tenang, dan perlahan-lahan lega.",
+    "syarat": {
+     "anakMax": 0
+    },
+    "k": {
+     "flag": {
+      "ceraiSelesai": true
+     },
+     "stres": -4,
+     "tunai": -500,
+     "luka": -10
+    }
+   },
+   {
+    "t": "Dapatkan kaunseling untuk melalui fasa ini",
+    "h": "Awak tak perlu lalui semua ini sendirian.",
+    "k": {
+     "flag": {
+      "ceraiSelesai": true,
+      "kaunseling": true
+     },
+     "stres": -6,
+     "tunai": -400,
+     "luka": -10
+    }
+   }
+  ]
+ },
+ {
+  "id": "rujuk",
+  "tajuk": "Rujuk atau teruskan?",
+  "fasa": [
+   6,
+   7
+  ],
+  "ulang": false,
+  "berat": 10,
+  "bulan": 3,
+  "latar": "kafe",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "bercerai"
+   ],
+   "fasaMin": 3,
+   "umurMax": 60
+  },
+  "teks": [
+   "Bertahun selepas bercerai, {nama} menghubungi awak. Suara yang awak kenal, tetapi lebih tenang. “Boleh kita berbual?” Di kafe, kalian duduk berhadapan seperti orang asing yang saling kenal."
+  ],
+  "pilihan": [
+   {
+    "t": "Rujuk semula, bermula dengan tulus",
+    "h": "Tak sempurna, tetapi kalian lebih memahami.",
+    "syarat": {
+     "max": {
+      "luka": 50
+     }
+    },
+    "k": {
+     "rel": "berkahwin",
+     "kasih": 8,
+     "percaya": 4,
+     "luka": -20,
+     "stres": 2,
+     "catat": "Rujuk semula dengan {nama}.",
+     "emoji": "💞"
+    }
+   },
+   {
+    "t": "Bercerita tentang hidup, tetapi kekal berpisah",
+    "h": "Ada penutup yang indah.",
+    "k": {
+     "stres": -4,
+     "luka": -8
+    }
+   },
+   {
+    "t": "Mencari pasangan baharu, mulakan dari awal",
+    "h": "Orang yang berbeza, cerita yang berbeza.",
+    "k": {
+     "pasanganBaru": true,
+     "stres": 3,
+     "catat": "Berkahwin semula dengan seseorang yang baharu.",
+     "emoji": "💍"
+    }
+   },
+   {
+    "t": "Teruskan hidup sendiri",
+    "h": "Damai dengan diri.",
+    "k": {
+     "stres": -5,
+     "flag": {
+      "damaiSendiri": true
+     }
+    }
+   }
+  ]
+ }
+]

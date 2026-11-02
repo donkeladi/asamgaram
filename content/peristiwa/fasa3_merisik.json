@@ -1,0 +1,48 @@
+[
+ {"id":"p3_merisik","tajuk":"Rombongan merisik","fasa":[3],"wajib":true,"urut":1,"bulan":2,"latar":"rumah","tag":["lucu"],"syarat":{"rel":["bercinta"],"tiada":["bezaTertunggak"]},
+  "teks":["Rombongan merisik tiba di rumah keluarga {nama}. Sirih junjung, kata-kata berbalas pantun. Makcik di sebelah bisik: “Jangan gelabah.” Awak sudah gelabah sejak semalam.","Majlis merisik: rombongan awak berpakaian rapi, bawa tepak sirih. Wakil bercakap dengan penuh adat. Awak diam, dengar perut sendiri."],
+  "pilihan":[
+   {"t":"Tenang, biar wakil bercakap","h":"Berjalan lancar. Keluarga kedua belah puas.","k":{"mertua":4,"reputasi":3,"stres":2}},
+   {"t":"Ikut campur dalam perbincangan","h":"Wakil menjeling. Tapi awak nampak bersungguh-sungguh.","k":{"mertua":2,"stres":4}},
+   {"t":"Gelak gugup tak henti-henti","h":"Majlis jadi lebih santai. Adat pun terkesan.","k":{"mertua":1,"stres":-1},"lucu":true},
+   {"t":"Hidangkan air sendiri, tunjuk khidmat","h":"Kecil, tapi dihargai.","bk":"khidmat","k":{"mertua":5,"kasih":2}}]},
+ {"id":"p3_hantaran","tajuk":"Tawar-menawar hantaran","fasa":[3],"wajib":true,"urut":2,"jenis":"mini","mini":"tawar_hantaran","bulan":1,"latar":"rumah","tag":["lucu"],"syarat":{"rel":["bercinta"],"tiada":["bezaTertunggak"]},
+  "teks":["Tiba masa berbincang hantaran. Angka pembuka: {hantaran}. Wakil keluarga bersedia. Ini bukan sekadar wang: ini soal adat, harga diri dan ibu-ibu saudara yang memerhati dari dapur."],
+  "miniHasil":{
+   "tinggi":{"t":"","h":"Perbincangan berjalan baik. Semua pihak mengangguk. Majlis bersurai dengan senyuman.","k":{"reputasi":4,"stres":-2,"catat":"Hantaran dipersetujui. Perundingan berjalan lancar.","emoji":"🤝"}},
+   "sederhana":{"t":"","h":"Berat sebelah sikit, tapi masing-masing akur.","k":{"reputasi":0,"stres":2}},
+   "rendah":{"t":"","h":"Terlalu tegang. Adat memang adat, tapi suasana dingin hingga ke akhir majlis.","k":{"reputasi":-3,"stres":6,"mertua":-3}}}},
+ {"id":"p3_cincin","tajuk":"Cincin dan tunang","fasa":[3],"wajib":true,"urut":3,"bulan":2,"latar":"kedai","tag":["tenang"],"syarat":{"rel":["bercinta"]},
+  "teks":["Masa untuk cincin tunang. Kedai emas penuh pasangan yang berbisik. Penjual senyum: “Yang ini sangat popular.” Awak lihat harga. Awak lihat {nama}. Awak lihat harga lagi."],
+  "pilihan":[
+   {"t":"Cincin mahal yang {nama} berkenan","h":"{nama} bercahaya. Dompet menyesal.","k":{"tunai":-3500,"kasih":6,"rel":"bertunang","catat":"Bertunang dengan {nama}. Cincin berkilau di jari.","emoji":"💍"}},
+   {"t":"Cincin sederhana, simpan untuk kenduri","h":"{nama} faham. Cincin itu tetap cantik.","k":{"tunai":-1200,"kasih":3,"rel":"bertunang","catat":"Bertunang dengan {nama}.","emoji":"💍"}},
+   {"t":"Reka bentuk sendiri, murah tapi bermakna","h":"{nama} menangis. Ini cincin satu-satunya di dunia.","bk":"kata","k":{"tunai":-600,"kasih":5,"rel":"bertunang","catat":"Bertunang dengan {nama}, dengan cincin yang direka sendiri.","emoji":"💍"}},
+   {"t":"Tak perlu cincin, cukup majlis kecil","h":"Keluarga sedikit kecewa. {nama} tersenyum sendiri.","k":{"kasih":1,"mertua":-2,"rel":"bertunang","catat":"Bertunang dengan {nama} dalam majlis kecil.","emoji":"💍"}}]},
+ {"id":"p3_mertua_campur","tajuk":"Mak mertua dan senarai kenduri","fasa":[3,4],"bulan":1,"latar":"rumah","tag":["serius"],"syarat":{"rel":["bertunang"],"mertua":["suka campur","pilih kasih"]},"berat":8,
+  "teks":["Mak {mertuaNama} hantar senarai kenduri ikut citarasanya: 800 jemputan, sewa dewan besar, khemah tiga warna. “Mak dah tempah. Tak payah risau.” Awak risau."],
+  "pilihan":[
+   {"t":"Setuju sahaja, jaga hati mak mertua","h":"Mak mertua gembira. Dompet awak kurang gembira.","k":{"mertua":6,"tunai":-1500,"stres":4,"kasih":-1}},
+   {"t":"Berbincang dengan {nama} dahulu, kemudian cakap bersama","h":"Bersama kalian menghadapi mak. Mak mengeluh, tapi akur sebahagian.","k":{"kasih":4,"mertua":-1,"stres":3,"percaya":2}},
+   {"t":"Tolak secara terang-terangan","h":"Satu rumah senyap. {nama} pandang awak lama.","k":{"mertua":-8,"stres":6,"kasih":-3}},
+   {"t":"Beritahu {nama} supaya {nama} yang cakap dengan mak","h":"Praktikal. {nama} agak tertekan.","k":{"kasih":-2,"mertua":1,"stres":2}}]},
+ {"id":"p3_kad_jemputan","tajuk":"Kad jemputan dan senarai nama","fasa":[3,4],"bulan":1,"latar":"rumah","tag":["lucu"],"syarat":{"rel":["bertunang"]},"berat":5,
+  "teks":["Senarai jemputan: 200 nama dari pihak awak, 500 dari pihak keluarga. Ada nama yang awak tak kenal langsung: “Pak Cik Zamri, kawan arwah atuk.”"],
+  "pilihan":[
+   {"t":"Jemput semua. Rezeki, kata orang tua","h":"Jemputan berganda. Bajet juga.","k":{"tunai":-800,"reputasi":3,"ibubapa":2}},
+   {"t":"Kurangkan, hanya orang yang betul-betul rapat","h":"Ada yang kecil hati. Ada yang lega.","k":{"tunai":300,"reputasi":-2,"stres":-2}},
+   {"t":"Biar mak ayah tentukan separuh","h":"Adil, dan mak ayah sangat gembira.","k":{"ibubapa":5,"stres":1}},
+   {"t":"Gunakan kad digital sahaja","h":"Jimat dan moden. Beberapa makcik tak faham kad digital.","k":{"tunai":200,"reputasi":-1},"lucu":true}]},
+ {"id":"p3_putus_tunang","tajuk":"Tunang goyah","fasa":[3],"bulan":2,"latar":"kafe","tag":["berat"],"syarat":{"rel":["bertunang"],"max":{"kasih":38},"min":{"luka":20}},"berat":6,
+  "teks":["Selepas beberapa pertengkaran, {nama} meletakkan cincin di atas meja. “Saya tak pasti lagi. Mungkin kita tergesa-gesa.” Awak tak tahu apa nak kata."],
+  "pilihan":[
+   {"t":"Cuba memujuk, bincang dari hati ke hati","h":"Satu jam kemudian, cincin itu kembali di jari. Dengan syarat: berubah.","rawak":{"p":45,"ya":{"kasih":6,"luka":-8,"percaya":3,"h":"Kalian bertahan. Tapi retak itu masih ada."},"tidak":{"putus":true,"stres":10,"kasih":-6,"tunai":-1500,"catat":"Putus tunang dengan {nama}. Adat: cincin dipulangkan, sebahagian kos kenduri diganti.","emoji":"💔","h":"{nama} tetap dengan keputusannya. Adat berjalan: cincin dipulangkan, ganti rugi persiapan diselesaikan."}}},
+   {"t":"Terima, walaupun sakit","h":"Adat berjalan: cincin dipulangkan, ganti rugi persiapan. Awak jalan dengan kepala tegak.","k":{"putus":true,"stres":10,"kasih":-6,"tunai":-1500,"catat":"Putus tunang dengan {nama}.","emoji":"💔"}},
+   {"t":"Cadangkan kaunselor atau ustaz","h":"Bantuan orang tengah tak menyelesaikan segalanya, tapi ia membuka pintu.","k":{"kasih":3,"luka":-4,"stres":2,"flag":{"orangTengah":true}}}]},
+ {"id":"p3_besar","tajuk":"Tarikh nikah","fasa":[3],"besar":true,"syarat":{"rel":["bertunang"],"fasaMin":5},"bulan":1,"latar":"rumah","tag":["serius"],
+  "teks":["Dua keluarga berkumpul di ruang tamu. Kalendar terbuka, jari menuding. Siapa yang nak raya dulu? Bila sesuai? Bajet berapa? Tarikh nikah mesti ditentukan malam ni."],
+  "pilihan":[
+   {"t":"Cepat: 3 bulan lagi, supaya tak lama bertunang","h":"Tergesa-gesa. Tapi semangat tinggi.","k":{"fasa":4,"stres":6,"kasih":3,"bulan":2,"flag":{"tarikh":"cepat"}}},
+   {"t":"Sebelum Raya: 6 bulan, sempat persiapan","h":"Realistik. Semua puas hati.","k":{"fasa":4,"stres":2,"bulan":4,"flag":{"tarikh":"sederhana"}}},
+   {"t":"Tunggu setahun, supaya simpanan lebih","h":"Lama, tapi dompet tenang.","k":{"fasa":4,"stres":-1,"simpanan":2500,"bulan":10,"kasih":-1,"flag":{"tarikh":"lambat"}}}]}
+]

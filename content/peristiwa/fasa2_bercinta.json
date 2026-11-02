@@ -1,0 +1,788 @@
+[
+ {
+  "id": "p2_dating_pertama",
+  "tajuk": "Dating pertama",
+  "fasa": [
+   2
+  ],
+  "wajib": true,
+  "urut": 1,
+  "bulan": 2,
+  "latar": "kafe",
+  "tag": [
+   "tenang"
+  ],
+  "syarat": {
+   "rel": [
+    "bercinta"
+   ]
+  },
+  "teks": [
+   "Akhirnya, dating pertama dengan {nama}. Awak tukar baju tiga kali. {nama} pun nampak sedikit gugup. Mana nak pergi?"
+  ],
+  "pilihan": [
+   {
+    "t": "Makan malam di restoran {makanan} kegemaran",
+    "h": "{nama} gembira awak ambil berat tentang citarasanya.",
+    "bk": "masa",
+    "k": {
+     "tunai": -80,
+     "kasih": 4
+    }
+   },
+   {
+    "t": "Bawa bunga dan coklat",
+    "h": "{nama} merah muka. Bunga dikekalkan seminggu.",
+    "bk": "hadiah",
+    "k": {
+     "tunai": -90,
+     "kasih": 4
+    }
+   },
+   {
+    "t": "Jalan-jalan di taman sambil berbual",
+    "h": "Murah, santai, bermakna. Dua jam macam dua minit.",
+    "bk": "kata",
+    "k": {
+     "kasih": 4,
+     "stres": -2
+    }
+   },
+   {
+    "t": "Hantar ke rumah, tolong bawa barang",
+    "h": "Kecil, tapi {nama} perasan segalanya.",
+    "bk": "khidmat",
+    "k": {
+     "kasih": 4,
+     "percaya": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p2_beza_agama",
+  "tajuk": "Soal agama",
+  "fasa": [
+   2,
+   3,
+   4
+  ],
+  "wajib": true,
+  "urut": 2,
+  "bulan": 2,
+  "latar": "kafe",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "flag": {
+    "bezaAgama": true,
+    "bezaSelesai": false
+   }
+  },
+  "teks": [
+   "{nama} bukan beragama Islam. Awak tahu perkara ini sejak awal, tapi hari ni ia jadi nyata. Di Malaysia, orang Islam tak boleh berkahwin dengan bukan Islam. Awak ada dua jalan: hubungan ini berakhir, atau {nama} memilih memeluk Islam atas kerelaan sendiri, bukan kerana tekanan."
+  ],
+  "pilihan": [
+   {
+    "t": "Bincang jujur. Biar {nama} fikir dan putuskan sendiri",
+    "h": "Beberapa minggu {nama} diam. Dia belajar, bertanya, berfikir.",
+    "rawak": {
+     "p": 50,
+     "ya": {
+      "flag": {
+       "bezaSelesai": true,
+       "bezaTertunggak": null
+      },
+      "pasanganIslam": true,
+      "kasih": 6,
+      "percaya": 4,
+      "stres": 4,
+      "catat": "{nama} memeluk Islam atas kerelaan sendiri. Dua keluarga bergelut dengan perasaan masing-masing.",
+      "emoji": "🕌",
+      "h": "{nama} akhirnya memilih memeluk Islam atas kerelaan sendiri, bukan kerana awak. Reaksi keluarga kedua-dua belah beragam: ada yang menangis, ada yang diam."
+     },
+     "tidak": {
+      "putus": true,
+      "kasih": -8,
+      "luka": 4,
+      "stres": 8,
+      "catat": "Berpisah dengan {nama} kerana perbezaan agama.",
+      "emoji": "💔",
+      "h": "{nama} tidak mahu menukar agama. Dia menghormati awak, tapi ini jalan yang tidak boleh dikongsi. Kalian berpisah dengan baik.",
+      "flag": {
+       "bezaTertunggak": null
+      }
+     }
+    }
+   },
+   {
+    "t": "Berpisah baik-baik sekarang, sebelum lebih sakit",
+    "h": "Menangis di kereta. Awak tahu itu keputusan yang betul, tapi sakitnya sama.",
+    "k": {
+     "putus": true,
+     "stres": 6,
+     "kasih": -6,
+     "catat": "Memilih berpisah dengan {nama} kerana perbezaan agama.",
+     "emoji": "💔",
+     "flag": {
+      "bezaTertunggak": null
+     }
+    }
+   },
+   {
+    "t": "Minta masa untuk berfikir",
+    "h": "Masa berlalu. Soalan itu tak hilang. Awak kena pilih juga nanti.",
+    "k": {
+     "stres": 4,
+     "flag": {
+      "bezaTertunggak": true,
+      "mintaMasaAgama": true
+     }
+    },
+    "syarat": {
+     "flag": {
+      "mintaMasaAgama": false
+     }
+    }
+   }
+  ],
+  "ulang": 2,
+  "cd": 3
+ },
+ {
+  "id": "p2_kenal_keluarga",
+  "tajuk": "Kenal keluarga",
+  "fasa": [
+   2
+  ],
+  "wajib": true,
+  "urut": 3,
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "lucu"
+  ],
+  "syarat": {
+   "rel": [
+    "bercinta"
+   ]
+  },
+  "teks": [
+   "Hari ni awak bertemu keluarga {nama}. Mak {nama}, Mak {mertuaNama}, memandang awak dari atas ke bawah macam pengawas peperiksaan. Adik beradik berbisik di dapur."
+  ],
+  "pilihan": [
+   {
+    "t": "Bawa buah tangan, salam semua orang",
+    "h": "Mak {mertuaNama} senyum sikit. Cukup untuk awak lulus ujian pertama.",
+    "ikut": {
+     "m:penyayang": {
+      "mertua": 8
+     },
+     "m:suka campur": {
+      "mertua": 4,
+      "stres": 3
+     },
+     "m:pilih kasih": {
+      "mertua": 2
+     }
+    },
+    "k": {
+     "mertua": 4,
+     "tunai": -60
+    }
+   },
+   {
+    "t": "Tolong di dapur, basuh pinggan",
+    "h": "Mak {mertuaNama} diam-diam perhatikan. Tangan awak laju. Dia puas hati.",
+    "ikut": {
+     "m:penyayang": {
+      "mertua": 8
+     },
+     "m:suka campur": {
+      "mertua": 3,
+      "stres": 4
+     },
+     "m:pilih kasih": {
+      "mertua": 4
+     }
+    },
+    "k": {
+     "mertua": 5
+    }
+   },
+   {
+    "t": "Berbual dengan ayah {nama} tentang bola",
+    "h": "Ayah gembira. Mak tak peduli. Anak-anak ketawa.",
+    "k": {
+     "mertua": 2,
+     "reputasi": 2
+    }
+   },
+   {
+    "t": "Gugup, tumpahkan teh atas kain meja",
+    "h": "Sunyi. Kemudian adik {nama} ketawa dan semua ikut. Ais pecah.",
+    "k": {
+     "mertua": -1,
+     "stres": 3,
+     "kasih": 1
+    },
+    "lucu": true
+   }
+  ]
+ },
+ {
+  "id": "p2_cemburu_ex",
+  "tajuk": "Mesej dari bekas",
+  "fasa": [
+   2
+  ],
+  "bulan": 2,
+  "latar": "chat",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "bercinta"
+   ]
+  },
+  "utas": "pasangan",
+  "berat": 5,
+  "teks": [
+   "Telefon {nama} berbunyi. Mesej dari nama yang awak tak kenal. {nama} tersengih sedikit lepas baca, kemudian simpan telefon."
+  ],
+  "chat": [
+   {
+    "d": "ex",
+    "t": "Hai, lama tak dengar. Apa khabar?"
+   },
+   {
+    "d": "pasangan",
+    "t": "Eh, dia bekas saya. Takde apa pun."
+   }
+  ],
+  "pilihan": [
+   {
+    "t": "Percaya dan tidak tanya lagi",
+    "h": "{nama} lega. Hubungan makin tenang.",
+    "k": {
+     "percaya": 4
+    },
+    "ikut": {
+     "p:rahsiaHutang": {
+      "percaya": -1
+     }
+    }
+   },
+   {
+    "t": "Tanya, “Siapa dia sebenarnya?”",
+    "h": "{nama} cerita panjang. Jujur. Kadang jujur itu pahit.",
+    "k": {
+     "percaya": 1,
+     "stres": 3
+    }
+   },
+   {
+    "t": "Minta tengok chat",
+    "h": "{nama} terkesima. Dia tunjuk tapi mata berkaca.",
+    "k": {
+     "percaya": -3,
+     "kasih": -4,
+     "luka": 4
+    },
+    "ikut": {
+     "s:cemburu": {
+      "stres": 3
+     }
+    }
+   },
+   {
+    "t": "Gurau, “Ada saingan ke?”",
+    "h": "{nama} gelak, tapi tak penuh.",
+    "gaya": "humor",
+    "k": {
+     "kasih": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p2_hutang_rahsia",
+  "tajuk": "Rahsia {nama}",
+  "fasa": [
+   2,
+   3
+  ],
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "sifatP": [
+    "rahsiaHutang"
+   ],
+   "rel": [
+    "bercinta",
+    "bertunang"
+   ],
+   "flag": {
+    "hutangPDedah": false
+   }
+  },
+  "berat": 7,
+  "teks": [
+   "Secara tak sengaja, awak nampak notifikasi di telefon {nama}: ‘Tunggakan RM6,200’. {nama} cepat-cepat capai telefon."
+  ],
+  "pilihan": [
+   {
+    "t": "Tanya terus, dengan lembut",
+    "h": "{nama} diam, kemudian mengaku. Kad kredit, pinjaman, BNPL. Dia takut awak tinggalkan dia.",
+    "k": {
+     "percaya": 2,
+     "kasih": 2,
+     "flag": {
+      "hutangPDedah": true
+     },
+     "stres": 3
+    }
+   },
+   {
+    "t": "Biarkan, tunggu dia sendiri cerita",
+    "h": "Seminggu. Dua minggu. Dia tak cerita.",
+    "k": {
+     "percaya": -2,
+     "stres": 3,
+     "flag": {
+      "hutangPDedah": true
+     }
+    },
+    "ikut": {
+     "p:rahsiaHutang": {
+      "luka": 3
+     }
+    }
+   },
+   {
+    "t": "Tawar bantu atur pelan bayaran",
+    "h": "{nama} menangis kecil. Dia tak pernah ada orang bantu begini.",
+    "k": {
+     "kasih": 6,
+     "percaya": 3,
+     "flag": {
+      "hutangPDedah": true
+     },
+     "tunai": -200
+    }
+   },
+   {
+    "t": "Marah dan mula curiga semua perbelanjaannya",
+    "h": "Pergaduhan besar. Hubungan goyah.",
+    "k": {
+     "kasih": -6,
+     "luka": 8,
+     "percaya": -4,
+     "flag": {
+      "hutangPDedah": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p2_ulang_tahun",
+  "tajuk": "Kuiz ulang tahun",
+  "fasa": [
+   2,
+   3,
+   5
+  ],
+  "jenis": "mini",
+  "mini": "kuiz_pasangan",
+  "bulan": 1,
+  "latar": "kafe",
+  "tag": [
+   "lucu"
+  ],
+  "syarat": {
+   "rel": [
+    "bercinta",
+    "bertunang",
+    "berkahwin"
+   ]
+  },
+  "berat": 5,
+  "ulang": true,
+  "cd": 10,
+  "teks": [
+   "Ulang tahun {nama}. Awak ingatkan diri sendiri sepanjang minggu. Kali ini, {nama} bercanda: “Saya bagi kuiz. Kalau lulus, awak dapat hadiah. Kalau gagal... awak yang belanja.”"
+  ],
+  "miniHasil": {
+   "tinggi": {
+    "t": "",
+    "h": "Hampir semua betul. {nama} terharu: “Awak betul-betul dengar!”",
+    "k": {
+     "kasih": 6,
+     "percaya": 3,
+     "catat": "Lulus kuiz {nama} dengan cemerlang.",
+     "emoji": "🎂"
+    }
+   },
+   "sederhana": {
+    "t": "",
+    "h": "Beberapa betul, beberapa salah. {nama} ketawa dan beri markah separa.",
+    "k": {
+     "kasih": 2
+    }
+   },
+   "rendah": {
+    "t": "",
+    "h": "Hampir semua salah. {nama} geleng kepala: “Awak tak ambil tahu langsung?”",
+    "k": {
+     "kasih": -4,
+     "luka": 3,
+     "tunai": -100
+    }
+   }
+  }
+ },
+ {
+  "id": "p2_teka_mood",
+  "tajuk": "Mood hari ni?",
+  "fasa": [
+   2,
+   3,
+   5,
+   6
+  ],
+  "jenis": "mini",
+  "mini": "teka_mood",
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "lucu"
+  ],
+  "syarat": {
+   "rel": [
+    "bercinta",
+    "bertunang",
+    "berkahwin"
+   ]
+  },
+  "berat": 5,
+  "ulang": true,
+  "cd": 10,
+  "teks": [
+   "{nama} masuk rumah. Senyap. Tak cakap apa-apa. Awak ada 5 saat untuk teka mood dia sebelum tersilap langkah."
+  ],
+  "miniHasil": {
+   "tinggi": {
+    "t": "",
+    "h": "Tepat! Awak sudah sedia dengan teh dan coklat. {nama} hampir menangis kerana lega.",
+    "k": {
+     "kasih": 5,
+     "stres": -3
+    }
+   },
+   "sederhana": {
+    "t": "",
+    "h": "Hampir betul. Mood awak betul, nada awak kurang. {nama} tetap hargai usaha.",
+    "k": {
+     "kasih": 1
+    }
+   },
+   "rendah": {
+    "t": "",
+    "h": "Awak ketawa pada masa tak sesuai. {nama} lari ke bilik.",
+    "k": {
+     "kasih": -4,
+     "luka": 3
+    }
+   }
+  }
+ },
+ {
+  "id": "p2_mengawal_1",
+  "tajuk": "Kenapa awak tak jawab?",
+  "fasa": [
+   2,
+   3,
+   5
+  ],
+  "bulan": 1,
+  "latar": "chat",
+  "tag": [
+   "sensitif",
+   "keganasan"
+  ],
+  "amaran": "Babak ini memaparkan tanda-tanda hubungan yang mengawal. Sesetengah pemain mungkin rasa tidak selesa.",
+  "utas": "pasangan",
+  "syarat": {
+   "sifatP": [
+    "mengawal"
+   ],
+   "rel": [
+    "bercinta",
+    "bertunang",
+    "berkahwin"
+   ],
+   "tiada": [
+    "kawal1"
+   ]
+  },
+  "berat": 8,
+  "teks": [
+   "{nama} dah telefon awak 14 kali sejak awak masuk mesyuarat. Mesej bertubi-tubi. “Awak kat mana? Dengan siapa? Kenapa tak jawab?” Awak rasa dada sesak."
+  ],
+  "chat": [
+   {
+    "d": "pasangan",
+    "t": "Awak kat mana?"
+   },
+   {
+    "d": "pasangan",
+    "t": "Kenapa tak balas?"
+   },
+   {
+    "d": "pasangan",
+    "t": "Saya tanya ni. Jawab."
+   }
+  ],
+  "pilihan": [
+   {
+    "t": "Jelaskan dan minta maaf supaya reda",
+    "h": "{nama} reda. Tapi awak mula rasa perlu minta maaf untuk benda biasa.",
+    "k": {
+     "stres": 6,
+     "flag": {
+      "kawal1": true,
+      "tandaAmaran": "+1"
+     }
+    }
+   },
+   {
+    "t": "Tetapkan sempadan: “Saya perlu masa kerja.”",
+    "h": "{nama} marah, tapi akhirnya diam. Awak rasa tak selesa.",
+    "k": {
+     "stres": 3,
+     "flag": {
+      "kawal1": true,
+      "tandaAmaran": "+1"
+     },
+     "percaya": -3
+    }
+   },
+   {
+    "t": "Cerita pada kawan atau keluarga",
+    "h": "Mereka dengar. Salah seorang cakap: “Itu bukan normal.” Ayat itu menetap lama.",
+    "k": {
+     "stres": -2,
+     "flag": {
+      "kawal1": true,
+      "tandaAmaran": "+1"
+     },
+     "kawan": 3
+    }
+   },
+   {
+    "t": "Ketawa, anggap sayang berlebihan",
+    "h": "Awak cuba yakinkan diri. Dalam hati ada sesuatu yang berbunyi.",
+    "k": {
+     "stres": 4,
+     "flag": {
+      "kawal1": true,
+      "tandaAmaran": "+1"
+     }
+    }
+   }
+  ],
+  "bantuan": true
+ },
+ {
+  "id": "p2_perbezaan_negeri",
+  "tajuk": "Adat lain-lain",
+  "fasa": [
+   2,
+   3
+  ],
+  "bulan": 2,
+  "latar": "kampung",
+  "tag": [
+   "tenang"
+  ],
+  "syarat": {
+   "bezaNegeri": true,
+   "rel": [
+    "bercinta",
+    "bertunang"
+   ]
+  },
+  "berat": 5,
+  "teks": [
+   "Awak dari {negeri}, {nama} dari {negeriP}. Bila bercakap tentang adat, ada sedikit pertembungan: loghat, makanan, cara menyambut tetamu. Mak {mertuaNama} tersengih: “Orang negeri awak memang macam tu.”"
+  ],
+  "pilihan": [
+   {
+    "t": "Belajar adat {negeriP} dengan rela hati",
+    "h": "Keluarga {nama} kagum awak berusaha.",
+    "k": {
+     "mertua": 4,
+     "kasih": 2
+    }
+   },
+   {
+    "t": "Ajar {nama} adat {negeri} dengan penuh humor",
+    "h": "Gelak sampai kenyang. {nama} cuba loghat awak, hancur tapi comel.",
+    "k": {
+     "kasih": 3
+    },
+    "lucu": true
+   },
+   {
+    "t": "Pertahankan adat sendiri",
+    "h": "Awak tak salah. Tapi suasana jadi tegang sikit.",
+    "k": {
+     "stres": 3,
+     "mertua": -2
+    }
+   },
+   {
+    "t": "Gabungkan: satu adat dari tiap-tiap negeri",
+    "h": "Kreatif, dan keluarga kedua-dua pihak berpuas hati.",
+    "k": {
+     "mertua": 3,
+     "ibubapa": 2,
+     "stres": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p2_kerja_lewat",
+  "tajuk": "Terlalu sibuk",
+  "fasa": [
+   2,
+   3
+  ],
+  "bulan": 2,
+  "latar": "pejabat",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "bercinta",
+    "bertunang"
+   ]
+  },
+  "berat": 5,
+  "teks": [
+   "Tiga minggu berturut-turut awak balik lewat. {nama} berhenti bertanya bila awak boleh keluar. Itu lebih menakutkan daripada bertanya."
+  ],
+  "pilihan": [
+   {
+    "t": "Tolak kerja lebih masa, keluar dengan {nama}",
+    "h": "Bos mengeluh. {nama} tersenyum.",
+    "bk": "masa",
+    "k": {
+     "kasih": 5,
+     "stres": -2,
+     "gaji": 0
+    }
+   },
+   {
+    "t": "Teruskan, ini untuk masa depan kita",
+    "h": "{nama} faham. Cuba faham.",
+    "k": {
+     "kasih": -3,
+     "stres": 4,
+     "tunai": 300
+    }
+   },
+   {
+    "t": "Bawa {nama} ke pejabat, makan malam di pantri",
+    "h": "Pelik tapi manis.",
+    "k": {
+     "kasih": 3,
+     "stres": 2
+    },
+    "lucu": true
+   },
+   {
+    "t": "Hantar mesej suara waktu rehat",
+    "h": "Dia simpan mesej itu.",
+    "bk": "kata",
+    "k": {
+     "kasih": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "p2_besar",
+  "tajuk": "Serius atau putus?",
+  "fasa": [
+   2
+  ],
+  "besar": true,
+  "syarat": {
+   "rel": [
+    "bercinta"
+   ],
+   "fasaMin": 7,
+   "tiada": [
+    "bezaTertunggak"
+   ]
+  },
+  "bulan": 1,
+  "latar": "kafe",
+  "tag": [
+   "serius"
+  ],
+  "teks": [
+   "Dua tahun hampir berlalu. Awak dan {nama} duduk di kafe tempat dating pertama dulu. Persoalan tak diungkapkan, tapi ia ada di atas meja: kita ke mana?"
+  ],
+  "pilihan": [
+   {
+    "t": "Serius. Saya mahu rombong merisik.",
+    "h": "{nama} diam, kemudian senyum. “Saya tunggu awak cakap benda ni.”",
+    "k": {
+     "fasa": 3,
+     "flag": {
+      "seriusDipilih": true
+     },
+     "kasih": 5,
+     "stres": 4,
+     "catat": "Memutuskan untuk serius dengan {nama}.",
+     "emoji": "💍"
+    }
+   },
+   {
+    "t": "Kita putus. Hala tuju kita lain",
+    "h": "Air mata. Pelukan terakhir. Awak jalan pulang, dunia lebih sunyi.",
+    "k": {
+     "putus": true,
+     "fasa": 1,
+     "stres": 8,
+     "kasih": -6,
+     "catat": "Putus dengan {nama} selepas dua tahun.",
+     "emoji": "💔"
+    }
+   },
+   {
+    "t": "Minta lebih masa, belum bersedia",
+    "h": "{nama} tidak marah, tapi hampa. Masa itu akan dituntut.",
+    "k": {
+     "kasih": -3,
+     "percaya": -2,
+     "stres": 3,
+     "flag": {
+      "mintaMasa": "+1"
+     },
+     "fasa": 3
+    }
+   }
+  ]
+ }
+]

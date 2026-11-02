@@ -1,0 +1,440 @@
+[
+ {
+  "id": "p4_kursus",
+  "tajuk": "Kursus pra-perkahwinan",
+  "fasa": [
+   4
+  ],
+  "wajib": true,
+  "urut": 1,
+  "bulan": 1,
+  "latar": "pejabat",
+  "tag": [
+   "lucu"
+  ],
+  "syarat": {
+   "rel": [
+    "bertunang"
+   ]
+  },
+  "teks": [
+   "Kursus pra-perkahwinan: dua hari, dewan penuh pasangan dengan wajah campuran teruja dan mengantuk. Penceramah bercerita tentang tanggungjawab, komunikasi dan ‘jangan bergaduh depan anak’."
+  ],
+  "pilihan": [
+   {
+    "t": "Catat nota, ambil serius",
+    "h": "Awak belajar sesuatu tentang mendengar. Sebenarnya berguna.",
+    "k": {
+     "kasih": 2,
+     "percaya": 2,
+     "stres": 2
+    }
+   },
+   {
+    "t": "Tidur sekejap di barisan belakang",
+    "h": "{nama} cubit awak. Penceramah perasan. Seluruh dewan ketawa.",
+    "k": {
+     "kasih": -1,
+     "reputasi": -1
+    },
+    "lucu": true
+   },
+   {
+    "t": "Bertanya soalan yang sebenar-benarnya risau",
+    "h": "Soalan awak membuka perbualan yang lama tertunda dengan {nama}.",
+    "k": {
+     "kasih": 3,
+     "percaya": 4,
+     "stres": 2
+    }
+   },
+   {
+    "t": "Main telefon, balas mesej kerja",
+    "h": "Sijil dapat. Pengetahuan: tak berapa.",
+    "k": {
+     "stres": 2,
+     "kasih": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p4_saringan",
+  "tajuk": "Ujian saringan kesihatan",
+  "fasa": [
+   4
+  ],
+  "wajib": true,
+  "urut": 2,
+  "bulan": 1,
+  "latar": "hospital",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "bertunang"
+   ]
+  },
+  "teks": [
+   "Klinik kesihatan: ujian saringan wajib sebelum nikah. Darah diambil, borang disimpan. Seminggu kemudian, keputusan sampai. Awak dan {nama} buka bersama-sama."
+  ],
+  "pilihan": [
+   {
+    "t": "Buka keputusan bersama-sama",
+    "h": "Hasilnya baik. Lega sampai awak tersandar di kerusi.",
+    "rawak": {
+     "p": 88,
+     "ya": {
+      "kesihatan": 2,
+      "kasih": 2,
+      "h": "Semua jelas dan sihat."
+     },
+     "tidak": {
+      "flag": {
+       "pembawa": true
+      },
+      "stres": 4,
+      "kasih": 2,
+      "h": "Seorang daripada kalian pembawa ciri keturunan. Doktor jelaskan: tak perlu bimbang, tapi perlu rancang dan buat pemeriksaan semasa mengandung. Perbualan jujur bermula."
+     }
+    }
+   },
+   {
+    "t": "Tanya doktor pelan lanjutan",
+    "h": "Doktor jelaskan dengan sabar. Awak dan {nama} lebih tenang.",
+    "k": {
+     "stres": -1,
+     "percaya": 2
+    }
+   },
+   {
+    "t": "Simpan keputusan, tak buka dulu",
+    "h": "Anehnya, makin lama simpan makin berat.",
+    "k": {
+     "stres": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "p4_borang",
+  "tajuk": "Borang permohonan nikah",
+  "fasa": [
+   4
+  ],
+  "wajib": true,
+  "urut": 3,
+  "bulan": 1,
+  "latar": "pejabat",
+  "tag": [
+   "lucu"
+  ],
+  "syarat": {
+   "rel": [
+    "bertunang"
+   ]
+  },
+  "teks": [
+   "Di pejabat agama negeri: borang, salinan kad pengenalan, surat kebenaran, gambar. Pegawai di kaunter: “Gambar tak cukup. Salinan tak jelas. Kena ulang.” Awak ke kedai fotostat buat kali ketiga."
+  ],
+  "pilihan": [
+   {
+    "t": "Sabar, ulang sehingga siap",
+    "h": "Selesai. Pegawai pun senyum. Awak hampir menangis.",
+    "k": {
+     "stres": 3
+    }
+   },
+   {
+    "t": "Minta tolong kenalan yang bekerja di situ",
+    "h": "Cepat. Tapi awak rasa sedikit bersalah.",
+    "k": {
+     "stres": -1,
+     "reputasi": -1
+    }
+   },
+   {
+    "t": "Hantar {nama} sahaja, awak sibuk",
+    "h": "{nama} hampa tapi menyelesaikannya. Kalian bercakap panjang malam tu.",
+    "k": {
+     "kasih": -3,
+     "stres": 1
+    }
+   },
+   {
+    "t": "Bawa air untuk pegawai, urus dengan sopan",
+    "h": "Pegawai tersenyum pertama kali hari tu.",
+    "k": {
+     "stres": 0,
+     "reputasi": 2,
+     "tunai": -20
+    },
+    "lucu": true
+   }
+  ]
+ },
+ {
+  "id": "p4_kenduri_besar",
+  "tajuk": "Kenduri besar atau sederhana?",
+  "fasa": [
+   4
+  ],
+  "wajib": true,
+  "urut": 4,
+  "bulan": 1,
+  "latar": "kenduri",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "bertunang"
+   ]
+  },
+  "teks": [
+   "Dua keluarga, dua selera. Kenduri besar: {kenduriBesar} bahagian awak, 800 tetamu, pelamin tiga lapis, katering sepuluh jenis lauk. Kenduri sederhana: {kenduriSederhana}, 250 tetamu, lebih santai. Setiap orang ada pendapat."
+  ],
+  "pilihan": [
+   {
+    "t": "Kenduri besar, sekali seumur hidup",
+    "h": "Semua gembira kecuali dompet. Dan juga awak, tiga bulan kemudian.",
+    "k": {
+     "tunai": "-$kenduriBesar",
+     "stat": {
+      "kenduri": "$kenduriBesar"
+     },
+     "flag": {
+      "kenduriBesar": true,
+      "kenduriJenis": "besar"
+     },
+     "reputasi": 8,
+     "mertua": 4,
+     "ibubapa": 4,
+     "stres": 6
+    }
+   },
+   {
+    "t": "Kenduri sederhana, utamakan masa depan",
+    "h": "Beberapa makcik berbisik. Tapi dompet awak berterima kasih.",
+    "k": {
+     "tunai": "-$kenduriSederhana",
+     "flag": {
+      "kenduriJenis": "sederhana"
+     },
+     "reputasi": 0,
+     "stres": 0,
+     "simpanan": 2000,
+     "stat": {
+      "kenduri": "$kenduriSederhana"
+     }
+    }
+   },
+   {
+    "t": "Akad nikah di masjid, kenduri kecil buat keluarga sahaja",
+    "h": "Tenang, syahdu. Tetamu kurang, kenangan dalam.",
+    "k": {
+     "tunai": -2500,
+     "flag": {
+      "kenduriJenis": "kecil"
+     },
+     "stres": -3,
+     "kasih": 3,
+     "reputasi": -2,
+     "stat": {
+      "kenduri": 2500
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p4_pinjaman",
+  "tajuk": "Pinjaman peribadi untuk kenduri",
+  "fasa": [
+   4
+  ],
+  "bulan": 1,
+  "latar": "pejabat",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "bertunang"
+   ],
+   "flag": {
+    "kenduriBesar": true
+   },
+   "max": {
+    "tunai": 3000
+   }
+  },
+  "berat": 8,
+  "teks": [
+   "Kos kenduri melebihi simpanan. Pegawai bank menyodorkan borang: pinjaman peribadi RM25,000, bayar 5 tahun. Mudah, terlalu mudah."
+  ],
+  "pilihan": [
+   {
+    "t": "Ambil pinjaman penuh",
+    "h": "Kenduri meriah. Tetapi bil bulanan meriah juga.",
+    "k": {
+     "hutang": 25000,
+     "tunai": 9000,
+     "stres": 5,
+     "flag": {
+      "pinjamanKenduri": true
+     }
+    }
+   },
+   {
+    "t": "Ambil separuh, kurangkan tetamu",
+    "h": "Seimbang. Dan ketat.",
+    "k": {
+     "hutang": 12000,
+     "tunai": 4000,
+     "stres": 2
+    }
+   },
+   {
+    "t": "Tidak mahu berhutang, sesuaikan kenduri",
+    "h": "Kenduri lebih kecil daripada rancangan. Tidak ada hutang. Ada sedikit kecewa.",
+    "k": {
+     "tunai": 8000,
+     "reputasi": -2,
+     "stres": -2,
+     "kasih": 1,
+     "flag": {
+      "kenduriBesar": null
+     }
+    }
+   },
+   {
+    "t": "Minta bantuan keluarga",
+    "h": "Mak ayah hulur. Dengan senyap, dengan air mata.",
+    "k": {
+     "tunai": 5000,
+     "ibubapa": -3,
+     "stres": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p4_parking",
+  "tajuk": "Parking kenduri",
+  "fasa": [
+   4,
+   5,
+   6
+  ],
+  "jenis": "mini",
+  "mini": "parking_kenduri",
+  "bulan": 1,
+  "latar": "jalan",
+  "tag": [
+   "lucu"
+  ],
+  "syarat": {
+   "rel": [
+    "bertunang",
+    "berkahwin"
+   ]
+  },
+  "berat": 5,
+  "ulang": true,
+  "cd": 12,
+  "teks": [
+   "Hari kenduri sepupu. Lorong sempit, kereta di kiri kanan. Awak kena cari tempat parking tanpa melanggar kereta orang atau mengganggu pak cik yang sedang mengatur lalu lintas."
+  ],
+  "miniHasil": {
+   "tinggi": {
+    "t": "",
+    "h": "Berjaya! Tepat di celah dua kereta. Pak cik tabik awak.",
+    "k": {
+     "stres": -3,
+     "reputasi": 2
+    }
+   },
+   "sederhana": {
+    "t": "",
+    "h": "Berjaya, walaupun tiga kali undur. Pak cik geleng kepala.",
+    "k": {
+     "stres": 1
+    }
+   },
+   "rendah": {
+    "t": "",
+    "h": "Bunyi garisan di sisi kereta. Pemandu kereta sebelah mengerut dahi. Awak bayar ganti.",
+    "k": {
+     "stres": 5,
+     "tunai": -300,
+     "reputasi": -2
+    }
+   }
+  }
+ },
+ {
+  "id": "p4_akad",
+  "tajuk": "Akad nikah",
+  "fasa": [
+   4
+  ],
+  "besar": true,
+  "syarat": {
+   "rel": [
+    "bertunang"
+   ],
+   "fasaMin": 5
+  },
+  "bulan": 1,
+  "latar": "masjid",
+  "tag": [
+   "tenang"
+  ],
+  "fasaNext": 5,
+  "seterusnya": "p5_malam_pertama",
+  "teks": [
+   "Hari akad nikah. Baju pengantin sesak sedikit. Tok kadi di hadapan, saksi di kiri kanan, kamera mengintip dari semua sudut. Jantung awak berdegup macam drum kompang.",
+   "Pagi ni, awak bangun dengan perut senak. Semua ahli keluarga datang. {nama} duduk di sebelah, tangannya sejuk. Tok kadi mula bicara."
+  ],
+  "pilihan": [
+   {
+    "t": "Lafaz dengan tenang, sekali lafaz",
+    "h": "“Sah!” Kata saksi. Tangan {nama} menggenggam tangan awak. Air mata mengalir tanpa disedari.",
+    "k": {
+     "rel": "berkahwin",
+     "kasih": 8,
+     "percaya": 4,
+     "stres": -4,
+     "catat": "Akad nikah dengan {nama}. Sekali lafaz.",
+     "emoji": "💒"
+    }
+   },
+   {
+    "t": "Gugup, gagap, ulang dua kali",
+    "h": "Seluruh dewan sabar. Kali ketiga lancar. Semua gelak lega.",
+    "k": {
+     "rel": "berkahwin",
+     "kasih": 6,
+     "stres": -2,
+     "reputasi": 1,
+     "catat": "Akad nikah dengan {nama}. Gagap dua kali, sah kali ketiga.",
+     "emoji": "💒"
+    },
+    "lucu": true
+   },
+   {
+    "t": "Tersenyum sendiri sehingga tok kadi berhenti seketika",
+    "h": "Tok kadi senyum juga. “Tarik nafas, nak.” Sah dalam sekali lagi.",
+    "k": {
+     "rel": "berkahwin",
+     "kasih": 7,
+     "stres": -3,
+     "catat": "Akad nikah dengan {nama}. Senyuman tak boleh disorok.",
+     "emoji": "💒"
+    }
+   }
+  ]
+ }
+]

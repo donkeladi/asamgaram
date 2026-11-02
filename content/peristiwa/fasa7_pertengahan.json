@@ -1,0 +1,1141 @@
+[
+ {
+  "id": "p7_yuran_sekolah",
+  "tajuk": "Yuran sekolah dan tuisyen",
+  "fasa": [
+   7
+  ],
+  "bulan": [
+   8,
+   14
+  ],
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "anakMin": 1
+  },
+  "berat": 8,
+  "ulang": true,
+  "cd": 8,
+  "teks": [
+   "Januari: bil yuran, baju sekolah, buku, beg, kasut, tuisyen. {sekolah} setahun untuk satu anak, belum campur ‘aktiviti tambahan’. Awak dan {nama} (atau awak seorang) berdiri di kedai buku dengan troli."
+  ],
+  "pilihan": [
+   {
+    "t": "Beli semua yang perlu, ketatkan tali pinggang",
+    "h": "Anak gembira, dompet merana.",
+    "k": {
+     "tunai": "-$sekolah",
+     "anak": 3,
+     "stres": 3
+    }
+   },
+   {
+    "t": "Beli yang paling asas, cari barang terpakai",
+    "h": "Cerdik dan jimat. Anak sedikit kecewa tetapi faham.",
+    "k": {
+     "tunai": -400,
+     "anak": 1,
+     "stres": 0
+    }
+   },
+   {
+    "t": "Tuisyen: daftar semua mata pelajaran",
+    "h": "Anak penat, markah naik, wang habis.",
+    "k": {
+     "tunai": -1500,
+     "anak": -1,
+     "stres": 4,
+     "kesihatan": 0
+    }
+   },
+   {
+    "t": "Ajar sendiri, jimatkan tuisyen",
+    "h": "Malam-malam awak jadi kelas. Awak pun belajar semula.",
+    "k": {
+     "anak": 5,
+     "stres": 4,
+     "kasih": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_hantar_anak",
+  "tajuk": "Hantar anak ke sekolah",
+  "fasa": [
+   7
+  ],
+  "jenis": "mini",
+  "mini": "hantar_anak",
+  "bulan": [
+   6,
+   10
+  ],
+  "latar": "jalan",
+  "tag": [
+   "lucu"
+  ],
+  "syarat": {
+   "anakMin": 1
+  },
+  "berat": 7,
+  "ulang": true,
+  "cd": 12,
+  "teks": [
+   "Pukul 6.45 pagi. {anak} masih mencari kasut. Loceng sekolah berbunyi 7.30. Jalan sesak, dan awak ada satu peluang sahaja."
+  ],
+  "miniHasil": {
+   "tinggi": {
+    "t": "",
+    "h": "Sampai sebelum loceng! {anak} lambai dengan wajah selamat. Awak merasa jadi ibu/ayah paling hebat.",
+    "k": {
+     "anak": 3,
+     "stres": -2
+    }
+   },
+   "sederhana": {
+    "t": "",
+    "h": "Sampai lewat sedikit, tapi sempat. Guru disiplin senyum nipis.",
+    "k": {
+     "anak": 0,
+     "stres": 2
+    }
+   },
+   "rendah": {
+    "t": "",
+    "h": "Pagar dikunci. {anak} masuk ikut pintu lain bersama pak guard. Awak balik rumah, kuncikan diri dalam kereta lima minit.",
+    "k": {
+     "anak": -3,
+     "stres": 6
+    }
+   }
+  }
+ },
+ {
+  "id": "p7_naik_pangkat",
+  "tajuk": "Peluang kerjaya",
+  "fasa": [
+   7
+  ],
+  "bulan": [
+   10,
+   18
+  ],
+  "latar": "pejabat",
+  "tag": [
+   "serius"
+  ],
+  "berat": 8,
+  "ulang": true,
+  "cd": 10,
+  "teks": [
+   "Bos panggil awak ke pejabat. Ada kekosongan jawatan penting. Kenaikan gaji besar, tapi jadual lebih ketat dan perjalanan lebih jauh."
+  ],
+  "pilihan": [
+   {
+    "t": "Terima, ini peluang besar",
+    "h": "Awak melangkah naik. Rumah kadang-kadang awak lihat hanya hujung minggu.",
+    "k": {
+     "gaji": 900,
+     "stres": 8,
+     "kasih": -3,
+     "anak": -2,
+     "flag": {
+      "naikPangkat": "+1"
+     }
+    }
+   },
+   {
+    "t": "Tolak, keluarga lebih utama",
+    "h": "Awak tak menyesal. Hampir.",
+    "k": {
+     "stres": -2,
+     "kasih": 3,
+     "anak": 3,
+     "stat": {
+      "sesal": 0
+     }
+    }
+   },
+   {
+    "t": "Berunding: minta kerja fleksibel",
+    "h": "Syarikat bersetuju sebahagian. Kompromi yang adil.",
+    "rawak": {
+     "p": 55,
+     "ya": {
+      "gaji": 500,
+      "stres": 2,
+      "kasih": 1,
+      "h": "Dapat jawatan baharu dengan jadual lebih baik."
+     },
+     "tidak": {
+      "stres": 4,
+      "h": "Syarikat tak setuju. Peluang itu hilang."
+     }
+    }
+   },
+   {
+    "t": "Tukar syarikat, cari peluang di tempat lain",
+    "h": "Berisiko, tapi mungkin memuaskan.",
+    "rawak": {
+     "p": 60,
+     "ya": {
+      "gaji": 1000,
+      "stres": 4,
+      "h": "Pekerjaan baharu dengan gaji lebih tinggi."
+     },
+     "tidak": {
+      "stres": 8,
+      "tunai": -1200,
+      "h": "Kontrak tak sesuai. Awak menganggur tiga bulan."
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_buang_kerja",
+  "tajuk": "Dibuang kerja",
+  "fasa": [
+   7
+  ],
+  "bulan": [
+   3,
+   6
+  ],
+  "latar": "pejabat",
+  "tag": [
+   "berat"
+  ],
+  "syarat": {
+   "kerjaya": [
+    "swasta",
+    "niaga"
+   ],
+   "flag": {
+    "berhentiKerja": false
+   }
+  },
+  "berat": 2.5,
+  "ulang": true,
+  "cd": 40,
+  "teks": [
+   "Mesej HR: ‘Syarikat sedang menyusun semula operasi.’ Awak diminta berjumpa pukul 3. Tiga puluh minit kemudian, awak duduk di tempat letak kereta memegang kotak barang."
+  ],
+  "pilihan": [
+   {
+    "t": "Cari kerja baharu secara agresif",
+    "h": "Berbulan-bulan temu duga. Akhirnya berjaya.",
+    "k": {
+     "stres": 10,
+     "tunai": -2000,
+     "gaji": -200,
+     "kasih": -2
+    }
+   },
+   {
+    "t": "Mulakan perniagaan kecil",
+    "h": "Berisiko dan menakutkan, tetapi bebas.",
+    "k": {
+     "kerja": "niaga",
+     "stres": 8,
+     "tunai": -3000,
+     "flag": {
+      "bisnesMula": true
+     }
+    }
+   },
+   {
+    "t": "Bekerja gig buat sementara",
+    "h": "Cukup untuk makan. Tak cukup untuk impian.",
+    "k": {
+     "kerja": "gig",
+     "stres": 6,
+     "gaji": -800
+    }
+   },
+   {
+    "t": "Bertukar peranan: {nama} jadi pencari rezeki utama",
+    "h": "Lenturan peranan yang mengajar banyak benda.",
+    "k": {
+     "stres": 4,
+     "kasih": 2,
+     "percaya": 3,
+     "gaji": -1000
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_ibubapa_uzur",
+  "tajuk": "Ibu bapa semakin uzur",
+  "fasa": [
+   7
+  ],
+  "bulan": [
+   8,
+   14
+  ],
+  "latar": "hospital",
+  "tag": [
+   "serius"
+  ],
+  "berat": 10,
+  "ulang": true,
+  "cd": 10,
+  "teks": [
+   "Telefon pukul 4 pagi: abah/mak jatuh di bilik air. Hospital, wad, doktor. Doktor berkata: ‘Perlukan penjagaan lebih dekat.’ Adik-beradik berkumpul di koridor dan semua senyap."
+  ],
+  "pilihan": [
+   {
+    "t": "Bawa mereka tinggal bersama kita",
+    "h": "Rumah penuh, hati penuh. Perkahwinan diuji, juga.",
+    "ikut": {
+     "p:berdikari": {
+      "kasih": 2
+     },
+     "m:suka campur": {
+      "stres": 4
+     }
+    },
+    "k": {
+     "ibubapa": 10,
+     "stres": 7,
+     "kasih": -2,
+     "tunai": -500
+    }
+   },
+   {
+    "t": "Bergilir-gilir dengan adik-beradik",
+    "h": "Jadual diatur, kos dikongsi. Ada tegang, ada gelak.",
+    "k": {
+     "ibubapa": 6,
+     "stres": 4,
+     "tunai": -300,
+     "kawan": -1
+    }
+   },
+   {
+    "t": "Upah penjaga, bayar kos bulanan",
+    "h": "Selesa untuk mereka. Berat untuk dompet.",
+    "k": {
+     "tunai": -1200,
+     "ibubapa": 4,
+     "stres": 2
+    }
+   },
+   {
+    "t": "Bawa ke pusat jagaan yang baik",
+    "h": "Pilihan sukar. Awak datang tiap minggu. Ada rasa bersalah yang tak hilang.",
+    "k": {
+     "tunai": -1000,
+     "ibubapa": -2,
+     "stres": 4,
+     "stat": {
+      "sesal": 1
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_ipar_pinjam",
+  "tajuk": "Ipar pinjam duit",
+  "fasa": [
+   7
+  ],
+  "bulan": [
+   6,
+   10
+  ],
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ]
+  },
+  "berat": 6,
+  "ulang": true,
+  "cd": 16,
+  "teks": [
+   "Ipar awak datang dengan wajah sedih: bisnes tak jalan, anak masuk universiti, bayaran tertunggak. “Pinjam RM5,000, abang/kak. Bulan depan saya bayar.” {nama} pandang awak."
+  ],
+  "pilihan": [
+   {
+    "t": "Pinjamkan, kita keluarga",
+    "h": "Bulan depan jadi bulan seterusnya. Ipar menepati sebahagian.",
+    "k": {
+     "tunai": -2500,
+     "mertua": 5,
+     "kasih": 2,
+     "stres": 3,
+     "flag": {
+      "iparPinjam": true
+     }
+    }
+   },
+   {
+    "t": "Bincang dengan {nama} dulu, tetapkan jumlah",
+    "h": "Kalian bersetuju RM1,000, tidak lebih. Ipar terima.",
+    "k": {
+     "tunai": -1000,
+     "percaya": 4,
+     "kasih": 2
+    }
+   },
+   {
+    "t": "Tolak dengan baik",
+    "h": "Ipar faham, mungkin. Hawa dingin di kenduri berikut.",
+    "k": {
+     "mertua": -5,
+     "stres": 2,
+     "percaya": 1
+    }
+   },
+   {
+    "t": "Bantu cari jalan lain, bukan duit",
+    "h": "Awak hubungkan ipar dengan peluang kerja. Ada rasa dihargai.",
+    "k": {
+     "mertua": 2,
+     "stres": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_krisis_umur",
+  "tajuk": "Krisis pertengahan umur",
+  "fasa": [
+   7
+  ],
+  "bulan": [
+   8,
+   12
+  ],
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "berat": 8,
+  "ulang": true,
+  "cd": 20,
+  "teks": [
+   "Awak berdiri depan cermin. Rambut mula beruban. Kawan-kawan beli kereta sport. Awak tertanya-tanya: ini ke hidup yang awak mimpikan dulu? Hati berat tanpa alasan."
+  ],
+  "pilihan": [
+   {
+    "t": "Bercakap dengan {nama} secara jujur",
+    "h": "{nama} dengar. Rupanya {nama} pun rasa begitu.",
+    "k": {
+     "kasih": 6,
+     "percaya": 5,
+     "stres": -4
+    }
+   },
+   {
+    "t": "Beli sesuatu yang mahal untuk diri sendiri",
+    "h": "Gembira seminggu. Bil sebulan.",
+    "k": {
+     "tunai": -3500,
+     "stres": -6,
+     "kasih": -2,
+     "hutang": 1500
+    },
+    "lucu": true
+   },
+   {
+    "t": "Mula senaman dan hobi baharu",
+    "h": "Badan segar, fikiran jernih.",
+    "k": {
+     "kesihatan": 6,
+     "stres": -6,
+     "flag": {
+      "hobi": true
+     }
+    }
+   },
+   {
+    "t": "Cari seseorang yang memahami (di luar rumah)",
+    "h": "Berbahaya. Dan awak tahu.",
+    "k": {
+     "percaya": -4,
+     "stres": 5,
+     "flag": {
+      "orangKetigaDekat": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_orang_ketiga",
+  "tajuk": "Mesej yang tak sepatutnya",
+  "fasa": [
+   7
+  ],
+  "bulan": [
+   3,
+   6
+  ],
+  "latar": "chat",
+  "tag": [
+   "berat",
+   "sensitif"
+  ],
+  "amaran": "Babak ini menyentuh kecurangan dan orang ketiga.",
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "orangKetigaDekat": true,
+    "orangKetigaSelesai": false
+   }
+  },
+  "berat": 14,
+  "teks": [
+   "Rakan sekerja lama menghantar mesej: “Kita lunch esok?” Hati awak berdegup, bukan kerana lapar. {nama} sedang tidur di sebelah."
+  ],
+  "chat": [
+   {
+    "d": "kawan",
+    "t": "Lama tak berbual. Saya rindu perbualan kita."
+   },
+   {
+    "d": "saya",
+    "t": "..."
+   }
+  ],
+  "pilihan": [
+   {
+    "t": "Padam mesej, sekat nombor itu",
+    "h": "Awak rasa lega dan bersalah serentak. Tapi awak pilih keluarga.",
+    "k": {
+     "stres": -2,
+     "percaya": 3,
+     "kasih": 2,
+     "flag": {
+      "orangKetigaSelesai": true
+     },
+     "catat": "Menolak godaan di tengah jalan.",
+     "emoji": "🛡️"
+    }
+   },
+   {
+    "t": "Bercakap dengan {nama}, beritahu semua",
+    "h": "Sukar, menakutkan, tapi ruang untuk diperbaiki wujud.",
+    "k": {
+     "percaya": 2,
+     "stres": 6,
+     "kasih": 2,
+     "luka": 5,
+     "flag": {
+      "orangKetigaSelesai": true,
+      "orangTengah": true
+     }
+    }
+   },
+   {
+    "t": "Jumpa untuk makan tengah hari sahaja",
+    "h": "Satu langkah kecil. Satu langkah besar.",
+    "k": {
+     "percaya": -6,
+     "stres": 6,
+     "luka": 10,
+     "flag": {
+      "curangRahsia": true,
+      "orangKetigaSelesai": true
+     },
+     "stat": {
+      "sesal": 2
+     }
+    }
+   },
+   {
+    "t": "Minta bantuan kaunselor",
+    "h": "Awak mula faham apa sebenarnya yang awak cari.",
+    "k": {
+     "stres": -4,
+     "flag": {
+      "orangKetigaSelesai": true,
+      "kaunseling": true
+     },
+     "tunai": -200
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_sekolah_pilihan",
+  "tajuk": "Sekolah mana untuk anak?",
+  "fasa": [
+   7
+  ],
+  "bulan": [
+   6,
+   10
+  ],
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "anakMin": 1
+  },
+  "berat": 6,
+  "ulang": false,
+  "teks": [
+   "Pilihan sekolah: kebangsaan dekat rumah, sekolah tahfiz, atau swasta berbayar tinggi. Setiap pilihan ada pendapat, setiap pendapat ada ahli keluarga yang menyokongnya."
+  ],
+  "pilihan": [
+   {
+    "t": "Sekolah kebangsaan terdekat",
+    "h": "Jimat, dekat dan rakan-rakan sekampung. Anak selesa.",
+    "k": {
+     "tunai": -100,
+     "anak": 3,
+     "stres": -1
+    }
+   },
+   {
+    "t": "Sekolah tahfiz",
+    "h": "Anak belajar nilai dan hafazan, tetapi jauh dari rumah.",
+    "k": {
+     "anak": 4,
+     "ibubapa": 3,
+     "tunai": -500,
+     "stres": 2,
+     "mertua": 3
+    }
+   },
+   {
+    "t": "Sekolah swasta",
+    "h": "Fasiliti terbaik. Yuran terbaik juga.",
+    "k": {
+     "tunai": -1200,
+     "anak": 4,
+     "stres": 4,
+     "hutang": 2000
+    }
+   },
+   {
+    "t": "Biar anak sendiri pilih (bersama bimbingan)",
+    "h": "Anak teruja. Awak lebih tenang.",
+    "k": {
+     "anak": 5,
+     "stres": 0
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_remaja",
+  "tajuk": "Anak remaja degil",
+  "fasa": [
+   7
+  ],
+  "bulan": [
+   8,
+   12
+  ],
+  "latar": "rumah",
+  "tag": [
+   "lucu"
+  ],
+  "syarat": {
+   "anakMin": 1
+  },
+  "berat": 8,
+  "ulang": true,
+  "cd": 14,
+  "teks": [
+   "{anak} berusia 15. Pintu bilik ditutup, mesej dibalas dengan ‘😐’, makan pun sedikit. Awak dan {nama} berpandangan di dapur, sama-sama tak faham."
+  ],
+  "pilihan": [
+   {
+    "t": "Beri ruang, tunggu anak datang bercakap",
+    "h": "Tiga minggu kemudian, {anak} datang tengah malam dan cerita segalanya.",
+    "k": {
+     "anak": 6,
+     "stres": 2
+    }
+   },
+   {
+    "t": "Tegas, ambil telefon dan aturkan peraturan",
+    "h": "Anak marah. Kemudian akur. Hubungan lebih dingin.",
+    "k": {
+     "anak": -4,
+     "stres": 3
+    }
+   },
+   {
+    "t": "Cuba faham dunia mereka (belajar trend)",
+    "h": "Anak malu dan geli, tapi dalam hati sedikit gembira.",
+    "k": {
+     "anak": 5,
+     "stres": 1,
+     "kasih": 1
+    },
+    "lucu": true
+   },
+   {
+    "t": "Minta bantuan kaunselor sekolah",
+    "h": "Satu perbualan yang tak boleh awak buat sendiri.",
+    "k": {
+     "anak": 3,
+     "stres": -1,
+     "tunai": -100
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_penyakit",
+  "tajuk": "Amaran kesihatan",
+  "fasa": [
+   7
+  ],
+  "bulan": [
+   4,
+   8
+  ],
+  "latar": "hospital",
+  "tag": [
+   "serius"
+  ],
+  "berat": 7,
+  "ulang": true,
+  "cd": 16,
+  "syarat": {
+   "min": {
+    "stres": 50
+   }
+  },
+  "teks": [
+   "Doktor menunjukkan keputusan darah awak. Tekanan darah tinggi, kolesterol melebihi had. Wajahnya serius tapi lembut: “Awak perlu ubah gaya hidup.”"
+  ],
+  "pilihan": [
+   {
+    "t": "Ubah gaya hidup: makan, tidur, bersenam",
+    "h": "Awak sukar bertahan seminggu, tetapi bertahan sebulan. Perlahan-lahan.",
+    "k": {
+     "kesihatan": 8,
+     "stres": -5,
+     "tunai": -150
+    }
+   },
+   {
+    "t": "Ambil ubat sahaja, hidup macam biasa",
+    "h": "Nombor baik. Hati risau.",
+    "k": {
+     "kesihatan": 3,
+     "tunai": -100
+    }
+   },
+   {
+    "t": "Abaikan, kerja lebih penting",
+    "h": "Badan menyimpan semua tuntutan untuk nanti.",
+    "k": {
+     "kesihatan": -6,
+     "stres": 3,
+     "stat": {
+      "sesal": 1
+     }
+    }
+   },
+   {
+    "t": "Berjalan kaki dengan {nama} setiap petang",
+    "h": "Dua kali sehari bercakap. Dua kali sehari tersenyum.",
+    "bk": "masa",
+    "k": {
+     "kesihatan": 6,
+     "kasih": 5,
+     "stres": -4
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_impian",
+  "tajuk": "Impian lama",
+  "fasa": [
+   7
+  ],
+  "bulan": [
+   6,
+   12
+  ],
+  "latar": "rumah",
+  "tag": [
+   "tenang"
+  ],
+  "syarat": {
+   "flag": {
+    "impian": true
+   },
+   "tiada": [
+    "impianSelesai"
+   ]
+  },
+  "berat": 14,
+  "ulang": false,
+  "teks": [
+   "Awak jumpa buku nota lama. Muka surat pertama: ‘Sebelum umur 50, saya mesti ...’. Awak baca, dan teringat awak yang berusia 22 tahun. Adakah awak masih berhutang sesuatu pada diri itu?"
+  ],
+  "pilihan": [
+   {
+    "t": "Cuba tunaikan sekarang dengan simpanan yang ada",
+    "h": "Awak buat kira-kira. Ada sesuatu yang awak boleh lakukan.",
+    "syarat": {
+     "tunaiMin": 3000
+    },
+    "k": {
+     "flag": {
+      "impianSelesai": true,
+      "impianSebahagian": true
+     },
+     "stres": -3,
+     "catat": "Mula menunaikan impian lama.",
+     "emoji": "✨"
+    }
+   },
+   {
+    "t": "Kumpul duit sedikit-sedikit untuk beberapa tahun",
+    "h": "Awak tetapkan matlamat. Yang penting: mula.",
+    "k": {
+     "simpanan": 2000,
+     "flag": {
+      "impianSebahagian": true,
+      "impianSelesai": true
+     },
+     "stres": -1
+    }
+   },
+   {
+    "t": "Bincang dengan {nama} dan buat pelan bersama",
+    "h": "{nama} menyokong. Satu impian jadi impian dua orang.",
+    "syarat": {
+     "rel": [
+      "berkahwin"
+     ]
+    },
+    "k": {
+     "kasih": 5,
+     "flag": {
+      "impianSelesai": true,
+      "impianSebahagian": true
+     },
+     "stres": -2
+    }
+   },
+   {
+    "t": "Lupakan sahaja, hidup dah berbeza",
+    "h": "Awak tutup buku nota perlahan. Ada sesuatu yang kekal tak selesai.",
+    "k": {
+     "stat": {
+      "sesal": 2
+     },
+     "flag": {
+      "impianSelesai": true
+     },
+     "stres": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_impian_tunai",
+  "tajuk": "Impian jadi kenyataan",
+  "fasa": [
+   7,
+   8
+  ],
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "tenang"
+  ],
+  "syarat": {
+   "flag": {
+    "impianSebahagian": true,
+    "impianTercapai": false
+   }
+  },
+  "berat": 18,
+  "ulang": false,
+  "teks": [
+   "Hari yang awak tunggu telah tiba. Setelah bertahun-tahun, awak berdiri di hadapan impian itu."
+  ],
+  "pilihan": [
+   {
+    "t": "Rumah: akhirnya geran atas nama sendiri",
+    "h": "Awak menyentuh dinding rumah. Hangat.",
+    "syarat": {
+     "flag": {
+      "impian": "rumah"
+     }
+    },
+    "k": {
+     "flag": {
+      "impianTercapai": true
+     },
+     "rumah": "beli",
+     "stres": -5,
+     "catat": "Impian memiliki rumah tercapai.",
+     "emoji": "🏡"
+    }
+   },
+   {
+    "t": "Umrah: bersama mak ayah, air mata di Tanah Suci",
+    "h": "Wang habis ({umrah}). Hati penuh.",
+    "syarat": {
+     "flag": {
+      "impian": "umrah"
+     }
+    },
+    "k": {
+     "flag": {
+      "impianTercapai": true
+     },
+     "tunai": "-$umrah",
+     "ibubapa": 10,
+     "stres": -8,
+     "catat": "Menunaikan umrah bersama keluarga.",
+     "emoji": "🕋"
+    }
+   },
+   {
+    "t": "Bisnes: membuka pintu kedai sendiri buat kali pertama",
+    "h": "Modal: {bisnes}. Hati: menggigil dan bangga.",
+    "syarat": {
+     "flag": {
+      "impian": "bisnes"
+     }
+    },
+    "k": {
+     "flag": {
+      "impianTercapai": true,
+      "bisnesMula": true
+     },
+     "tunai": "-$bisnes",
+     "stres": 5,
+     "gaji": 400,
+     "catat": "Membuka perniagaan sendiri.",
+     "emoji": "🏪"
+    }
+   },
+   {
+    "t": "Melancong: tapak kaki di negara yang dulu cuma di gambar",
+    "h": "{cuti} habis. Kenangan tak ternilai.",
+    "syarat": {
+     "flag": {
+      "impian": "melancong"
+     }
+    },
+    "k": {
+     "flag": {
+      "impianTercapai": true,
+      "melancong": "+1"
+     },
+     "tunai": "-$cuti",
+     "stres": -8,
+     "catat": "Melancong ke tempat impian.",
+     "emoji": "🌍"
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7_besar",
+  "tajuk": "Selamatkan atau tamatkan?",
+  "fasa": [
+   7
+  ],
+  "besar": true,
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "fasaMin": 5,
+   "umurMin": 48
+  },
+  "fasaNext": 8,
+  "bulan": [
+   24,
+   48
+  ],
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "teks": [
+   "Awak dan {nama} sudah lama bersama. Jalan hidup mula bercabang: pindah, jaga ibu bapa, atau sesuatu yang lebih sukar: sama ada awak ingin memperbaiki apa yang retak, atau mengakhirinya."
+  ],
+  "pilihan": [
+   {
+    "t": "Selamatkan: berusaha membetulkan hubungan, bersama kaunselor",
+    "h": "Bukan mudah, tapi awak berdua mencuba.",
+    "k": {
+     "kasih": 6,
+     "percaya": 4,
+     "luka": -12,
+     "flag": {
+      "kaunseling": true,
+      "orangTengah": true
+     },
+     "tunai": -1500,
+     "stres": 2
+    }
+   },
+   {
+    "t": "Pindah ke bandar/kampung baharu, mulakan babak baharu bersama",
+    "h": "Rumah baharu, kenalan baharu, harapan baharu.",
+    "k": {
+     "kasih": 3,
+     "stres": 4,
+     "tunai": -4000,
+     "mertua": -2
+    }
+   },
+   {
+    "t": "Bersara awal dan fokus pada ibu bapa serta cucu",
+    "h": "Hidup lebih perlahan, lebih penuh.",
+    "k": {
+     "stres": -5,
+     "ibubapa": 6,
+     "gaji": -300
+    }
+   },
+   {
+    "t": "Teruskan seperti biasa, jangan ubah apa-apa",
+    "h": "Itu juga satu keputusan.",
+    "k": {
+     "kasih": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7c_besar",
+  "tajuk": "Hidup selepas bercerai",
+  "fasa": [
+   7
+  ],
+  "besar": true,
+  "syarat": {
+   "rel": [
+    "bercerai"
+   ],
+   "fasaMin": 5,
+   "umurMin": 48
+  },
+  "fasaNext": 8,
+  "bulan": [
+   24,
+   48
+  ],
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "teks": [
+   "Bertahun selepas itu, awak tak lagi mengira hari sejak perceraian. Hidup ada rentak yang baharu."
+  ],
+  "pilihan": [
+   {
+    "t": "Hidup untuk anak dan diri sendiri",
+    "h": "Bangga dengan apa yang awak bina.",
+    "k": {
+     "stres": -4,
+     "anak": 4,
+     "flag": {
+      "damaiSendiri": true
+     }
+    }
+   },
+   {
+    "t": "Bina semula hubungan dengan bekas pasangan sebagai ibu bapa bersama",
+    "h": "Dingin pada mulanya, mesra kemudian.",
+    "k": {
+     "stres": -2,
+     "anak": 5,
+     "luka": -8
+    }
+   },
+   {
+    "t": "Mulakan perniagaan, fokus pada kerjaya",
+    "h": "Sibuk dan bermakna.",
+    "k": {
+     "gaji": 700,
+     "stres": 4
+    }
+   }
+  ]
+ },
+ {
+  "id": "p7b_besar",
+  "tajuk": "Bujang bahagia?",
+  "fasa": [
+   7
+  ],
+  "besar": true,
+  "syarat": {
+   "rel": [
+    "bujang"
+   ],
+   "fasaMin": 5,
+   "umurMin": 48
+  },
+  "fasaNext": 8,
+  "bulan": [
+   24,
+   48
+  ],
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "teks": [
+   "Awak sudah lama bergelar bujang, dengan segala kelebihan dan sunyi. Kawan-kawan bercerita tentang cucu. Awak ada rancangan sendiri."
+  ],
+  "pilihan": [
+   {
+    "t": "Bangun komuniti: jadi pak cik/mak cik kegemaran semua budak",
+    "h": "Rumah awak selalu penuh dengan anak saudara.",
+    "k": {
+     "flag": {
+      "anakSaudara": true
+     },
+     "kawan": 5,
+     "stres": -3
+    }
+   },
+   {
+    "t": "Melancong dan jalani hobi",
+    "h": "Dunia luas. Awak ada masa.",
+    "k": {
+     "tunai": "-$cuti",
+     "stres": -6,
+     "flag": {
+      "melancong": "+1"
+     }
+    }
+   },
+   {
+    "t": "Tumpukan pada kesihatan dan simpanan",
+    "h": "Berhati-hati dan tenang.",
+    "k": {
+     "kesihatan": 6,
+     "simpanan": 6000,
+     "stres": -3
+    }
+   }
+  ]
+ }
+]

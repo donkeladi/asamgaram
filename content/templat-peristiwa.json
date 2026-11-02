@@ -1,0 +1,45 @@
+[
+  {
+    "id": "p2_contoh_peristiwa",
+    "tajuk": "Tajuk pendek (dipaparkan di Hub sebagai 'peristiwa minggu ini')",
+    "fasa": [2],
+    "syarat": { "rel": ["bercinta"], "sifatP": ["cemburu"], "min": { "stres": 40 } },
+    "berat": 5,
+    "ulang": false,
+    "bulan": 2,
+    "latar": "kafe",
+    "tag": ["lucu"],
+    "teks": [
+      "Versi 1 tulisan. Boleh guna {nama}, {saya}, {hantaran}, {negeri}, {pasGelar}.",
+      "Versi 2: tulis 3 hingga 5 versi supaya tak jemu bila diulang."
+    ],
+    "pilihan": [
+      {
+        "t": "Pilihan pertama (neutral, tidak jelas betul atau salah)",
+        "h": "Apa yang berlaku selepas itu.",
+        "gaya": "lembut",
+        "k": { "kasih": 3, "stres": -2, "tunai": -50 }
+      },
+      {
+        "t": "Pilihan kedua, kesan bergantung pada sifat pasangan",
+        "h": "Reaksi.",
+        "k": { "kasih": 1 },
+        "ikut": { "p:cemburu": { "percaya": -3 }, "s:boros": { "tunai": -100 } }
+      },
+      {
+        "t": "Pilihan berisiko (rawak)",
+        "rawak": {
+          "p": 50,
+          "ya": { "kasih": 5, "h": "Berjaya!" },
+          "tidak": { "kasih": -3, "h": "Tak jadi." }
+        }
+      },
+      {
+        "t": "Pilihan lucu",
+        "lucu": true,
+        "h": "Setiap peristiwa ada sekurang-kurangnya satu pilihan lucu.",
+        "k": { "stres": -3 }
+      }
+    ]
+  }
+]

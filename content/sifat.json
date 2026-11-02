@@ -1,0 +1,11 @@
+{
+  "semua": ["sabar","cemburu","boros","berjimat","manja","berdikari","pendiam","suka bercakap"],
+  "bk": {"masa":"masa bersama","hadiah":"hadiah","kata":"kata-kata","khidmat":"khidmat","sentuhan":"sentuhan"},
+  "makanan": ["nasi lemak","laksa","mee goreng mamak","nasi kerabu","char kuey teow","ayam percik","roti canai","cendol","asam pedas","nasi ayam"],
+  "kerjaLabel": {
+    "kerajaan": ["guru","jururawat","pegawai tadbir","pegawai polis","pembantu tadbir"],
+    "swasta": ["eksekutif pemasaran","akauntan","jurutera","pereka grafik","pegawai bank"],
+    "gig": ["rider penghantaran","pemandu e-hailing","freelancer"],
+    "niaga": ["penjual kuih","pemilik kedai runcit","peniaga online","pemilik gerai makan"]
+  }
+}

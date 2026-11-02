@@ -1,0 +1,20 @@
+[
+  {"id":"susu","jenis":"kecil","teks":"{nama} buka peti sejuk: \"Saya dah pesan beli susu. Dah tiga kali dah.\""},
+  {"id":"pinggan","jenis":"kecil","teks":"Pinggan bertimbun dalam singki lagi. {nama} diam, tapi bunyi pinggan dibasuh cukup kuat."},
+  {"id":"telefon","jenis":"kecil","teks":"{nama}: \"Kita makan malam, tapi awak tengok telefon je dari tadi.\""},
+  {"id":"tuala","jenis":"kecil","teks":"Tuala basah atas katil. Lagi. {nama} tarik nafas panjang."},
+  {"id":"lambat","jenis":"kecil","teks":"Awak lambat setengah jam. {nama} dah tunggu depan restoran dengan muka tak ada ekspresi."},
+  {"id":"aircond","jenis":"kecil","teks":"Perang aircond: {nama} sejuk, awak panas. Remote dirampas pukul 2 pagi."},
+  {"id":"tv","jenis":"kecil","teks":"{nama}: \"Awak tengok bola lagi? Drama saya baru nak mula.\""},
+  {"id":"parkir","jenis":"kecil","teks":"Awak parkir senget sampai kereta sebelah tak boleh buka pintu. {nama} malu."},
+  {"id":"lupa_ulang","jenis":"kecil","teks":"{nama} senyap sepanjang hari. Bila ditanya, \"Tak ada apa.\" Hari ni ulang tahun dia, ke? 😬"},
+  {"id":"mak_telefon","jenis":"kecil","teks":"Mak awak telefon tiga kali sehari. {nama} sedikit terganggu, tapi cuba senyum."},
+  {"id":"hutang_rahsia","jenis":"besar","teks":"{nama} jumpa penyata kad kredit yang awak sorok. Jumlahnya lebih besar daripada yang awak cakap.","syarat":{"min":{"hutang":3000}},"luka":8},
+  {"id":"mertua_campur","jenis":"besar","teks":"\"Mak awak tegur cara saya masak depan semua orang,\" kata {nama}. \"Awak langsung tak backup saya.\"","syarat":{"rel":["berkahwin"],"mertua":["suka campur","pilih kasih"]},"luka":8},
+  {"id":"balas_mesej","jenis":"besar","teks":"{nama} nampak awak online sepanjang malam, tapi mesej dia tak berbalas. \"Siapa yang awak chat?\"","syarat":{"sifatP":["cemburu"]},"luka":6},
+  {"id":"duit_ibu_bapa","jenis":"besar","teks":"{nama} perasan duit belanja ibu bapa awak setiap bulan. \"Awak tak pernah bincang dengan saya pun.\"","syarat":{"rel":["berkahwin"]},"luka":6},
+  {"id":"lama_ungkit","jenis":"besar","teks":"Pergaduhan kecil tentang pinggan tiba-tiba jadi pergaduhan tentang segala-galanya sejak tiga tahun lepas.","syarat":{"min":{"luka":30}},"luka":10},
+  {"id":"kerja_lewat","jenis":"besar","teks":"Awak balik pukul 11 malam lagi. {nama}: \"Kita pun ada hidup, bukan kerja je.\"","syarat":{"min":{"stres":50}},"luka":6},
+  {"id":"anak_urus","jenis":"besar","teks":"{nama} dah penat. \"Saya bangun tiga kali malam tadi, awak tidur lena.\"","syarat":{"anakMin":1},"luka":6},
+  {"id":"raya_siapa","jenis":"besar","teks":"Giliran Raya tahun ni: {nama} mahu balik rumah keluarga dia, awak mahu balik rumah keluarga awak.","syarat":{"rel":["berkahwin"]},"luka":4}
+]

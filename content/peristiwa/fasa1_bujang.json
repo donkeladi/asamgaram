@@ -1,0 +1,1017 @@
+[
+ {
+  "id": "p1_kerja_pertama",
+  "tajuk": "Hari pertama kerja",
+  "fasa": [
+   1
+  ],
+  "wajib": true,
+  "urut": 1,
+  "bulan": 1,
+  "latar": "pejabat",
+  "tag": [
+   "tenang"
+  ],
+  "teks": [
+   "Hari pertama sebagai {kerjaS}. Lanyard masih berkilat, senyuman masih ikhlas. Senior tunjuk meja awak, dan pantri yang kopi dia lebih mahal dari kopi di kedai bawah.",
+   "Awak datang awal 30 minit. Semua orang belum sampai kecuali pak guard. Awak rasa dah jadi orang dewasa."
+  ],
+  "pilihan": [
+   {
+    "t": "Datang awal, balik lewat. Tunjuk rajin",
+    "h": "Bos perasan. Badan awak pun perasan.",
+    "k": {
+     "stres": 6,
+     "gaji": 100,
+     "reputasi": 3
+    }
+   },
+   {
+    "t": "Tanya senior banyak benda",
+    "h": "Mereka suka orang yang mahu belajar. Kebanyakannya.",
+    "k": {
+     "stres": 2,
+     "reputasi": 2,
+     "kawan": 4
+    }
+   },
+   {
+    "t": "Ikut rentak sambil perhati",
+    "h": "Tenang. Kerja pun sedikit demi sedikit okey.",
+    "k": {
+     "stres": -2
+    }
+   },
+   {
+    "t": "Makan tengah hari sorang-sorang, scroll telefon",
+    "h": "Aman. Sedikit sunyi.",
+    "k": {
+     "stres": -3,
+     "kawan": -3
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_gaji_pertama",
+  "tajuk": "Gaji pertama",
+  "fasa": [
+   1
+  ],
+  "wajib": true,
+  "urut": 2,
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "lucu"
+  ],
+  "teks": [
+   "Notifikasi bank: gaji masuk. Awak tenung skrin lama-lama. Lepas ditolak KWSP dan sebagainya, angka itu kecil lagi dari yang awak kira. Tapi ia milik awak.",
+   "Gaji pertama! Awak ada tiga rancangan: simpan, belanja, atau bagi pada mak. Bank balance: tak cukup untuk ketiga-tiganya."
+  ],
+  "pilihan": [
+   {
+    "t": "Bagi RM300 pada mak, simpan selebihnya",
+    "h": "Mak menangis sikit. Awak pun hampir.",
+    "k": {
+     "tunai": -300,
+     "ibubapa": 6,
+     "flag": {
+      "bagiMak": true
+     }
+    }
+   },
+   {
+    "t": "Simpan semua, jimat-jimat dulu",
+    "h": "Disiplin. Kawan awak panggil awak 'bank berjalan'.",
+    "k": {
+     "simpanan": 400,
+     "kawan": -2
+    }
+   },
+   {
+    "t": "Belanja diri sendiri: kasut, makan sedap",
+    "h": "Seronok. Dompet menjerit perlahan.",
+    "k": {
+     "tunai": -500,
+     "stres": -4
+    },
+    "lucu": true
+   },
+   {
+    "t": "Belanja kawan-kawan makan besar",
+    "h": "Semua gembira. Awak jadi legenda sehari.",
+    "k": {
+     "tunai": -400,
+     "kawan": 6,
+     "reputasi": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_impian",
+  "tajuk": "Impian awak",
+  "fasa": [
+   1
+  ],
+  "wajib": true,
+  "urut": 3,
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "tenang"
+  ],
+  "teks": [
+   "Malam tu awak tak boleh tidur. Awak keluarkan buku nota dan tulis satu ayat: “Sebelum umur 50, saya mesti ...”. Awak tenung lama sebelum sambung."
+  ],
+  "pilihan": [
+   {
+    "t": "Beli rumah sendiri",
+    "h": "Bumbung sendiri. Bukan sewa.",
+    "k": {
+     "flag": {
+      "impian": "rumah"
+     }
+    }
+   },
+   {
+    "t": "Pergi umrah bersama mak ayah",
+    "h": "Impian yang tenang dan dalam.",
+    "k": {
+     "flag": {
+      "impian": "umrah"
+     }
+    }
+   },
+   {
+    "t": "Buka bisnes sendiri",
+    "h": "Awak mahu jadi bos diri sendiri.",
+    "k": {
+     "flag": {
+      "impian": "bisnes"
+     }
+    }
+   },
+   {
+    "t": "Melancong keliling dunia",
+    "h": "Dunia tu luas dan pasport awak masih kosong.",
+    "k": {
+     "flag": {
+      "impian": "melancong"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_ptptn",
+  "tajuk": "Surat PTPTN",
+  "fasa": [
+   1
+  ],
+  "wajib": true,
+  "urut": 4,
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "min": {
+    "ptptn": 1
+   }
+  },
+  "teks": [
+   "Surat PTPTN sampai. Awak teringat zaman universiti: yuran, pinjaman, makan maggi. Sekarang bayaran bermula, dan jumlah baki membuat awak tertelan air liur."
+  ],
+  "pilihan": [
+   {
+    "t": "Bayar ansuran biasa, setiap bulan",
+    "h": "Perlahan tapi pasti. Hutang berkurang.",
+    "k": {
+     "stres": 1
+    }
+   },
+   {
+    "t": "Bayar lebih supaya cepat habis",
+    "h": "Dompet nipis, tapi hati ringan.",
+    "k": {
+     "tunai": -400,
+     "ptptn": -800,
+     "stres": -1
+    }
+   },
+   {
+    "t": "Tunda dulu, fikir kemudian",
+    "h": "Surat peringatan datang. Dan datang lagi.",
+    "k": {
+     "stres": 4,
+     "percaya": 0,
+     "flag": {
+      "tundaPtptn": true
+     }
+    },
+    "lucu": true
+   },
+   {
+    "t": "Mohon potongan gaji automatik",
+    "h": "Beres. Awak lupa pasal dia.",
+    "k": {
+     "stres": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_kenduri_raya",
+  "tajuk": "Kenduri makcik",
+  "fasa": [
+   1
+  ],
+  "wajib": true,
+  "urut": 5,
+  "bulan": 2,
+  "latar": "kenduri",
+  "tag": [
+   "lucu"
+  ],
+  "teks": [
+   "Di kenduri, makcik-makcik berkumpul macam pasukan siasatan. “Awak dah ada calon? Bila nak kahwin? Umur dah berapa tu?” Mak awak pura-pura sibuk menyenduk nasi.",
+   "Kenduri sepupu di kampung. Duduk di meja bujang. Makcik tegur: “Cantik/kacak, kerja bagus, kenapa belum kahwin? Jangan memilih sangat!”"
+  ],
+  "pilihan": [
+   {
+    "t": "Senyum, “Doakan, makcik.”",
+    "h": "Selamat. Makcik puas hati. Buat masa ni.",
+    "k": {
+     "reputasi": 2,
+     "stres": 2
+    }
+   },
+   {
+    "t": "“Makcik pula, bila nak kurus?” (gurau)",
+    "h": "Seluruh meja senyap, lepas tu gelak. Mak jeling.",
+    "k": {
+     "reputasi": -3,
+     "kawan": 3,
+     "stres": -2
+    },
+    "lucu": true
+   },
+   {
+    "t": "Lari ke dapur tolong basuh pinggan",
+    "h": "Pinggan paling bersih sepanjang kenduri.",
+    "k": {
+     "stres": -1,
+     "ibubapa": 2,
+     "reputasi": 1
+    }
+   },
+   {
+    "t": "Jawab jujur: “Belum jumpa lagi.”",
+    "h": "Makcik mula cadangkan anak kawan dia. Tiga orang.",
+    "k": {
+     "stres": 3,
+     "flag": {
+      "makcikCalon": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_group_wa",
+  "tajuk": "Group WhatsApp keluarga",
+  "fasa": [
+   1,
+   5,
+   6,
+   7
+  ],
+  "bulan": 1,
+  "latar": "chat",
+  "tag": [
+   "lucu"
+  ],
+  "berat": 6,
+  "ulang": true,
+  "cd": 12,
+  "utas": "group",
+  "teks": [
+   "Group WhatsApp keluarga bising lagi pagi ni."
+  ],
+  "chat": [
+   {
+    "d": "ayah",
+    "t": "a"
+   },
+   {
+    "d": "ayah",
+    "t": "s"
+   },
+   {
+    "d": "ayah",
+    "t": "s"
+   },
+   {
+    "d": "mak",
+    "t": "Ayah awak tengah taip. Tunggu."
+   },
+   {
+    "d": "ayah",
+    "t": "Selamat pagi semua, jangan lupa solat"
+   },
+   {
+    "d": "group",
+    "t": "[Mesej palsu: Panduan Cepat Kaya Dalam 3 Hari! Sebarkan!]"
+   }
+  ],
+  "pilihan": [
+   {
+    "t": "Balas “Aamiin” dan senyap",
+    "h": "Cara paling selamat.",
+    "k": {
+     "ibubapa": 1
+    }
+   },
+   {
+    "t": "Betulkan: “Itu mesej palsu, ayah.”",
+    "h": "Ayah tak balas dua hari. Lepas tu dia hantar “Terima kasih. Maaf.”",
+    "k": {
+     "ibubapa": 2,
+     "reputasi": -1
+    },
+    "lucu": true
+   },
+   {
+    "t": "Mute group selama-lamanya",
+    "h": "Aman. Tapi awak terlepas berita kenduri minggu depan.",
+    "k": {
+     "stres": -2,
+     "ibubapa": -2,
+     "reputasi": -3
+    }
+   },
+   {
+    "t": "Hantar stiker gembira, tak baca langsung",
+    "h": "Mesej 213 belum dibaca.",
+    "k": {
+     "stres": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_barang_salah",
+  "tajuk": "Barang yang salah",
+  "fasa": [
+   1,
+   5,
+   6
+  ],
+  "bulan": 1,
+  "latar": "kedai",
+  "tag": [
+   "lucu"
+  ],
+  "ulang": true,
+  "cd": 10,
+  "teks": [
+   "Mak (atau {nama}) hantar senarai belian: tisu dapur, santan, “benda yang biasa tu”. Awak berdiri di lorong barang kedai runcit 20 minit."
+  ],
+  "pilihan": [
+   {
+    "t": "Beli apa yang awak rasa",
+    "h": "Tisu muka. Santan serbuk. Bukan 'benda biasa tu'.",
+    "k": {
+     "stres": 2,
+     "flag": {
+      "barangSalah": "+1"
+     }
+    },
+    "lucu": true
+   },
+   {
+    "t": "Video call minta bantuan",
+    "h": "Selamat. Dan memalukan. Sikit.",
+    "k": {
+     "stres": -1,
+     "kasih": 1
+    }
+   },
+   {
+    "t": "Beli semua yang nampak mungkin betul",
+    "h": "Bil kedai: RM180. Barang pun cukup.",
+    "k": {
+     "tunai": -100,
+     "stres": -2
+    }
+   },
+   {
+    "t": "Balik tangan kosong, mengaku",
+    "h": "Orang rumah ketawa. Tak marah.",
+    "k": {
+     "stres": 0,
+     "kasih": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_parcel",
+  "tajuk": "Parcel misteri",
+  "fasa": [
+   1,
+   5,
+   6,
+   7
+  ],
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "lucu"
+  ],
+  "ulang": true,
+  "cd": 14,
+  "teks": [
+   "Kotak online tiba lagi. Hampir setiap hari. Ada yang berlabel, ada yang tidak. Seisi rumah buat-buat tak tahu."
+  ],
+  "pilihan": [
+   {
+    "t": "Pura-pura tak perasan",
+    "h": "Aman dunia. Dompet pun aman. Mungkin.",
+    "k": {
+     "tunai": -80,
+     "stres": -1
+    }
+   },
+   {
+    "t": "Tanya: “Apa dalam kotak tu?”",
+    "h": "“Tisu.” Tisu yang berharga RM89?",
+    "k": {
+     "tunai": -50,
+     "kasih": -1
+    },
+    "lucu": true
+   },
+   {
+    "t": "Cuba kawal bajet beli-belah",
+    "h": "Mula-mula marah, kemudian faham.",
+    "k": {
+     "stres": 2,
+     "simpanan": 150
+    }
+   },
+   {
+    "t": "Ikut beli juga, sale 11.11!",
+    "h": "Dua-dua gembira. Dua-dua miskin.",
+    "k": {
+     "tunai": -300,
+     "stres": -3
+    },
+    "lucu": true
+   }
+  ]
+ },
+ {
+  "id": "p1_kawan_kenalkan",
+  "tajuk": "Kawan nak kenalkan seseorang",
+  "fasa": [
+   1
+  ],
+  "bulan": 2,
+  "latar": "kafe",
+  "tag": [
+   "tenang"
+  ],
+  "ulang": false,
+  "berat": 8,
+  "teks": [
+   "Kawan baik awak tersengih: “Aku ada kenalan. Kau mesti suka. Dia pun tengah single.” Mulanya awak enggan, kemudian awak buka WhatsApp."
+  ],
+  "pilihan": [
+   {
+    "t": "Terima, jumpa di kafe",
+    "h": "Kekok. Tapi tak teruk. Mungkin ada sesuatu.",
+    "k": {
+     "stres": 2,
+     "flag": {
+      "kenal": "kawan"
+     },
+     "kawan": 2
+    }
+   },
+   {
+    "t": "Tolak, belum bersedia",
+    "h": "Kawan awak mengeluh. Tapi faham.",
+    "k": {
+     "stres": -1,
+     "kawan": -1
+    }
+   },
+   {
+    "t": "Setuju tapi bawa kawan tag-along",
+    "h": "Tiga orang di meja. Janggal tapi lucu.",
+    "k": {
+     "stres": 1,
+     "kawan": 3
+    },
+    "lucu": true
+   },
+   {
+    "t": "Minta gambar dulu, dan tanya hobi",
+    "h": "Dia nampak baik di gambar. Gambar boleh menipu.",
+    "k": {
+     "stres": 1,
+     "flag": {
+      "kenal": "kawan"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_app_kenalan",
+  "tajuk": "Dalam app kenalan",
+  "fasa": [
+   1
+  ],
+  "bulan": 2,
+  "latar": "chat",
+  "tag": [
+   "lucu"
+  ],
+  "berat": 6,
+  "utas": "kawan",
+  "teks": [
+   "Pukul 1 pagi, awak swipe kiri kanan. Seseorang dengan profil ‘suka makan {makanan}’ buat awak berhenti. Match!"
+  ],
+  "chat": [
+   {
+    "d": "kawan",
+    "t": "Hai. Awak pun suka {makanan} ke?"
+   },
+   {
+    "d": "saya",
+    "t": "Hahaha mestilah. Siapa tak suka?"
+   },
+   {
+    "d": "kawan",
+    "t": "Okay kita jodoh. Nak jumpa?"
+   }
+  ],
+  "pilihan": [
+   {
+    "t": "Jumpa di tempat awam yang ramai orang",
+    "h": "Selamat dan bijak. Orangnya sama macam di profil. Nasib baik.",
+    "k": {
+     "stres": 1,
+     "flag": {
+      "kenal": "app"
+     }
+    }
+   },
+   {
+    "t": "Berbual lama dulu sebelum jumpa",
+    "h": "Dua minggu berbual. Kemudian dia hilang.",
+    "k": {
+     "stres": 3,
+     "kasih": -2
+    },
+    "lucu": true
+   },
+   {
+    "t": "Padam app, terlalu awkward",
+    "h": "Awak rasa lega. Dan kesepian.",
+    "k": {
+     "stres": -2
+    }
+   },
+   {
+    "t": "Bagi nombor telefon terus",
+    "h": "Terlalu laju. Tapi dia pun begitu.",
+    "k": {
+     "stres": 2,
+     "flag": {
+      "kenal": "app"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_kenal_kerja",
+  "tajuk": "Rakan sekerja yang menarik",
+  "fasa": [
+   1
+  ],
+  "bulan": 2,
+  "latar": "pejabat",
+  "tag": [
+   "tenang"
+  ],
+  "syarat": {
+   "kerjaya": [
+    "kerajaan",
+    "swasta"
+   ]
+  },
+  "teks": [
+   "Setiap hari ada seseorang di pantri yang senyum pada awak. Hari ni dia tanya: “Awak nak teh?” Awak rasa jantung awak buat benda pelik."
+  ],
+  "pilihan": [
+   {
+    "t": "Balas senyum, ajak lunch",
+    "h": "Lunch tiga kali seminggu. Pejabat mula berbisik.",
+    "k": {
+     "flag": {
+      "kenal": "kerja"
+     },
+     "reputasi": -1,
+     "stres": 2
+    }
+   },
+   {
+    "t": "Terima teh, tak lebih",
+    "h": "Profesional. Tapi hati tak profesional.",
+    "k": {
+     "stres": 1,
+     "flag": {
+      "kenal": "kerja"
+     }
+    }
+   },
+   {
+    "t": "Elak. Takut jadi gosip",
+    "h": "Awak selamat. Pejabat tak bising. Tapi awak tertanya-tanya.",
+    "k": {
+     "stres": -1
+    }
+   },
+   {
+    "t": "Tanya kawan sekerja lain tentang dia dulu",
+    "h": "“Dia baik. Tapi jangan tanya pasal bekas dia.” Hmm.",
+    "k": {
+     "stres": 2,
+     "flag": {
+      "kenal": "kerja"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_adik_pinjam",
+  "tajuk": "Adik pinjam duit",
+  "fasa": [
+   1
+  ],
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "flag": {
+    "adikRamai": false
+   }
+  },
+  "berat": 4,
+  "teks": [
+   "Adik awak hantar mesej: “Along/Kak, pinjam RM200 boleh? Bulan depan bayar.” Awak tahu bulan depan tu agak tak pasti."
+  ],
+  "pilihan": [
+   {
+    "t": "Bagi tanpa soal",
+    "h": "Adik gembira. Awak jimat makan seminggu.",
+    "k": {
+     "tunai": -200,
+     "ibubapa": 2
+    }
+   },
+   {
+    "t": "Bagi separuh dan nasihat",
+    "h": "Dia terima. Bebelan awak pun.",
+    "k": {
+     "tunai": -100,
+     "ibubapa": 1
+    }
+   },
+   {
+    "t": "Tolak dengan lembut",
+    "h": "Dia sedih, tapi kemudian faham.",
+    "k": {
+     "ibubapa": -2
+    }
+   },
+   {
+    "t": "Bagi, tapi minta tulis perjanjian (gurau)",
+    "h": "Dia ketawa dan benar-benar bayar.",
+    "k": {
+     "tunai": -200,
+     "ibubapa": 1
+    },
+    "lucu": true
+   }
+  ]
+ },
+ {
+  "id": "p1_jiran",
+  "tajuk": "Gosip jiran",
+  "fasa": [
+   1,
+   5,
+   6
+  ],
+  "bulan": 1,
+  "latar": "kampung",
+  "tag": [
+   "lucu"
+  ],
+  "ulang": true,
+  "cd": 12,
+  "teks": [
+   "Jiran sebelah rumah tahu segala-galanya. Awak balik malam pukul 11, dan esoknya satu taman tahu awak ‘pulang lewat dengan seseorang’."
+  ],
+  "pilihan": [
+   {
+    "t": "Senyum dan mengelak",
+    "h": "Nasib baik, minggu depan ada berita lain.",
+    "k": {
+     "reputasi": 0,
+     "stres": 0
+    }
+   },
+   {
+    "t": "Jelaskan baik-baik",
+    "h": "Dia angguk. Esoknya satu taman dah dengar versi baharu.",
+    "k": {
+     "reputasi": 2,
+     "stres": 2
+    }
+   },
+   {
+    "t": "Tukar topik dengan hidangkan kuih",
+    "h": "Kuih dimakan. Gosip pun dimakan sama.",
+    "k": {
+     "reputasi": 3,
+     "tunai": -30
+    },
+    "lucu": true
+   },
+   {
+    "t": "Biar je. Dengki orang bukan masalah awak",
+    "h": "Hati tenang. Masyarakat tetap bercakap.",
+    "k": {
+     "reputasi": -2,
+     "stres": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_diet_gagal",
+  "tajuk": "Diet gagal, gym bayar sahaja",
+  "fasa": [
+   1,
+   5
+  ],
+  "bulan": 2,
+  "latar": "jalan",
+  "tag": [
+   "lucu"
+  ],
+  "ulang": true,
+  "cd": 14,
+  "teks": [
+   "Tahun baharu, azam baharu: gym! Awak bayar yuran setahun. Pergi dua kali. Kemudian teringat, dan tenung kad keahlian dengan pilu."
+  ],
+  "pilihan": [
+   {
+    "t": "Pergi betul-betul bulan ni",
+    "h": "Seminggu pergi. Kemudian hujan.",
+    "k": {
+     "kesihatan": 3,
+     "stres": -2,
+     "tunai": -100
+    }
+   },
+   {
+    "t": "Hentikan keahlian, kerugian saja",
+    "h": "Pembatalan kena denda. Ironi.",
+    "k": {
+     "tunai": -150,
+     "stres": 1
+    },
+    "lucu": true
+   },
+   {
+    "t": "Jogging di taman percuma",
+    "h": "Percuma dan sama berkesan. Awak puas.",
+    "k": {
+     "kesihatan": 4,
+     "stres": -3
+    }
+   },
+   {
+    "t": "Biarkan, hidup sekali",
+    "h": "Dan kek coklat pun sekali.",
+    "k": {
+     "kesihatan": -2,
+     "stres": -2
+    },
+    "lucu": true
+   }
+  ]
+ },
+ {
+  "id": "p1_durian_runtuh",
+  "tajuk": "Durian runtuh!",
+  "fasa": [
+   1,
+   5,
+   6,
+   7
+  ],
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "lucu"
+  ],
+  "berat": 0.7,
+  "ulang": true,
+  "cd": 40,
+  "teks": [
+   "Awak menang cabutan bertuah di kedai: hadiah RM1,500! Atau mungkin bonus tak dijangka. Rezeki memang datang bila tak diduga."
+  ],
+  "pilihan": [
+   {
+    "t": "Simpan semua",
+    "h": "Bijak. Sangat bijak.",
+    "k": {
+     "simpanan": 1500,
+     "stres": -3
+    }
+   },
+   {
+    "t": "Belanja separuh, simpan separuh",
+    "h": "Seimbang. Puas.",
+    "k": {
+     "simpanan": 750,
+     "tunai": 300,
+     "stres": -4
+    }
+   },
+   {
+    "t": "Bayar hutang",
+    "h": "Satu beban hilang. Terasa ringan.",
+    "k": {
+     "hutang": -1500,
+     "stres": -5
+    }
+   },
+   {
+    "t": "Belanja sepenuhnya, jom!",
+    "h": "Seronok, lagi seronok sehingga habis.",
+    "k": {
+     "stres": -6,
+     "kawan": 3
+    },
+    "lucu": true
+   }
+  ]
+ },
+ {
+  "id": "p1_kereta_buruk",
+  "tajuk": "Kenderaan merajuk",
+  "fasa": [
+   1
+  ],
+  "bulan": 2,
+  "latar": "jalan",
+  "tag": [
+   "lucu"
+  ],
+  "ulang": false,
+  "berat": 4,
+  "teks": [
+   "Motor/kereta awak hidup, mati, hidup, mati. Di bengkel, mekanik menggeleng: “Boleh baiki, tapi rasanya awak patut fikir pasal yang baru.”"
+  ],
+  "pilihan": [
+   {
+    "t": "Baiki saja",
+    "h": "RM400. Bunyi enjin lega.",
+    "k": {
+     "tunai": -400,
+     "stres": 1
+    }
+   },
+   {
+    "t": "Naik kenderaan awam beberapa bulan",
+    "h": "Lewat sikit tiap hari. Jimat tiap bulan.",
+    "k": {
+     "stres": 3,
+     "simpanan": 300
+    }
+   },
+   {
+    "t": "Pinjam wang kawan, tukar kenderaan",
+    "h": "Lebih selesa. Hutang pun lebih selesa.",
+    "k": {
+     "hutang": 3000,
+     "stres": -1,
+     "kereta": "motor"
+    }
+   },
+   {
+    "t": "Mak tawarkan bantu bayar",
+    "h": "Awak terharu dan malu serentak.",
+    "k": {
+     "ibubapa": 3,
+     "tunai": -100,
+     "stres": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p1_besar",
+  "tajuk": "Siapa yang dikejar?",
+  "fasa": [
+   1
+  ],
+  "besar": true,
+  "jenis": "pilihPasangan",
+  "syarat": {
+   "rel": [
+    "bujang"
+   ],
+   "fasaMin": 7
+  },
+  "bulan": 1,
+  "latar": "kafe",
+  "tag": [
+   "tenang"
+  ],
+  "teks": [
+   "Dua orang berbeza muncul dalam hidup awak dalam minggu yang sama. Satu daripada kawan, satu lagi tanpa disangka. Awak boleh mengejar satu, atau teruskan hidup sendiri. Kedua-duanya pilihan sah."
+  ],
+  "pilihan": [],
+  "ulang": true,
+  "cd": 3
+ },
+ {
+  "id": "pengisi",
+  "tajuk": "Hari biasa",
+  "fasa": [
+   0
+  ],
+  "ulang": true,
+  "cd": 0,
+  "berat": 1,
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "tenang"
+  ],
+  "teks": [
+   "Hari biasa. Tak ada yang istimewa. Awak bangun, kerja, balik, makan malam, tidur. Tapi itu pun sebahagian hidup.",
+   "Hari ni tenang. Awak minum teh dan tengok hujan dari tingkap.",
+   "Tak ada drama hari ni. Awak hampir tak percaya. Awak ambil kesempatan untuk rehat."
+  ],
+  "pilihan": [
+   {
+    "t": "Rehat dan nikmati ketenangan",
+    "h": "Kadang-kadang itu yang paling berharga.",
+    "k": {
+     "stres": -4
+    }
+   },
+   {
+    "t": "Hubungi kawan lama",
+    "h": "Dia gembira awak telefon. Dua jam berbual.",
+    "k": {
+     "kawan": 4,
+     "stres": -2
+    }
+   },
+   {
+    "t": "Kemas rumah, buat apa yang tertangguh",
+    "h": "Rumah bersih, hati pun ringan.",
+    "k": {
+     "stres": -2,
+     "kesihatan": 1
+    }
+   },
+   {
+    "t": "Bekerja lebih masa",
+    "h": "Produktif. Tapi penat.",
+    "k": {
+     "stres": 3,
+     "tunai": 150
+    }
+   }
+  ]
+ }
+]

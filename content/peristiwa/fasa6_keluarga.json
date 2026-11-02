@@ -1,0 +1,1411 @@
+[
+ {
+  "id": "p6_ikhtiar_anak",
+  "tajuk": "Soal anak",
+  "fasa": [
+   6
+  ],
+  "wajib": true,
+  "urut": 1,
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "anakMax": 0,
+   "tiada": [
+    "mahuAnak"
+   ]
+  },
+  "teks": [
+   "Satu malam, selepas makan, {nama} meletakkan sudu: “Kita tak pernah betul-betul bincang. Kita nak anak ke tak? Bila?”"
+  ],
+  "pilihan": [
+   {
+    "t": "“Kita mulakan sekarang.”",
+    "h": "{nama} tersenyum, mata berair. Kalian mula merancang.",
+    "k": {
+     "flag": {
+      "mahuAnak": "ya"
+     },
+     "kasih": 4,
+     "stres": 3
+    }
+   },
+   {
+    "t": "“Tunggu 2 tahun lagi, kita stabil dahulu.”",
+    "h": "Masuk akal, tapi ada nada kecewa.",
+    "k": {
+     "flag": {
+      "mahuAnak": "tunggu"
+     },
+     "percaya": 2,
+     "stres": 0
+    }
+   },
+   {
+    "t": "“Saya tak pasti saya mahu.”",
+    "h": "Perbualan panjang, jujur, dan tidak mudah. Tapi sihat.",
+    "k": {
+     "flag": {
+      "mahuAnak": "tidak"
+     },
+     "stres": 5,
+     "percaya": 3,
+     "kasih": -1
+    }
+   },
+   {
+    "t": "“Terserah Tuhan.”",
+    "h": "Jawapan selamat. Kalian terus hidup, menunggu rezeki.",
+    "k": {
+     "flag": {
+      "mahuAnak": "ya"
+     },
+     "stres": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6_cuba",
+  "tajuk": "Menanti rezeki",
+  "fasa": [
+   6
+  ],
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "anakMax": 0,
+   "flag": {
+    "mahuAnak": "ya",
+    "hamil": false
+   }
+  },
+  "berat": 10,
+  "ulang": 8,
+  "cd": 1,
+  "teks": [
+   "Bulan demi bulan. Setiap kali ujian kehamilan di tangan {nama}, awak berdua menahan nafas. Garis kedua... bergantung pada hari ini.",
+   "Rakan sekerja baru melahirkan. Kawan lama baru mengandung. Awak dan {nama} tersenyum, tapi ada sesuatu yang berat di dalam."
+  ],
+  "pilihan": [
+   {
+    "t": "Teruskan dengan sabar",
+    "h": "Tiada tekanan. Hanya doa dan masa.",
+    "rawak": {
+     "p": 38,
+     "ya": {
+      "flag": {
+       "hamil": true
+      },
+      "kasih": 6,
+      "stres": -2,
+      "h": "Garis kedua muncul. {nama} menutup mulut dengan tangan, lalu menangis dan ketawa serentak."
+     },
+     "tidak": {
+      "flag": {
+       "cubaGagal": "+1"
+      },
+      "stres": 3,
+      "h": "Belum lagi. Bulan depan, mungkin."
+     }
+    }
+   },
+   {
+    "t": "Buat pemeriksaan kesuburan",
+    "h": "Doktor jelaskan dengan tenang, memberi nasihat dan jadual.",
+    "k": {
+     "tunai": "-$rawatan",
+     "stat": {
+      "rawatan": 1
+     }
+    },
+    "rawak": {
+     "p": 45,
+     "ya": {
+      "flag": {
+       "hamil": true
+      },
+      "kasih": 6,
+      "stres": -2,
+      "h": "Dengan sedikit bantuan, ia berhasil."
+     },
+     "tidak": {
+      "flag": {
+       "cubaGagal": "+1"
+      },
+      "stres": 4,
+      "h": "Keputusan tak jelas. Doktor cadangkan lebih banyak ujian."
+     }
+    }
+   },
+   {
+    "t": "Berehat, pergi bercuti berdua",
+    "h": "Tekanan berkurang. Hubungan lebih tenang.",
+    "k": {
+     "tunai": "-$cuti",
+     "stres": -6,
+     "kasih": 4,
+     "flag": {
+      "cubaGagal": "+0"
+     }
+    },
+    "rawak": {
+     "p": 30,
+     "ya": {
+      "flag": {
+       "hamil": true
+      },
+      "h": "Dan pulang bercuti dengan satu berita istimewa."
+     },
+     "tidak": {
+      "h": ""
+     }
+    }
+   },
+   {
+    "t": "Berhenti dahulu, kita lihat kemudian",
+    "h": "Satu keputusan yang berat. {nama} diam lama, kemudian angguk.",
+    "k": {
+     "flag": {
+      "mahuAnak": "tunggu"
+     },
+     "stres": -2
+    }
+   }
+  ],
+  "wajib": true,
+  "urut": 1.5
+ },
+ {
+  "id": "p6_rawatan",
+  "tajuk": "Ikhtiar rawatan",
+  "fasa": [
+   6
+  ],
+  "bulan": 3,
+  "latar": "hospital",
+  "tag": [
+   "serius",
+   "sensitif"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "cubaGagal": 3,
+    "hamil": false
+   },
+   "anakMax": 0
+  },
+  "berat": 20,
+  "ulang": 3,
+  "cd": 3,
+  "amaran": "Babak ini membincangkan ketidaksuburan dan ikhtiar mendapatkan anak dengan nada serius.",
+  "teks": [
+   "Kali ketiga bulan kelabu. Doktor menyusun pilihan: ubat, prosedur, atau IVF. Kos tinggi, tekanan lebih tinggi. {nama} diam sepanjang perjalanan pulang."
+  ],
+  "pilihan": [
+   {
+    "t": "Teruskan rawatan IVF ({ivf})",
+    "h": "Setiap suntikan, setiap harapan, setiap kecewa. Mereka berjuang bersama.",
+    "k": {
+     "tunai": "-$ivf",
+     "stat": {
+      "rawatan": 1
+     },
+     "stres": 8,
+     "kasih": 3
+    },
+    "rawak": {
+     "p": 35,
+     "ya": {
+      "flag": {
+       "hamil": true
+      },
+      "kasih": 8,
+      "stres": -5,
+      "h": "Hasilnya positif. {nama} duduk lama di lantai bilik air, menangis."
+     },
+     "tidak": {
+      "flag": {
+       "cubaGagal": "+1"
+      },
+      "stres": 8,
+      "kasih": -1,
+      "h": "Tidak berhasil kali ini. Kalian berpelukan, tak berkata apa-apa."
+     }
+    }
+   },
+   {
+    "t": "Cuba cara semula jadi lebih lama",
+    "h": "Tanpa tekanan, tanpa kos. Dengan doa.",
+    "k": {
+     "stres": 2
+    }
+   },
+   {
+    "t": "Berhenti ikhtiar dan terima takdir",
+    "h": "Satu keputusan sukar. Awak dan {nama} belajar mencari makna lain: tabah, tak sendirian.",
+    "k": {
+     "flag": {
+      "mahuAnak": "tidak",
+      "pilihTiadaAnak": true
+     },
+     "stres": -4,
+     "kasih": 4,
+     "catat": "Memilih untuk menerima takdir tanpa anak, bersama.",
+     "emoji": "🤍"
+    }
+   },
+   {
+    "t": "Berbincang tentang anak angkat",
+    "h": "Soalan baru, perasaan baru. Satu perjalanan yang lain.",
+    "k": {
+     "flag": {
+      "mahuAnak": "angkat"
+     },
+     "stres": 2,
+     "kasih": 2
+    }
+   }
+  ],
+  "bantuan": false
+ },
+ {
+  "id": "p6_anak_angkat",
+  "tajuk": "Anak angkat",
+  "fasa": [
+   6
+  ],
+  "bulan": 8,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "mahuAnak": "angkat"
+   },
+   "anakMax": 0
+  },
+  "berat": 30,
+  "teks": [
+   "Proses pengangkatan bukan mudah: borang, temu duga, lawatan pegawai. Awak dan {nama} menunggu tarikh. Satu hari, panggilan datang: seorang bayi menanti."
+  ],
+  "pilihan": [
+   {
+    "t": "Sambut bayi itu sebagai anak sendiri",
+    "h": "Tangan kecil menggenggam jari awak. Dunia berubah.",
+    "k": {
+     "anakLahir": 1,
+     "kasih": 8,
+     "stres": 4,
+     "tunai": -1500,
+     "catat": "Menyambut anak angkat ke dalam keluarga.",
+     "emoji": "👶",
+     "flag": {
+      "mahuAnak": "selesai"
+     }
+    }
+   },
+   {
+    "t": "Tangguh, minta lebih masa",
+    "h": "Peluang berlalu. Dan ada perasaan yang tak boleh dilupakan.",
+    "k": {
+     "stres": 4,
+     "stat": {
+      "sesal": 1
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6_hamil",
+  "tajuk": "Garis dua!",
+  "fasa": [
+   6
+  ],
+  "wajib": true,
+  "urut": 2,
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "tenang"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "hamil": true,
+    "hamilSah": false
+   }
+  },
+  "teks": [
+   "Dua garis. {nama} memegang ujian itu di tangan, dan awak hampir lupa cara bernafas. Seketika sunyi. Kemudian ketawa, menangis, peluk.",
+   "Doktor sahkan: {nama} hamil. Awak teringat semua nasihat makcik: jangan angkat berat, jangan makan nanas, jangan marah."
+  ],
+  "pilihan": [
+   {
+    "t": "Peluk erat dan menangis bersama",
+    "h": "Hari terbaik dalam hidup awak setakat ini.",
+    "k": {
+     "kasih": 8,
+     "flag": {
+      "hamilSah": true
+     },
+     "catat": "Mendapat tahu {nama} mengandung.",
+     "emoji": "🤰"
+    }
+   },
+   {
+    "t": "Telefon mak, nak kongsi kegembiraan",
+    "h": "Mak menjerit gembira. Group WhatsApp meletup sebelum awak habiskan ayat.",
+    "k": {
+     "ibubapa": 5,
+     "mertua": 3,
+     "flag": {
+      "hamilSah": true
+     },
+     "kasih": 4
+    },
+    "lucu": true
+   },
+   {
+    "t": "Gelabah: kira kos, bajet bersalin dan taska",
+    "h": "Matematik panik. {nama} tersenyum dan tarik awak duduk.",
+    "k": {
+     "stres": 6,
+     "flag": {
+      "hamilSah": true
+     },
+     "kasih": 3
+    }
+   },
+   {
+    "t": "Rahsiakan sehingga tiga bulan",
+    "h": "Rahsia berdua yang manis.",
+    "k": {
+     "kasih": 5,
+     "flag": {
+      "hamilSah": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6_pemeriksaan",
+  "tajuk": "Pemeriksaan kehamilan",
+  "fasa": [
+   6
+  ],
+  "wajib": true,
+  "urut": 3,
+  "bulan": 3,
+  "latar": "hospital",
+  "tag": [
+   "tenang"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "hamilSah": true,
+    "hamilPeriksa": false
+   },
+   "mod": [
+    "santai"
+   ]
+  },
+  "teks": [
+   "Imbasan pertama. Doktor tunjuk bintik kecil dengan denyut: jantung. {nama} genggam tangan awak kuat."
+  ],
+  "pilihan": [
+   {
+    "t": "Rakam bunyi jantung dalam telefon",
+    "h": "Awak dengar rakaman itu 200 kali.",
+    "k": {
+     "kasih": 5,
+     "flag": {
+      "hamilPeriksa": true
+     }
+    }
+   },
+   {
+    "t": "Tanya doktor soalan-soalan awak catat",
+    "h": "Doktor sabar menjawab.",
+    "k": {
+     "stres": -3,
+     "flag": {
+      "hamilPeriksa": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6_pemeriksaan_risiko",
+  "tajuk": "Pemeriksaan kehamilan",
+  "fasa": [
+   6
+  ],
+  "wajib": true,
+  "urut": 3,
+  "bulan": 3,
+  "latar": "hospital",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "hamilSah": true,
+    "hamilPeriksa": false
+   },
+   "mod": [
+    "realistik",
+    "cabaran"
+   ]
+  },
+  "teks": [
+   "Imbasan pertama. Doktor tenung skrin lebih lama dari biasa. Awak perhatikan wajahnya. {nama} juga perhatikan."
+  ],
+  "pilihan": [
+   {
+    "t": "Tunggu doktor bercakap",
+    "h": "Beberapa saat paling panjang dalam hidup awak.",
+    "rawak": {
+     "p": 13,
+     "ya": {
+      "flag": {
+       "hamil": null,
+       "hamilSah": null,
+       "keguguran": true
+      },
+      "kasih": -2,
+      "stres": 10,
+      "percaya": 2,
+      "catat": "Kehilangan kandungan awal. Kalian saling menyokong dalam duka.",
+      "emoji": "🤍",
+      "h": "Doktor berkata dengan suara perlahan: tiada denyutan. Kandungan tak berterusan. {nama} diam. Awak peluk dan tak mampu berkata apa-apa. Duka ini ada di kalangan banyak keluarga, tapi tak kurang sakitnya."
+     },
+     "tidak": {
+      "flag": {
+       "hamilPeriksa": true
+      },
+      "kasih": 4,
+      "stres": -4,
+      "h": "“Semua baik,” kata doktor. Awak baru sedar awak menahan nafas dari tadi."
+     }
+    }
+   }
+  ],
+  "bantuan": false
+ },
+ {
+  "id": "p6_bersalin",
+  "tajuk": "Hari bersalin",
+  "fasa": [
+   6
+  ],
+  "wajib": true,
+  "urut": 4,
+  "bulan": 5,
+  "latar": "hospital",
+  "tag": [
+   "tenang"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "hamilPeriksa": true,
+    "hamilSah": true
+   }
+  },
+  "teks": [
+   "Pukul 3 pagi. {nama} mencengkam lengan awak. “Dah. Sekarang.” Beg hospital di tempat duduk belakang, kunci kereta di tangan yang menggigil. Jalan lengang, kecuali awak dan tiada traffic light yang hijau.",
+   "Hospital. Wad. Bunyi mesin. Kemudian tangisan kecil. Awak tak ingat bagaimana awak sampai ke sini."
+  ],
+  "pilihan": [
+   {
+    "t": "Berada di sisi {nama} sepanjang masa",
+    "h": "Detik terpanjang dan terindah. Bayi diletakkan di dada {nama}.",
+    "k": {
+     "anakLahir": 1,
+     "tunai": "-$bersalin",
+     "kasih": 9,
+     "stres": -2,
+     "flag": {
+      "hamil": null,
+      "hamilSah": null,
+      "hamilPeriksa": null,
+      "baruBersalin": true,
+      "mahuAnak": "selesai"
+     },
+     "catat": "Kelahiran {anak}. Hari paling mengubah hidup.",
+     "emoji": "👶"
+    },
+    "gaya": "lembut"
+   },
+   {
+    "t": "Hampir pengsan, jururawat menolong awak duduk",
+    "h": "Selepas itu semua gelak. Awak masih tak boleh bercakap tentang darah.",
+    "k": {
+     "anakLahir": 1,
+     "tunai": "-$bersalin",
+     "kasih": 7,
+     "flag": {
+      "hamil": null,
+      "hamilSah": null,
+      "hamilPeriksa": null,
+      "baruBersalin": true,
+      "mahuAnak": "selesai"
+     },
+     "catat": "Kelahiran {anak}. Awak hampir pengsan.",
+     "emoji": "👶"
+    },
+    "lucu": true
+   }
+  ]
+ },
+ {
+  "id": "p6_cuti_bersalin",
+  "tajuk": "Cuti bersalin dan paterniti",
+  "fasa": [
+   6
+  ],
+  "wajib": true,
+  "urut": 5,
+  "bulan": 2,
+  "latar": "pejabat",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "baruBersalin": true,
+    "cutiDiambil": false
+   }
+  },
+  "teks": [
+   "Bos tanya tentang cuti. Di bawah Akta Kerja, cuti bersalin ialah 98 hari dan cuti paterniti 7 hari untuk pekerja lelaki yang layak. Pekerja gig, bagaimanapun, tiada cuti berbayar: setiap hari tak bekerja bermakna tiada pendapatan."
+  ],
+  "pilihan": [
+   {
+    "t": "Ambil cuti penuh yang layak",
+    "h": "Masa bersama anak. Sangat berharga.",
+    "k": {
+     "stres": -4,
+     "anak": 5,
+     "kasih": 3,
+     "flag": {
+      "cutiDiambil": true
+     },
+     "gaji": 0
+    },
+    "ikut": {
+     "s:berdikari": {
+      "stres": 1
+     }
+    }
+   },
+   {
+    "t": "Ambil sebahagian, kembali kerja lebih awal",
+    "h": "Ekonomi lebih penting. Hati berbelah bahagi.",
+    "k": {
+     "stres": 4,
+     "anak": -1,
+     "tunai": 600,
+     "flag": {
+      "cutiDiambil": true
+     }
+    }
+   },
+   {
+    "t": "Gig/niaga: bekerja terus, tiada pilihan",
+    "h": "Jadual panjang. Anak membesar di sebelah awak.",
+    "k": {
+     "stres": 6,
+     "tunai": 900,
+     "anak": -2,
+     "flag": {
+      "cutiDiambil": true
+     }
+    },
+    "syarat": {
+     "kerjaya": [
+      "gig",
+      "niaga"
+     ]
+    }
+   },
+   {
+    "t": "Berhenti kerja sementara untuk jaga anak",
+    "h": "Keputusan besar. Pendapatan menurun.",
+    "k": {
+     "flag": {
+      "cutiDiambil": true,
+      "berhentiKerja": true
+     },
+     "anak": 6,
+     "stres": -1,
+     "kasih": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6_pantang",
+  "tajuk": "Berpantang",
+  "fasa": [
+   6
+  ],
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "lucu"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "baruBersalin": true,
+    "pantangSelesai": false
+   }
+  },
+  "berat": 20,
+  "teks": [
+   "Mak mertua datang menjaga {nama} berpantang: urutan, bertungku, jamu, makanan tertentu. Mak awak pula ada cara berbeza. Dua mak, dua ‘cara yang betul’. Anak kecil di tengah-tengah."
+  ],
+  "pilihan": [
+   {
+    "t": "Ikut cara mak mertua, mak sendiri ikut sahaja",
+    "h": "{nama} berpuas hati. Mak awak sedikit tersinggung.",
+    "ikut": {
+     "m:suka campur": {
+      "stres": 4,
+      "mertua": 3
+     }
+    },
+    "k": {
+     "mertua": 4,
+     "ibubapa": -2,
+     "flag": {
+      "pantangSelesai": true
+     },
+     "stres": 1
+    }
+   },
+   {
+    "t": "Ikut cara mak sendiri",
+    "h": "Mak mertua tak berkata apa, tetapi mukanya sedikit mendung.",
+    "k": {
+     "mertua": -4,
+     "ibubapa": 4,
+     "flag": {
+      "pantangSelesai": true
+     },
+     "stres": 2
+    }
+   },
+   {
+    "t": "Gabungkan: awak jadi pengantara dan pengurus jadual",
+    "h": "Penat. Tapi semua tersenyum pada akhirnya.",
+    "k": {
+     "stres": 5,
+     "mertua": 2,
+     "ibubapa": 2,
+     "kasih": 2,
+     "flag": {
+      "pantangSelesai": true
+     }
+    }
+   },
+   {
+    "t": "Upah bidan pantang profesional",
+    "h": "Mak-mak lega. Dompet tidak.",
+    "k": {
+     "tunai": -1800,
+     "stres": -3,
+     "flag": {
+      "pantangSelesai": true
+     },
+     "kasih": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6_bayi_tidak_tidur",
+  "tajuk": "Bayi tak mahu tidur",
+  "fasa": [
+   6,
+   7
+  ],
+  "jenis": "mini",
+  "mini": "tidurkan_bayi",
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "lucu"
+  ],
+  "syarat": {
+   "anakMin": 1,
+   "rel": [
+    "berkahwin",
+    "bercerai",
+    "bujang"
+   ]
+  },
+  "berat": 8,
+  "ulang": true,
+  "cd": 10,
+  "teks": [
+   "Pukul 2.47 pagi. {anak} menangis. Awak dukung, mengayun, menyanyi lagu asing yang awak tak tahu dari mana datang. {nama} (atau awak) mesti kembali tidur dalam tiga jam."
+  ],
+  "miniHasil": {
+   "tinggi": {
+    "t": "",
+    "h": "Anak lelap. Awak menahan nafas dan berjalan seperti ninja ke katil.",
+    "k": {
+     "stres": -4,
+     "anak": 4
+    }
+   },
+   "sederhana": {
+    "t": "",
+    "h": "Tidur, tetapi hanya sejam. Kemudian, ulang dari awal.",
+    "k": {
+     "stres": 3,
+     "anak": 2
+    }
+   },
+   "rendah": {
+    "t": "",
+    "h": "Anak terjaga sepenuhnya, awak pula hampir menangis. {nama} datang menyelamat.",
+    "k": {
+     "stres": 8,
+     "anak": -1,
+     "kasih": -1
+    }
+   }
+  }
+ },
+ {
+  "id": "p6_anak_sakit",
+  "tajuk": "Anak demam",
+  "fasa": [
+   6,
+   7
+  ],
+  "bulan": 1,
+  "latar": "hospital",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "anakMin": 1
+  },
+  "berat": 6,
+  "ulang": true,
+  "cd": 12,
+  "teks": [
+   "{anak} panas membara pukul 2 pagi. Awak pegang dahi kecil itu, berpeluh dingin. Klinik 24 jam, hospital swasta, atau hospital kerajaan?"
+  ],
+  "pilihan": [
+   {
+    "t": "Klinik 24 jam, selamat dan cepat",
+    "h": "Doktor tenang. Ubat diberi. Awak lega, bil klinik lebih besar dari jangka.",
+    "k": {
+     "tunai": -250,
+     "stres": -1,
+     "anak": 3
+    }
+   },
+   {
+    "t": "Hospital kerajaan, tunggu giliran",
+    "h": "Menunggu panjang. Tapi doktor baik, kos rendah.",
+    "k": {
+     "tunai": -30,
+     "stres": 4,
+     "anak": 2
+    }
+   },
+   {
+    "t": "Hospital swasta, tak berkira",
+    "h": "Segala-galanya pantas. Bil: {hospital}.",
+    "k": {
+     "tunai": "-$hospital",
+     "stres": -2,
+     "anak": 3
+    }
+   },
+   {
+    "t": "Cuba kawal demam di rumah dahulu",
+    "h": "Berhasil dengan sabar. Hampir.",
+    "rawak": {
+     "p": 70,
+     "ya": {
+      "stres": 2,
+      "anak": 2,
+      "h": "Demam reda menjelang pagi."
+     },
+     "tidak": {
+      "stres": 6,
+      "anak": -1,
+      "tunai": -400,
+      "h": "Demam naik. Akhirnya ke klinik juga."
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6_berhenti_kerja",
+  "tajuk": "Siapa yang berhenti kerja?",
+  "fasa": [
+   6
+  ],
+  "bulan": 2,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "anakMin": 1,
+   "flag": {
+    "berhentiKerja": false,
+    "pasanganBerhenti": false
+   }
+  },
+  "berat": 10,
+  "teks": [
+   "Taska RM700 sebulan. Pengasuh RM900. Gaji salah seorang hampir habis untuk itu. Persoalan lama muncul: siapa yang berhenti kerja, atau patutkah semua berkorban sedikit?"
+  ],
+  "pilihan": [
+   {
+    "t": "Saya yang berhenti kerja",
+    "h": "Anak mendapat lebih masa. Pendapatan jatuh. Identiti awak berubah.",
+    "k": {
+     "flag": {
+      "berhentiKerja": true
+     },
+     "anak": 6,
+     "stres": 2,
+     "kasih": 1,
+     "stat": {
+      "sesal": 0
+     }
+    }
+   },
+   {
+    "t": "{nama} yang berhenti kerja",
+    "h": "{nama} menerima, walaupun dengan sedikit berat hati.",
+    "k": {
+     "flag": {
+      "pasanganBerhenti": true
+     },
+     "anak": 4,
+     "stres": -1,
+     "kasih": -1
+    }
+   },
+   {
+    "t": "Dua-dua terus kerja, guna taska",
+    "h": "Pagi lintang-pukang. Malam penat. Tapi pendapatan stabil.",
+    "k": {
+     "stres": 6,
+     "anak": -2,
+     "tunai": -100
+    }
+   },
+   {
+    "t": "Minta mak/mertua jaga anak",
+    "h": "Penjimatan besar, tapi campur tangan lebih besar.",
+    "ikut": {
+     "m:suka campur": {
+      "stres": 5,
+      "mertua": -3
+     },
+     "m:penyayang": {
+      "mertua": 4,
+      "stres": -2
+     }
+    },
+    "k": {
+     "anak": 1,
+     "stres": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6_anak_jujur",
+  "tajuk": "Anak terlalu jujur",
+  "fasa": [
+   6,
+   7
+  ],
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "lucu"
+  ],
+  "syarat": {
+   "anakMin": 1
+  },
+  "berat": 7,
+  "ulang": true,
+  "cd": 14,
+  "teks": [
+   "Tetamu datang. {anak} berdiri di tengah ruang tamu dan menyiarkan dengan lantang: “Mama tak suka Aunty ni! Mama kata dia kedekut!” Seisi rumah membeku."
+  ],
+  "pilihan": [
+   {
+    "t": "Ketawa dan bawa {anak} ke dapur",
+    "h": "Aunty ketawa juga. Tapi matanya tidak.",
+    "k": {
+     "reputasi": -2,
+     "stres": 3
+    },
+    "lucu": true
+   },
+   {
+    "t": "Tegur {anak} dengan lembut kemudian",
+    "h": "Pelajaran buat anak, dan buat awak juga.",
+    "k": {
+     "anak": 2,
+     "reputasi": 0
+    }
+   },
+   {
+    "t": "Tegur serta-merta di depan tetamu",
+    "h": "Tetamu rasa awkward. {anak} menangis.",
+    "k": {
+     "anak": -2,
+     "reputasi": -1,
+     "stres": 2
+    }
+   },
+   {
+    "t": "Pura-pura tak dengar, hidang air",
+    "h": "Seisi rumah mengikut tektik awak.",
+    "k": {
+     "stres": -1,
+     "reputasi": 1
+    },
+    "lucu": true
+   }
+  ]
+ },
+ {
+  "id": "p6_kemesraan",
+  "tajuk": "Keinginan yang tak sama",
+  "fasa": [
+   6,
+   7
+  ],
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "dewasa",
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ]
+  },
+  "berat": 6,
+  "ulang": true,
+  "cd": 20,
+  "teks": [
+   "Dua tahun selepas anak lahir, malam-malam awak dan {nama} sunyi. Penat, tak sama keinginan, dan sedikit kekok untuk berbincang. Awak berdua sedar: ini perlu dibincangkan, bukan dielakkan."
+  ],
+  "pilihan": [
+   {
+    "t": "Bercakap terus terang, dengan lembut",
+    "h": "Perbualan janggal tapi menyembuhkan. Persetujuan bersama dan komunikasi ialah kuncinya.",
+    "k": {
+     "keintiman": 8,
+     "kasih": 4,
+     "percaya": 4,
+     "stres": -2
+    }
+   },
+   {
+    "t": "Minta {nama} berehat dahulu, beri ruang",
+    "h": "{nama} menghargai pertimbangan awak.",
+    "k": {
+     "keintiman": 2,
+     "stres": -2,
+     "kasih": 2
+    }
+   },
+   {
+    "t": "Jumpa doktor/klinik untuk nasihat kesihatan",
+    "h": "Profesional, tenang, dan sangat membantu.",
+    "k": {
+     "keintiman": 4,
+     "tunai": -150,
+     "kesihatan": 2,
+     "stat": {
+      "rawatan": 0
+     }
+    }
+   },
+   {
+    "t": "Biarkan sahaja, nanti pun baik",
+    "h": "Tidak baik. Jarak membesar senyap-senyap.",
+    "k": {
+     "keintiman": -6,
+     "kasih": -3,
+     "luka": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6_perancang",
+  "tajuk": "Kaedah perancang keluarga",
+  "fasa": [
+   5,
+   6
+  ],
+  "bulan": 1,
+  "latar": "hospital",
+  "tag": [
+   "dewasa",
+   "serius"
+  ],
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "flag": {
+    "perancangBincang": false
+   }
+  },
+  "berat": 4,
+  "teks": [
+   "Awak dan {nama} perlu berbincang jarak kelahiran dan kaedah perancang keluarga. Awak berdua bersetuju untuk berjumpa doktor atau klinik untuk nasihat yang sesuai dengan kesihatan dan agama."
+  ],
+  "pilihan": [
+   {
+    "t": "Berjumpa doktor bersama-sama",
+    "h": "Doktor jelaskan pilihan dengan tenang. Satu pelan yang berpatutan dipilih.",
+    "k": {
+     "tunai": -100,
+     "percaya": 3,
+     "kasih": 3,
+     "flag": {
+      "perancangBincang": true
+     }
+    }
+   },
+   {
+    "t": "Minta nasihat ustaz dan doktor",
+    "h": "Perbincangan lebih lapang, hormat kedua-dua pihak.",
+    "k": {
+     "kasih": 2,
+     "percaya": 2,
+     "flag": {
+      "perancangBincang": true
+     }
+    }
+   },
+   {
+    "t": "Biar sahaja, ikut rezeki",
+    "h": "Mungkin baik. Mungkin kejutan.",
+    "k": {
+     "flag": {
+      "perancangBincang": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6_hutang_menimbun",
+  "tajuk": "Hutang menimbun",
+  "fasa": [
+   5,
+   6,
+   7
+  ],
+  "bulan": 1,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "syarat": {
+   "min": {
+    "hutang": 8000
+   },
+   "rel": [
+    "berkahwin",
+    "bercerai",
+    "bujang"
+   ]
+  },
+  "berat": 6,
+  "ulang": true,
+  "cd": 16,
+  "teks": [
+   "Penyata bulanan sampai: tiga kad kredit, satu pinjaman peribadi, dua ‘bayar kemudian’. Awak jumlahkan dengan kalkulator. Kemudian awak jumlahkan semula, berharap kalkulator salah."
+  ],
+  "pilihan": [
+   {
+    "t": "Ambil kaunseling kredit dan atur pelan bayaran",
+    "h": "Satu langkah kecil. Satu nafas lega.",
+    "k": {
+     "stres": -4,
+     "hutang": -1000,
+     "flag": {
+      "kaunselingKredit": true
+     }
+    }
+   },
+   {
+    "t": "Bayar kecil-kecil, abaikan faedah",
+    "h": "Hutang kekal, stres juga.",
+    "k": {
+     "hutang": -300,
+     "stres": 3
+    }
+   },
+   {
+    "t": "Ambil kerja sampingan (jual kuih, e-hailing)",
+    "h": "Pendapatan tambah. Masa untuk keluarga kurang.",
+    "k": {
+     "tunai": 800,
+     "stres": 5,
+     "kasih": -2,
+     "anak": -1
+    }
+   },
+   {
+    "t": "Beritahu {nama} terus terang dan bina pelan bersama",
+    "h": "Susah dikata, tapi lega kemudian.",
+    "k": {
+     "percaya": 5,
+     "kasih": 2,
+     "hutang": -500,
+     "stres": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6_besar",
+  "tajuk": "Tambah anak atau cukup?",
+  "fasa": [
+   6
+  ],
+  "besar": true,
+  "syarat": {
+   "rel": [
+    "berkahwin"
+   ],
+   "fasaMin": 12,
+   "tiada": [
+    "hamil",
+    "hamilSah",
+    "baruBersalinBaru"
+   ]
+  },
+  "fasaNext": 7,
+  "bulan": 8,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "teks": [
+   "Tahun-tahun berlalu dalam kabur. Lampin, taska, jadual. {nama} duduk di sebelah: “Kita nak tambah anak? Atau cukup?” Satu soalan lagi yang menentukan banyak benda."
+  ],
+  "pilihan": [
+   {
+    "t": "Tambah seorang lagi",
+    "h": "Rumah bertambah bising. Hati bertambah penuh.",
+    "k": {
+     "anakLahir": 1,
+     "tunai": "-$bersalin",
+     "stres": 6,
+     "kasih": 3,
+     "anak": 3,
+     "lompat": 3,
+     "catat": "Kelahiran anak kedua.",
+     "emoji": "👶"
+    }
+   },
+   {
+    "t": "Cukup, fokus untuk membesarkan yang ada",
+    "h": "Keputusan yang tenang. Tabung pendidikan bermula.",
+    "k": {
+     "simpanan": 3000,
+     "stres": -2,
+     "anak": 3,
+     "lompat": 4
+    }
+   },
+   {
+    "t": "Salah seorang berhenti kerja, fokus keluarga",
+    "h": "Rumah lebih tenang. Duit lebih ketat.",
+    "k": {
+     "flag": {
+      "berhentiKerja": true
+     },
+     "anak": 6,
+     "stres": -3,
+     "lompat": 4
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6c_besar",
+  "tajuk": "Memulakan semula",
+  "fasa": [
+   6
+  ],
+  "besar": true,
+  "syarat": {
+   "rel": [
+    "bercerai"
+   ],
+   "fasaMin": 4
+  },
+  "fasaNext": 7,
+  "bulan": 6,
+  "latar": "rumah",
+  "tag": [
+   "serius"
+  ],
+  "teks": [
+   "Setelah perceraian, hidup perlahan-lahan terbina semula. Beberapa tahun berlalu. Awak sudah mula tahu apa yang awak mahu dan tak mahu."
+  ],
+  "pilihan": [
+   {
+    "t": "Fokus pada anak, kerjaya dan kestabilan",
+    "h": "Tidak mudah, tapi mantap. Awak bangga pada diri.",
+    "k": {
+     "stres": -4,
+     "anak": 4,
+     "gaji": 300,
+     "lompat": 4,
+     "flag": {
+      "damaiSendiri": true
+     }
+    }
+   },
+   {
+    "t": "Cuba membuka hati sekali lagi, pelan-pelan",
+    "h": "Tak tergesa-gesa. Dan itu betul.",
+    "k": {
+     "stres": 1,
+     "kasih": 3,
+     "lompat": 3
+    }
+   },
+   {
+    "t": "Berpindah ke tempat baharu, mulakan segala-galanya",
+    "h": "Cabaran, tapi segar.",
+    "k": {
+     "stres": 3,
+     "gaji": 200,
+     "kawan": -3,
+     "lompat": 4,
+     "rumah": "sewa"
+    }
+   }
+  ]
+ },
+ {
+  "id": "p6b_besar",
+  "tajuk": "Kerjaya dan keluarga besar",
+  "fasa": [
+   6
+  ],
+  "besar": true,
+  "syarat": {
+   "rel": [
+    "bujang"
+   ],
+   "fasaMin": 4
+  },
+  "fasaNext": 7,
+  "bulan": 6,
+  "latar": "pejabat",
+  "tag": [
+   "serius"
+  ],
+  "teks": [
+   "Hidup berjalan dengan caranya sendiri. Anak saudara membesar, ibu bapa semakin tua, dan awak ada pilihan: terus mengejar kerjaya, atau lebih hadir di rumah."
+  ],
+  "pilihan": [
+   {
+    "t": "Bantu keluarga, jadi tiang kecil rumah",
+    "h": "Keluarga bersandar pada awak. Berat, tetapi bermakna.",
+    "k": {
+     "ibubapa": 8,
+     "tunai": -1500,
+     "stres": 3,
+     "flag": {
+      "anakSaudara": true
+     },
+     "lompat": 4
+    }
+   },
+   {
+    "t": "Kejar kerjaya, bina tabungan",
+    "h": "Pendapatan melonjak. Masa pulang berkurang.",
+    "k": {
+     "gaji": 500,
+     "stres": 5,
+     "simpanan": 4000,
+     "ibubapa": -3,
+     "lompat": 4
+    }
+   },
+   {
+    "t": "Seimbangkan: kerja dan hadir, secara realistik",
+    "h": "Tak sempurna, tapi cukup baik.",
+    "k": {
+     "stres": -1,
+     "ibubapa": 3,
+     "lompat": 4
+    }
+   }
+  ]
+ }
+]

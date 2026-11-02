@@ -1,0 +1,34 @@
+{
+  "nota": "SEMUA ANGKA ADALAH ANGGARAN UNTUK PERMAINAN, bukan data rasmi. Sila semak dan kemas kini dengan sumber sebenar (pull request dialu-alukan).",
+  "gajiMula": {
+    "spm":     {"kerajaan": 1700, "swasta": 1600, "gig": 2000, "niaga": 1500},
+    "diploma": {"kerajaan": 2300, "swasta": 2400, "gig": 2200, "niaga": 2000},
+    "ijazah":  {"kerajaan": 3200, "swasta": 3600, "gig": 2600, "niaga": 2600}
+  },
+  "faktorLokasi": {"bandar": 1.15, "kampung": 0.85},
+  "kosHidup": {
+    "bandar":  {"makan": 900, "bil": 320, "sewaBilik": 600, "sewaRumah": 1300, "ansuranRumah": 1450},
+    "kampung": {"makan": 650, "bil": 230, "sewaBilik": 350, "sewaRumah": 600,  "ansuranRumah": 800}
+  },
+  "kereta": {"ansuran": 650, "minyakTol": 280, "motor": 200},
+  "ptptn": {"baki": {"spm": 0, "diploma": 22000, "ijazah": 38000}, "ansuran": {"spm": 0, "diploma": 150, "ijazah": 250}},
+  "anak": {"bayi": 450, "taska": 700, "sekolah": 150, "remaja": 260},
+  "negeri": {
+    "Johor":           {"hantaran": 9000,  "kenduriBesar": 32000, "kenduriSederhana": 12000},
+    "Kedah":           {"hantaran": 7000,  "kenduriBesar": 26000, "kenduriSederhana": 10000},
+    "Kelantan":        {"hantaran": 10000, "kenduriBesar": 30000, "kenduriSederhana": 12000},
+    "Melaka":          {"hantaran": 7500,  "kenduriBesar": 26000, "kenduriSederhana": 10000},
+    "Negeri Sembilan": {"hantaran": 6000,  "kenduriBesar": 26000, "kenduriSederhana": 10000},
+    "Pahang":          {"hantaran": 7500,  "kenduriBesar": 25000, "kenduriSederhana": 10000},
+    "Perak":           {"hantaran": 7000,  "kenduriBesar": 26000, "kenduriSederhana": 10000},
+    "Perlis":          {"hantaran": 6500,  "kenduriBesar": 22000, "kenduriSederhana": 9000},
+    "Pulau Pinang":    {"hantaran": 7500,  "kenduriBesar": 28000, "kenduriSederhana": 11000},
+    "Sabah":           {"hantaran": 8500,  "kenduriBesar": 28000, "kenduriSederhana": 11000},
+    "Sarawak":         {"hantaran": 8000,  "kenduriBesar": 28000, "kenduriSederhana": 11000},
+    "Selangor":        {"hantaran": 8000,  "kenduriBesar": 35000, "kenduriSederhana": 14000},
+    "Terengganu":      {"hantaran": 9500,  "kenduriBesar": 28000, "kenduriSederhana": 11000},
+    "Kuala Lumpur":    {"hantaran": 8500,  "kenduriBesar": 38000, "kenduriSederhana": 15000}
+  },
+  "inflasi": 0.03,
+  "kadarBunga": 0.01
+}
