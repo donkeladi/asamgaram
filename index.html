@@ -14,7 +14,13 @@
   <link rel="stylesheet" crossorigin href="./assets/index-CPkk-8-x.css">
 </head>
 <body>
-  <div id="app" aria-live="polite"></div>
+  <div id="app" aria-live="polite"><p style="font-family:system-ui;padding:2rem;text-align:center">🌶️ Memuatkan Asam Garam…<br><small>Jika tulisan ini kekal, skrip gagal dimuatkan. Tekan Ctrl+Shift+R atau cuba tab incognito.</small></p></div>
+  <script>
+    window.addEventListener('error', function (e) {
+      var a = document.getElementById('app');
+      if (a && a.textContent.indexOf('Memuatkan') > -1) a.innerHTML = '<pre style="white-space:pre-wrap;padding:1rem;font:14px system-ui;color:#b00">Ralat memuatkan game:\n' + (e.message || e.target && e.target.src || 'tidak diketahui') + '</pre>';
+    }, true);
+  </script>
   <noscript>Asam Garam memerlukan JavaScript untuk dimainkan.</noscript>
 </body>
 </html>
